@@ -3,7 +3,7 @@ import Layout from './Layout.vue';
 import './styles.css';
 
 import { TroisJSVuePlugin } from 'troisjs';
-import * as Examples from '../../components/examples/index.js';
+import * as Examples from '../../components/index.js';
 
 export default {
   ...DefaultTheme,

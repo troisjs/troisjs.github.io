@@ -1,13 +1,11 @@
-const path = require('path');
-const production = process.env.NODE_ENV === 'production';
+// const path = require('path');
+// const production = process.env.NODE_ENV === 'production';
 
 module.exports = {
-	// base: production ? '/vue_three/vitepress/src/.vitepress/dist/' : '/',
 	base: '/',
 	title: 'TroisJS',
 	description: 'TroisJS examples and documentation',
 	themeConfig: {
-		showHero: false,
 		repo: 'troisjs/trois',
 		docsRepo: 'troisjs/troisjs',
 		docsDir: 'src',
@@ -15,22 +13,33 @@ module.exports = {
 		// prevLink: true,
 		// nextLink: true,
 		nav: [
-			{ text: 'Examples', link: '/examples/1', activeMatch: '^/examples/' },
+			{ text: 'Examples', link: '/examples/demos/1', activeMatch: '^/examples/' },
 			{ text: 'Documentation', link: '/guide/' },
 			{ text: 'GitHub', link: 'https://github.com/troisjs/trois' },
 		],
 		sidebar: {
 			'/examples/': [
 				{
-					text: 'Examples',
+					text: 'Demos',
 					children: [
-						{ link: '/examples/1', text: 'Demo 1' },
-						{ link: '/examples/2', text: 'Demo 2' },
-						{ link: '/examples/3', text: 'Demo 3' },
-						{ link: '/examples/4', text: 'Demo 4' },
-						{ link: '/examples/5', text: 'Textures' },
-						{ link: '/examples/6', text: 'Slider 1' },
-						{ link: '/examples/7', text: 'Slider 2' },
+						{ link: '/examples/demos/1', text: 'Demo 1' },
+						{ link: '/examples/demos/2', text: 'Demo 2' },
+						{ link: '/examples/demos/3', text: 'Demo 3' },
+						{ link: '/examples/demos/4', text: 'Demo 4' },
+					],
+				},
+				{
+					text: 'Textures',
+					children: [
+						{ link: '/examples/textures/1', text: 'Textures' },
+						{ link: '/examples/textures/2', text: 'Matcap' },
+					],
+				},
+				{
+					text: 'Sliders',
+					children: [
+						{ link: '/examples/sliders/1', text: 'Slider 1' },
+						{ link: '/examples/sliders/2', text: 'Slider 2' },
 					],
 				},
 				// {
@@ -41,12 +50,6 @@ module.exports = {
 				// },
 				// {
 				// 	text: 'Events',
-				// 	children: [
-				// 		{ link: '/examples/', text: 'Example' },
-				// 	],
-				// },
-				// {
-				// 	text: 'Textures',
 				// 	children: [
 				// 		{ link: '/examples/', text: 'Example' },
 				// 	],
