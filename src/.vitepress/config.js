@@ -29,10 +29,11 @@ module.exports = {
 					],
 				},
 				{
-					text: 'Textures',
+					text: 'Materials',
 					children: [
-						{ link: '/examples/textures/1', text: 'Textures' },
-						{ link: '/examples/textures/2', text: 'Matcap' },
+						{ link: '/examples/materials/1', text: 'Textures' },
+						{ link: '/examples/materials/2', text: 'SubSurface' },
+						{ link: '/examples/materials/3', text: 'Matcap' },
 					],
 				},
 				{
