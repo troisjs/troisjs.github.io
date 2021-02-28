@@ -1,0 +1,1 @@
+import{r as t,o as e,c as a,a as r,w as l}from"./app.d777279d.js";const n='{"title":"","description":"","frontmatter":{},"relativePath":"examples/textures/2.md","lastUpdated":1614545420157}',s={};s.render=function(n,s,d,o,p,i){const u=t("Matcap"),c=t("ClientOnly");return e(),a("div",null,[r(c,null,{default:l((()=>[r(u)])),_:1})])};export default s;export{n as __pageData};
