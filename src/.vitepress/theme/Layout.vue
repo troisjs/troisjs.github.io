@@ -13,8 +13,19 @@
     </SideBar>
     <div class="sidebar-mask" @click="toggleSidebar(false)" />
 
-    <Content class="page" v-if="isCustomLayout" />
-    <Page :class="{ examples: isExamples }" v-else />
+    <Content v-if="isCustomLayout" class="page" />
+    <Home v-else-if="enableHome">
+      <template #hero>
+        <slot name="home-hero" />
+      </template>
+      <template #features>
+        <slot name="home-features" />
+      </template>
+      <template #footer>
+        <slot name="home-footer" />
+      </template>
+    </Home>
+    <Page v-else :class="{ examples: isExamples }" />
   </div>
 
   <Debug />
@@ -35,6 +46,7 @@ import type { DefaultTheme } from 'vitepress/dist/client/theme-default/config'
 import NavBar from 'vitepress/dist/client/theme-default/components/NavBar.vue'
 import SideBar from 'vitepress/dist/client/theme-default/components/SideBar.vue'
 import Page from 'vitepress/dist/client/theme-default/components/Page.vue'
+const Home = defineAsyncComponent(() => import('vitepress/dist/client/theme-default/components/Home.vue'))
 
 const NoopComponent = () => null
 

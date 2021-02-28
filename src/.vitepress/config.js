@@ -9,13 +9,15 @@ module.exports = {
 	themeConfig: {
 		showHero: false,
 		repo: 'troisjs/trois',
-		// docsRepo: 'troisjs/doc',
-		// editLinks: true,
+		docsRepo: 'troisjs/troisjs',
+		docsDir: 'src',
+		editLinks: true,
 		// prevLink: true,
 		// nextLink: true,
 		nav: [
-			{ text: 'Examples', link: '/examples/' },
+			{ text: 'Examples', link: '/examples/1', activeMatch: '^/examples/' },
 			{ text: 'Documentation', link: '/guide/' },
+			{ text: 'GitHub', link: 'https://github.com/troisjs/trois' },
 		],
 		sidebar: {
 			'/examples/': [

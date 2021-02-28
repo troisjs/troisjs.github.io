@@ -1,3 +1,9 @@
+:root {
+	--c-brand: #d24339;
+	--c-brand-light: #ef584e;
+	--c-divider: #ffffff1f;
+}
+
 .examples .container {
 	padding: 0;
 	max-width: none;
@@ -20,6 +26,8 @@
 	display: block;
 }
 
+.nav-bar .nav-links > .item:last-child,
+.examples .page-footer,
 .examples .next-and-prev-link {
 	display: none;
 }
