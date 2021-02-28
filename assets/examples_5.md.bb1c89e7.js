@@ -1,0 +1,1 @@
+import{r as t,o as a,c as e,a as r,w as l}from"./app.a57a87ca.js";const n='{"title":"","description":"","frontmatter":{},"relativePath":"examples/5.md","lastUpdated":1614537379081}',s={};s.render=function(n,s,o,d,i,p){const u=t("Textures"),c=t("ClientOnly");return a(),e("div",null,[r(c,null,{default:l((()=>[r(u)])),_:1})])};export default s;export{n as __pageData};
