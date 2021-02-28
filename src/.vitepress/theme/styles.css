@@ -1,0 +1,37 @@
+.examples .container {
+	padding: 0;
+	max-width: none;
+}
+
+.examples .content {
+	position: fixed;
+	padding: 0;
+	top: 3.6rem;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.examples .content > div {
+	height: 100%;
+}
+
+.examples .content > div canvas {
+	display: block;
+}
+
+.examples .next-and-prev-link {
+	display: none;
+}
+
+@media (min-width: 720px) {
+	.examples .content  {
+		left: 16.4rem;
+	}
+}
+
+@media (min-width: 960px) {
+	.examples .content  {
+		left: 20rem;
+	}
+}
