@@ -103,9 +103,16 @@ const toggleSidebar = (to?: boolean) => {
 
 const hideSidebar = toggleSidebar.bind(null, false)
 // close the sidebar when navigating to a different location
-watch(route, hideSidebar)
+// watch(route, hideSidebar)
 // TODO: route only changes when the pathname changes
 // listening to hashchange does nothing because it's prevented in router
+
+watch(route, () => {
+  hideSidebar();
+  // console.log(route.path);
+  siteData.$ga('set', 'page', route.path);
+  siteData.$ga('send', 'pageview');
+})
 
 // page classes
 const pageClasses = computed(() => {
