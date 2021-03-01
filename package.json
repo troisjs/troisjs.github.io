@@ -6,6 +6,7 @@
 	},
 	"devDependencies": {
 		"chroma-js": "^2.1.0",
+		"simplex-noise": "^2.4.0",
 		"troisjs": "^0.1.5",
 		"vitepress": "^0.12.2",
 		"vue": "3.0.5"

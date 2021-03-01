@@ -28,6 +28,10 @@ module.exports = {
 						{ link: '/examples/demos/4', text: 'Demo 4' },
 					],
 				},
+				// {
+				// 	text: 'Meshes',
+				// 	link: '/examples/meshes/',
+				// },
 				{
 					text: 'Materials',
 					children: [
@@ -37,11 +41,19 @@ module.exports = {
 					],
 				},
 				{
+					text: 'Shadows',
+					link: '/examples/shadows',
+				},
+				{
 					text: 'Sliders',
 					children: [
 						{ link: '/examples/sliders/1', text: 'Slider 1' },
 						{ link: '/examples/sliders/2', text: 'Slider 2' },
 					],
+				},
+				{
+					text: 'GLTF',
+					link: '/examples/gltf',
 				},
 				// {
 				// 	text: 'Mesh',
