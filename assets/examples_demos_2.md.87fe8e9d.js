@@ -1,0 +1,1 @@
+import{r as t,o as e,c as a,a as r,w as l}from"./app.cffcd09a.js";const n='{"title":"","description":"","frontmatter":{},"relativePath":"examples/demos/2.md","lastUpdated":1614642157370}',o={};o.render=function(n,o,s,d,i,p){const c=t("Demo2"),f=t("ClientOnly");return e(),a("div",null,[r(f,null,{default:l((()=>[r(c)])),_:1})])};export default o;export{n as __pageData};
