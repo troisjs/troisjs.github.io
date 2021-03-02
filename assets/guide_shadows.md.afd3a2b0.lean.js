@@ -1,0 +1,1 @@
+import{o as a,c as n,b as s}from"./app.a65b9c70.js";const t='{"title":"Shadows","description":"","frontmatter":{},"relativePath":"guide/shadows.md","lastUpdated":1614712060361}',p={},o=s('',5);p.render=function(s,t,p,e,c,l){return a(),n("div",null,[o])};export default p;export{t as __pageData};
