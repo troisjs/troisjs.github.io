@@ -1,0 +1,3 @@
+<ClientOnly>
+  <EventsExample />
+</ClientOnly>

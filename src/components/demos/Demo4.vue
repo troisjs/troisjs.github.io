@@ -1,6 +1,6 @@
 <template>
-  <Renderer ref="renderer" :orbit-ctrl="{ enableDamping: true, dampingFactor: 0.05 }" shadow>
-    <Camera :position="{ z: 100 }" />
+  <Renderer ref="renderer" :orbit-ctrl="{ enableDamping: true, dampingFactor: 0.05, autoRotate : true }" shadow>
+    <Camera :position="{ y: 100, z: 100 }" />
     <Scene>
       <SpotLight color="#ffffff" :intensity="0.5" :position="{ y: 150, z: 0 }" :cast-shadow="true" :shadow-map-size="{ width: 1024, height: 1024 }" />
       <SpotLight color="#ff0000" :intensity="0.5" :position="{ y: -150, z: 0 }" :cast-shadow="true" :shadow-map-size="{ width: 1024, height: 1024 }" />

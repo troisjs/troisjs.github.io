@@ -11,6 +11,7 @@ export { default as Matcap } from './materials/Matcap.vue';
 export { default as Slider1 } from './sliders/Slider1.vue';
 export { default as Slider2 } from './sliders/Slider2.vue';
 
-// export { default as Meshes } from './Meshes.vue';
+// export { default as MeshExample } from './MeshExample.vue';
+export { default as EventsExample } from './EventsExample.vue';
 export { default as ShadowsExample } from './ShadowsExample.vue';
 export { default as GLTFExample } from './GLTFExample.vue';
