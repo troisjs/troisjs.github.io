@@ -45,6 +45,10 @@ module.exports = {
 					link: '/examples/shadows',
 				},
 				{
+					text: 'Events',
+					link: '/examples/events',
+				},
+				{
 					text: 'Sliders',
 					children: [
 						{ link: '/examples/sliders/1', text: 'Slider 1' },
@@ -55,33 +59,15 @@ module.exports = {
 					text: 'GLTF',
 					link: '/examples/gltf',
 				},
-				// {
-				// 	text: 'Mesh',
-				// 	children: [
-				// 		{ link: '/components/examples/Example1.vue', text: 'Example' },
-				// 	],
-				// },
-				// {
-				// 	text: 'Events',
-				// 	children: [
-				// 		{ link: '/examples/', text: 'Example' },
-				// 	],
-				// },
-				// {
-				// 	text: 'Components',
-				// 	children: [
-				// 		{ link: '/examples/', text: 'NoisyImage' },
-				// 	],
-				// },
 			],
 			'/guide/': [
 				{
-					link: '/guide/',
 					text: 'Introduction',
 					children: [
 						{ link: '/guide/install', text: 'Installation' },
-						{ link: '/guide/dev', text: 'Dev' },
+						{ link: '/guide/cdn', text: 'CDN' },
 						{ link: '/guide/hmr', text: 'HMR' },
+						{ link: '/guide/dev', text: 'Dev' },
 					],
 				},
 				{
@@ -89,7 +75,6 @@ module.exports = {
 					text: 'Usage',
 				},
 				{
-					link: '/guide/materials/',
 					text: 'Materials',
 					children: [
 						{ link: '/guide/materials/', text: 'Introduction' },
@@ -101,7 +86,6 @@ module.exports = {
 					text: 'Lights',
 				},
 				{
-					link: '/guide/meshes/',
 					text: 'Meshes',
 					children: [
 						{ link: '/guide/meshes/', text: 'Introduction' },
