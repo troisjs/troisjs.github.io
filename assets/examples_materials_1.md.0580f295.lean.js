@@ -1,0 +1,1 @@
+import{r as t,o as e,c as a,a as r,w as l}from"./app.4996689e.js";const s='{"title":"","description":"","frontmatter":{},"relativePath":"examples/materials/1.md","lastUpdated":1614709758868}',n={};n.render=function(s,n,o,i,d,p){const u=t("Textures"),m=t("ClientOnly");return e(),a("div",null,[r(m,null,{default:l((()=>[r(u)])),_:1})])};export default n;export{s as __pageData};

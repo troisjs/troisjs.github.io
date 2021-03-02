@@ -1,1 +1,0 @@
-import{r as t,o as a,c as e,a as r,w as l}from"./app.cffcd09a.js";const n='{"title":"","description":"","frontmatter":{},"relativePath":"examples/materials/3.md","lastUpdated":1614642157370}',s={};s.render=function(n,s,o,d,i,p){const c=t("Matcap"),f=t("ClientOnly");return a(),e("div",null,[r(f,null,{default:l((()=>[r(c)])),_:1})])};export default s;export{n as __pageData};
