@@ -7,7 +7,7 @@ module.exports = {
 	description: 'TroisJS examples and documentation',
 	themeConfig: {
 		repo: 'troisjs/trois',
-		docsRepo: 'troisjs/troisjs',
+		docsRepo: 'troisjs/troisjs.github.io',
 		docsDir: 'src',
 		editLinks: true,
 		// prevLink: true,
