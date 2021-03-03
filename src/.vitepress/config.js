@@ -28,10 +28,6 @@ module.exports = {
 						{ link: '/examples/demos/4', text: 'Demo 4' },
 					],
 				},
-				// {
-				// 	text: 'Meshes',
-				// 	link: '/examples/meshes/',
-				// },
 				{
 					text: 'Materials',
 					children: [
