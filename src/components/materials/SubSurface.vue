@@ -1,5 +1,5 @@
 <template>
-  <Renderer ref="renderer" orbit-ctrl mouse-move mouse-raycast>
+  <Renderer ref="renderer" orbit-ctrl mouse-move mouse-raycast @click="randomColors">
     <Camera :position="{ z: 200 }" />
     <Scene>
       <PointLight ref="light" color="#FFC0C0" />

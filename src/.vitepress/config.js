@@ -45,6 +45,10 @@ module.exports = {
 					link: '/examples/shadows',
 				},
 				{
+					text: 'Loop (v-for)',
+					link: '/examples/loop',
+				},
+				{
 					text: 'Events',
 					link: '/examples/events',
 				},
