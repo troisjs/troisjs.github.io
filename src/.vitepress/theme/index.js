@@ -5,6 +5,7 @@ import './styles.css';
 // import { TroisJSVuePlugin } from 'troisjs';
 // import * as Examples from '/components/index.js';
 import Dyn from '/Dyn.vue';
+import chroma from 'chroma-js';
 
 export default {
   ...DefaultTheme,
