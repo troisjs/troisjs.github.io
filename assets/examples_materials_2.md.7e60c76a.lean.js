@@ -1,0 +1,1 @@
+import{r as t,o as a,c as e,a as r,w as l}from"./app.5e2615fa.js";const n='{"title":"","description":"","frontmatter":{},"relativePath":"examples/materials/2.md","lastUpdated":1614791098808}',s={};s.render=function(n,s,o,i,d,p){const u=t("SubSurface"),f=t("ClientOnly");return a(),e("div",null,[r(f,null,{default:l((()=>[r(u)])),_:1})])};export default s;export{n as __pageData};

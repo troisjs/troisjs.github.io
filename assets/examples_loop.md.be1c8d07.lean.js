@@ -1,0 +1,1 @@
+import{r as t,o as e,c as a,a as l,w as o}from"./app.5e2615fa.js";const r='{"title":"","description":"","frontmatter":{},"relativePath":"examples/loop.md","lastUpdated":1614791098808}',n={};n.render=function(r,n,p,s,d,i){const f=t("LoopExample"),m=t("ClientOnly");return e(),a("div",null,[l(m,null,{default:o((()=>[l(f)])),_:1})])};export default n;export{r as __pageData};
