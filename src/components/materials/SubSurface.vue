@@ -19,10 +19,39 @@
 
 <script>
 import { Color, InstancedBufferAttribute , MathUtils, Object3D, Vector3 } from 'three';
+
+import {
+  Camera,
+  DodecahedronGeometry,
+  EffectComposer,
+  FXAAPass,
+  InstancedMesh,
+  PointLight,
+  Renderer,
+  RenderPass,
+  SubSurfaceMaterial,
+  Scene,
+  UnrealBloomPass,
+} from 'troisjs';
+
 import chroma from 'chroma-js';
+
 const { randFloat: rnd, randFloatSpread: rndFS } = MathUtils;
 
 export default {
+  components: {
+    Camera,
+    DodecahedronGeometry,
+    EffectComposer,
+    FXAAPass,
+    InstancedMesh,
+    PointLight,
+    Renderer,
+    RenderPass,
+    SubSurfaceMaterial,
+    Scene,
+    UnrealBloomPass,
+  },
   setup() {
     const NUM_INSTANCES = 2000;
     const instances = [];

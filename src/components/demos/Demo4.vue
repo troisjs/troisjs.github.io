@@ -19,7 +19,32 @@
 <script>
 import { Object3D, MathUtils } from 'three';
 
+import {
+  Camera,
+  EffectComposer,
+  InstancedMesh,
+  PhongMaterial,
+  Renderer,
+  RenderPass,
+  SphereGeometry,
+  SpotLight,
+  Scene,
+  UnrealBloomPass,
+} from 'troisjs';
+
 export default {
+  components: {
+    Camera,
+    EffectComposer,
+    InstancedMesh,
+    PhongMaterial,
+    Renderer,
+    RenderPass,
+    SphereGeometry,
+    SpotLight,
+    Scene,
+    UnrealBloomPass,
+  },
   setup() {
     return {
       NUM_INSTANCES: 2000,

@@ -10,7 +10,10 @@
 </template>
 
 <script>
+import { Box, Camera, MatcapMaterial, Renderer, Scene } from 'troisjs';
+
 export default {
+  components: { Box, Camera, MatcapMaterial, Renderer, Scene },
   mounted() {
     const renderer = this.$refs.renderer;
     const mesh = this.$refs.mesh.mesh;

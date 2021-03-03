@@ -11,7 +11,10 @@
 </template>
 
 <script>
+import { Box, Camera, LambertMaterial, PointLight, Renderer, Scene } from 'troisjs';
+
 export default {
+  components: { Box, Camera, LambertMaterial, PointLight, Renderer, Scene },
   data() {
     return {
       boxColor: '#ffffff',

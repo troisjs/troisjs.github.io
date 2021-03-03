@@ -19,10 +19,34 @@
 
 <script>
 import { Object3D } from 'three';
+
+import {
+  AmbientLight,
+  BoxGeometry,
+  Camera,
+  InstancedMesh,
+  PhongMaterial,
+  Plane,
+  PointLight,
+  Renderer,
+  Scene,
+} from 'troisjs';
+
 import SimplexNoise from 'simplex-noise';
 const simplex = new SimplexNoise();
 
 export default {
+  components: {
+    AmbientLight,
+    BoxGeometry,
+    Camera,
+    InstancedMesh,
+    PhongMaterial,
+    Plane,
+    PointLight,
+    Renderer,
+    Scene,
+  },
   setup() {
     const SIZE = 1.5, NX = 20, NY = 20, PADDING = 1;
     const SIZEP = SIZE + PADDING;

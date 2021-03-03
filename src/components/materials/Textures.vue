@@ -20,7 +20,10 @@
 
 <script>
 // textures from https://3dtextures.me/2019/04/26/wood-tiles-002/
+import { AmbientLight, Camera, Renderer, PointLight, Scene, Sphere, StandardMaterial, Texture } from 'troisjs';
+
 export default {
+  components: { AmbientLight, Camera, Renderer, PointLight, Scene, Sphere, StandardMaterial, Texture },
   mounted() {
     const renderer = this.$refs.renderer;
     const mesh = this.$refs.mesh.mesh;

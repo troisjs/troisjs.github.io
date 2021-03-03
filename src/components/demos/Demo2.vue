@@ -16,9 +16,10 @@
 </template>
 
 <script>
-import { NoisyImage } from 'troisjs';
+import { Camera, Renderer, Scene } from 'troisjs';
+import NoisyImage from 'troisjs/src/components/noisy/NoisyImage.js';
 
 export default {
-  components: { NoisyImage },
+  components: { Camera, NoisyImage, Renderer, Scene },
 };
 </script>

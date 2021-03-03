@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { Slider2 as Slider } from 'troisjs';
+import { default as Slider }  from 'troisjs/src/components/sliders/Slider2.vue';
 
 export default {
   components: { Slider },

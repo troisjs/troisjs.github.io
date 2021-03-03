@@ -53,10 +53,35 @@
 </template>
 
 <script>
-import { NoisyPlane, NoisySphere, NoisyText } from 'troisjs';
+import {
+  Camera,
+  PhysicalMaterial,
+  PointLight,
+  RefractionMesh,
+  Renderer,
+  Scene,
+  StandardMaterial,
+  TorusGeometry,
+} from 'troisjs';
+
+import NoisyPlane from 'troisjs/src/components/noisy/NoisyPlane.js';
+import NoisySphere from 'troisjs/src/components/noisy/NoisySphere.js';
+import NoisyText from 'troisjs/src/components/noisy/NoisyText.js';
 
 export default {
-  components: { NoisyPlane, NoisySphere, NoisyText },
+  components: {
+    Camera,
+    NoisyPlane,
+    NoisySphere,
+    NoisyText,
+    PhysicalMaterial,
+    PointLight,
+    RefractionMesh,
+    Renderer,
+    Scene,
+    StandardMaterial,
+    TorusGeometry,
+  },
   mounted() {
     const renderer = this.$refs.renderer;
     const light1 = this.$refs.light1.light;
