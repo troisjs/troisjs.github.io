@@ -1,1 +1,0 @@
-import{r as t,o as e,c as a,a as r,w as l}from"./app.5e2615fa.js";const s='{"title":"","description":"","frontmatter":{},"relativePath":"examples/sliders/1.md","lastUpdated":1614791098808}',n={};n.render=function(s,n,d,i,o,p){const f=t("Slider1"),u=t("ClientOnly");return e(),a("div",null,[r(u,null,{default:l((()=>[r(f)])),_:1})])};export default n;export{s as __pageData};

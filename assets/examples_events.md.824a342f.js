@@ -1,1 +1,0 @@
-import{r as t,o as e,c as a,a as n,w as l}from"./app.5e2615fa.js";const r='{"title":"","description":"","frontmatter":{},"relativePath":"examples/events.md","lastUpdated":1614791098808}',s={};s.render=function(r,s,o,p,d,i){const f=t("EventsExample"),m=t("ClientOnly");return e(),a("div",null,[n(m,null,{default:l((()=>[n(f)])),_:1})])};export default s;export{r as __pageData};

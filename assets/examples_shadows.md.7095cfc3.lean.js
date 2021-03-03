@@ -1,1 +1,0 @@
-import{r as t,o as a,c as e,a as s,w as l}from"./app.5e2615fa.js";const r='{"title":"","description":"","frontmatter":{},"relativePath":"examples/shadows.md","lastUpdated":1614791098808}',n={};n.render=function(r,n,o,d,p,i){const f=t("ShadowsExample"),m=t("ClientOnly");return a(),e("div",null,[s(m,null,{default:l((()=>[s(f)])),_:1})])};export default n;export{r as __pageData};
