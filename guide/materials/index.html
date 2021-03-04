@@ -8,23 +8,23 @@
     </title>
     <meta name="description" content="TroisJS examples and documentation">
     <link rel="stylesheet" href="/assets/style.1f11d981.css">
-    <link rel="modulepreload" href="/assets/Home.3ce6354c.js">
-    <link rel="modulepreload" href="/assets/Demo1.8653b789.js">
-    <link rel="modulepreload" href="/assets/Demo2.50511baa.js">
-    <link rel="modulepreload" href="/assets/Demo3.ddbd94c9.js">
-    <link rel="modulepreload" href="/assets/Demo4.c70bda48.js">
-    <link rel="modulepreload" href="/assets/Matcap.f3211246.js">
-    <link rel="modulepreload" href="/assets/SubSurface.63d00a3d.js">
-    <link rel="modulepreload" href="/assets/Textures.a66feefd.js">
-    <link rel="modulepreload" href="/assets/EventsExample.208c0c8a.js">
-    <link rel="modulepreload" href="/assets/GLTFExample.0ad3e8ae.js">
-    <link rel="modulepreload" href="/assets/LoopExample.709b694b.js">
-    <link rel="modulepreload" href="/assets/ShadowsExample.8d3d66e2.js">
-    <link rel="modulepreload" href="/assets/Slider1.4a316973.js">
-    <link rel="modulepreload" href="/assets/Slider2.aab00758.js">
-    <link rel="modulepreload" href="/assets/app.ec0c195b.js">
-    <link rel="modulepreload" href="/assets/guide_materials_index.md.67ad8d77.lean.js">
-    <link rel="modulepreload" href="/assets/app.ec0c195b.js">
+    <link rel="modulepreload" href="/assets/Home.9299bd7d.js">
+    <link rel="modulepreload" href="/assets/Demo1.02b9fa63.js">
+    <link rel="modulepreload" href="/assets/Demo2.7e718809.js">
+    <link rel="modulepreload" href="/assets/Demo3.25fc344f.js">
+    <link rel="modulepreload" href="/assets/Demo4.c8ab2273.js">
+    <link rel="modulepreload" href="/assets/Matcap.4c48a046.js">
+    <link rel="modulepreload" href="/assets/SubSurface.6053a092.js">
+    <link rel="modulepreload" href="/assets/Textures.648199f5.js">
+    <link rel="modulepreload" href="/assets/EventsExample.e8deb9da.js">
+    <link rel="modulepreload" href="/assets/GLTFExample.814c6fe7.js">
+    <link rel="modulepreload" href="/assets/LoopExample.e8c78611.js">
+    <link rel="modulepreload" href="/assets/ShadowsExample.23b21e52.js">
+    <link rel="modulepreload" href="/assets/Slider1.09f69322.js">
+    <link rel="modulepreload" href="/assets/Slider2.41186692.js">
+    <link rel="modulepreload" href="/assets/app.50a82873.js">
+    <link rel="modulepreload" href="/assets/guide_materials_index.md.c3fc5a00.lean.js">
+    <link rel="modulepreload" href="/assets/app.50a82873.js">
     
     
   </head>
@@ -35,7 +35,7 @@
 </code></pre></div><h3 id="props"><a class="header-anchor" href="#props" aria-hidden="true">#</a> Props</h3><table><tbody><tr><th>Name</th><th>Description</th><th>Type</th><th>Default</th></tr><tr><td><code>color</code></td><td>Color</td><td>String, Number</td><td>#ffffff</td></tr><tr><td><code>depthTest</code></td><td>Whether to have depth test enabled when rendering this material.</td><td>Boolean</td><td>true</td></tr><tr><td><code>depthWrite</code></td><td>Whether rendering this material has any effect on the depth buffer.</td><td>Boolean</td><td>true</td></tr><tr><td><code>flatShading</code></td><td>Define whether the material is rendered with flat shading.</td><td>Boolean</td><td>false</td></tr><tr><td><code>fog</code></td><td>Whether the material is affected by fog.</td><td>Boolean</td><td>true</td></tr><!-- <tr><td><code>id</code></td><td>Material ID</td><td>String</td><td> </td></tr> --><tr><td><code>opacity</code></td><td>Float in the range of 0.0 - 1.0 indicating how transparent the material is.</td><td>Number</td><td>1</td></tr><tr><td><code>side</code></td><td>Defines which side of faces will be rendered - front, back or both.</td><td>Number</td><td>THREE.FrontSide</td></tr><tr><td><code>transparent</code></td><td>Defines whether this material is transparent.</td><td>Boolean</td><td>false</td></tr><tr><td><code>vertexColors</code></td><td>Defines whether vertex coloring is used.</td><td>Boolean</td><td>false</td></tr></tbody></table><h3 id="access-three-object"><a class="header-anchor" href="#access-three-object" aria-hidden="true">#</a> Access three object</h3><p>You should set a <em>ref</em> on your material :</p><div class="language-html"><pre><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>PhongMaterial</span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>material<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
 </code></pre></div><p>You can then access three material object in your component script :</p><div class="language-js"><pre><code><span class="token keyword">const</span> material <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$ref<span class="token punctuation">.</span>material<span class="token punctuation">.</span>material<span class="token punctuation">;</span>
 </code></pre></div></div></div><footer class="page-footer" data-v-d36a7fda data-v-5a019cc9><div class="edit" data-v-5a019cc9><div class="edit-link" data-v-5a019cc9 data-v-fb0131f2><a class="link" href="https://github.com/troisjs/troisjs.github.io/edit/master/src/guide/materials/index.md" target="_blank" rel="noopener noreferrer" data-v-fb0131f2>Edit this page <svg class="icon outbound icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-fb0131f2><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div></div><div class="updated" data-v-5a019cc9><!----></div></footer><div class="next-and-prev-link" data-v-d36a7fda data-v-6683615c><div class="container" data-v-6683615c><div class="prev" data-v-6683615c><a class="link" href="/guide/usage" data-v-6683615c><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="icon icon-prev" data-v-6683615c><path d="M19,11H7.4l5.3-5.3c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0l-7,7c-0.1,0.1-0.2,0.2-0.2,0.3c-0.1,0.2-0.1,0.5,0,0.8c0.1,0.1,0.1,0.2,0.2,0.3l7,7c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L7.4,13H19c0.6,0,1-0.4,1-1S19.6,11,19,11z"></path></svg><span class="text" data-v-6683615c>Usage</span></a></div><div class="next" data-v-6683615c><a class="link" href="/guide/materials/textures" data-v-6683615c><span class="text" data-v-6683615c>Textures</span><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="icon icon-next" data-v-6683615c><path d="M19.9,12.4c0.1-0.2,0.1-0.5,0-0.8c-0.1-0.1-0.1-0.2-0.2-0.3l-7-7c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l5.3,5.3H5c-0.6,0-1,0.4-1,1s0.4,1,1,1h11.6l-5.3,5.3c-0.4,0.4-0.4,1,0,1.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l7-7C19.8,12.6,19.9,12.5,19.9,12.4z"></path></svg></a></div></div></div><!--[--><!--]--></div></main></div><!----><!--]--></div>
-    <script>__VP_HASH_MAP__ = JSON.parse("{\"index.md\":\"b07c644e\",\"examples_events.md\":\"b1e4959a\",\"examples_gltf.md\":\"38217750\",\"examples_loop.md\":\"7f6cf464\",\"examples_shadows.md\":\"c03a7aa0\",\"guide_cdn.md\":\"5dcd3b2f\",\"guide_dev.md\":\"d5f779af\",\"guide_hmr.md\":\"0530a77c\",\"guide_index.md\":\"075105de\",\"guide_install.md\":\"210c37a4\",\"guide_shadows.md\":\"cd951207\",\"guide_usage.md\":\"08e9cb01\",\"examples_demos_1.md\":\"75754a38\",\"examples_demos_2.md\":\"bffca477\",\"examples_demos_3.md\":\"ac48b06b\",\"examples_demos_4.md\":\"c35d1a36\",\"examples_materials_1.md\":\"b2a661c6\",\"examples_materials_2.md\":\"8542721d\",\"examples_materials_3.md\":\"bd462e6f\",\"examples_sliders_1.md\":\"daf93d44\",\"examples_sliders_2.md\":\"583e685d\",\"guide_components_index.md\":\"e938422f\",\"guide_lights_index.md\":\"d3961e2d\",\"guide_materials_index.md\":\"67ad8d77\",\"guide_materials_textures.md\":\"9dc5994e\",\"guide_meshes_geometries.md\":\"e9379f21\",\"guide_meshes_image.md\":\"b9f7fb70\",\"guide_meshes_index.md\":\"0ab3206b\",\"guide_meshes_instanced.md\":\"f0f4d97d\",\"guide_meshes_sprite.md\":\"8dae69a5\",\"guide_postprocessing_index.md\":\"c0251e9b\"}")</script>
-    <script type="module" async src="/assets/app.ec0c195b.js"></script>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"index.md\":\"7333aaab\",\"examples_events.md\":\"facd5935\",\"examples_gltf.md\":\"0992d919\",\"examples_loop.md\":\"864a3498\",\"examples_shadows.md\":\"3525aa50\",\"guide_cdn.md\":\"4eca780f\",\"guide_dev.md\":\"e85066af\",\"guide_hmr.md\":\"fdf36890\",\"guide_index.md\":\"b283c3c7\",\"guide_install.md\":\"d577577f\",\"guide_shadows.md\":\"57f15df2\",\"guide_usage.md\":\"1f879093\",\"examples_demos_1.md\":\"0a8cf142\",\"examples_demos_2.md\":\"0b9f89e0\",\"examples_demos_3.md\":\"81f22cbb\",\"examples_demos_4.md\":\"a3bfdaa3\",\"examples_materials_1.md\":\"3888b6a8\",\"examples_materials_2.md\":\"97ec6a36\",\"examples_materials_3.md\":\"1a7524e4\",\"examples_sliders_1.md\":\"a3890139\",\"examples_sliders_2.md\":\"b8644464\",\"guide_components_index.md\":\"0b5788ac\",\"guide_lights_index.md\":\"9982ee0a\",\"guide_materials_index.md\":\"c3fc5a00\",\"guide_materials_textures.md\":\"3305fdb1\",\"guide_meshes_geometries.md\":\"8fa84886\",\"guide_meshes_image.md\":\"a89905ec\",\"guide_meshes_index.md\":\"884c6a4f\",\"guide_meshes_instanced.md\":\"1e8eddda\",\"guide_meshes_sprite.md\":\"3718c83f\",\"guide_postprocessing_index.md\":\"eb511a80\"}")</script>
+    <script type="module" async src="/assets/app.50a82873.js"></script>
   </body>
 </html>
