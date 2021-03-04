@@ -104,6 +104,12 @@ module.exports = {
 					text: 'Postprocessing',
 				},
 				{
+					text: 'Directives',
+					children: [
+						{ link: '/guide/directives/v-for', text: 'v-for' },
+					],
+				},
+				{
 					link: '/guide/components/',
 					text: 'Components',
 				},
