@@ -1,25 +1,8 @@
-# Usage
-
-TroisJS needs a `Renderer`, a `Camera` and a `Scene`, e.g. :
-
-```vue
-<template>
-  <Renderer>
-    <Camera :position="{ z: 100 }" />
-    <Scene>     
-      <Box :size="10">
-        <BasicMaterial />
-      </Box>
-    </Scene>
-  </Renderer>
-</template>
-```
-
-## Renderer
+# Renderer
 
 See [Renderer.js](https://github.com/troisjs/trois/blob/master/src/core/Renderer.js) and [THREE.WebGLRenderer](https://threejs.org/docs/#api/en/renderers/WebGLRenderer).
 
-#### Props from `THREE.WebGLRenderer`
+### Props from `THREE.WebGLRenderer`
 
 <table>
   <tbody>
@@ -39,7 +22,7 @@ See [Renderer.js](https://github.com/troisjs/trois/blob/master/src/core/Renderer
       <td><code>antialias</code></td>
       <td>Whether to perform antialiasing.</td>
       <td>Boolean</td>
-      <td>true</td>
+      <td>false</td>
     </tr>
     <tr>
       <td><code>autoClear</code></td>
@@ -50,7 +33,7 @@ See [Renderer.js](https://github.com/troisjs/trois/blob/master/src/core/Renderer
   </tbody>
 </table>
 
-#### Custom Props
+### Custom Props
 
 <table>
   <tbody>
@@ -114,76 +97,18 @@ See [Renderer.js](https://github.com/troisjs/trois/blob/master/src/core/Renderer
   </tbody>
 </table>
 
-## Camera
+### Access ThreeJS renderer
 
-See [PerspectiveCamera.js](https://github.com/troisjs/trois/blob/master/src/core/PerspectiveCamera.js) and [THREE.PerspectiveCamera](https://threejs.org/docs/#api/en/cameras/PerspectiveCamera).
+You should set a *ref* on the renderer :
 
-#### Props from `THREE.PerspectiveCamera`
+```html
+<Renderer ref="renderer">
+  ...
+</Renderer>
+```
 
-<table>
-  <tbody>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Default</th>
-    </tr>
-    <tr>
-      <td><code>aspect</code></td>
-      <td>Camera frustum aspect ratio.</td>
-      <td>Number</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td><code>far</code></td>
-      <td>Camera frustum far plane.</td>
-      <td>Number</td>
-      <td>2000</td>
-    </tr>
-    <tr>
-      <td><code>fov</code></td>
-      <td>Camera frustum vertical field of view.</td>
-      <td>Number</td>
-      <td>50</td>
-    </tr>
-    <tr>
-      <td><code>near</code></td>
-      <td>Camera frustum near plane.</td>
-      <td>Number</td>
-      <td>0.1</td>
-    </tr>
-    <tr>
-      <td><code>position</code></td>
-      <td>Camera position.</td>
-      <td>Object</td>
-      <td>{ x: 0, y: 0, z: 0 }</td>
-    </tr>
-    <tr>
-      <td><code>lookAt</code></td>
-      <td>Camera look at.</td>
-      <td>Object</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+You can then access ThreeJS renderer in your component script :
 
-## Scene
-
-See [Scene.js](https://github.com/troisjs/trois/blob/master/src/core/Scene.js) and [THREE.Scene](https://threejs.org/docs/#api/en/scenes/Scene).
-
-<table>
-  <tbody>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Default</th>
-    </tr>
-    <tr>
-      <td><code>background</code></td>
-      <td>Background color.</td>
-      <td>String, Number</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+```js
+const renderer = this.$ref.renderer.renderer;
+```

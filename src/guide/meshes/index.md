@@ -62,7 +62,7 @@ To enable shadows, please read [Shadows](../shadows).
 </Box>
 ```
 
-### Access three object
+### Access ThreeJS mesh
 
 You should set a *ref* on your mesh :
 
@@ -70,7 +70,7 @@ You should set a *ref* on your mesh :
 <Box ref="box" />
 ```
 
-You can then access three mesh object in your component script :
+You can then access ThreeJS mesh in your component script :
 
 ```js
 const mesh = this.$ref.box.mesh;

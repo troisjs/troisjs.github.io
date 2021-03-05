@@ -42,7 +42,7 @@ Example :
 </table>
 
 
-### Access three object
+### Access ThreeJS material
 
 You should set a *ref* on your material :
 
@@ -50,7 +50,7 @@ You should set a *ref* on your material :
 <PhongMaterial ref="material" />
 ```
 
-You can then access three material object in your component script :
+You can then access ThreeJS material in your component script :
 
 ```js
 const material = this.$ref.material.material;

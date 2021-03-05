@@ -31,7 +31,7 @@ Example :
 </tbody>
 </table>
 
-### Access three object
+### Access ThreeJS light
 
 You should set a *ref* on your light :
 
@@ -39,7 +39,7 @@ You should set a *ref* on your light :
 <PointLight ref="light" />
 ```
 
-You can then access three light object in your component script :
+You can then access ThreeJS light in your component script :
 
 ```js
 const light = this.$ref.light.light;

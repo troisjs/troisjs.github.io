@@ -79,8 +79,14 @@ module.exports = {
 					],
 				},
 				{
-					link: '/guide/usage',
+					link: '/guide/usage/',
 					text: 'Usage',
+					children: [
+						{ link: '/guide/usage/renderer', text: 'Renderer' },
+						{ link: '/guide/usage/camera', text: 'Camera' },
+						{ link: '/guide/usage/scene', text: 'Scene' },
+						{ link: '/guide/usage/raf', text: 'Render loop' },
+					],
 				},
 				{
 					text: 'Materials',
