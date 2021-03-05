@@ -2,7 +2,7 @@
 
 You can import TroisJS as a CDN package (take a look at this [codepen example](https://codepen.io/soju22/pen/YzpejwN)).
 
-::: warning ThreeJS/VueJS versions (TroisJS 0.1.8)
+::: warning ThreeJS/VueJS versions (TroisJS 0.1.10)
 If you need to import things from ThreeJS/VueJS, you should use :
 - ThreeJS **0.125.2**
 - VueJS **3.0.7**
@@ -39,8 +39,7 @@ If you are using DOM template, you should always use **kebab-case** and **closin
   </div>
 
   <script type="module">
-    import { createApp } from 'https://unpkg.com/vue@3.0.7/dist/vue.esm-browser.prod.js';
-    import { TroisJSVuePlugin } from 'https://unpkg.com/troisjs@0.1.8/build/trois.module.cdn.min.js';
+    import { createApp } from 'https://unpkg.com/troisjs@0.1.10/build/trois.module.cdn.min.js';
     createApp({
       mounted() {
         const renderer = this.$refs.renderer;
@@ -49,7 +48,7 @@ If you are using DOM template, you should always use **kebab-case** and **closin
           box.rotation.x += 0.01;
         });
       }
-    }).use(TroisJSVuePlugin).mount('#app');;
+    }).mount('#app');;
   </script>
 
 </body>
@@ -62,8 +61,7 @@ If you are using DOM template, you should always use **kebab-case** and **closin
 <div id="app"></div>
 
 <script type="module">
-  import { createApp } from 'https://unpkg.com/vue@3.0.7/dist/vue.esm-browser.prod.js';
-  import { TroisJSVuePlugin } from 'https://unpkg.com/troisjs@0.1.8/build/trois.module.cdn.min.js';
+  import { createApp } from 'https://unpkg.com/troisjs@0.1.10/build/trois.module.cdn.min.js';
   createApp({
     template: `
       <Renderer ref="renderer" antialias orbit-ctrl resize="window">
@@ -83,6 +81,6 @@ If you are using DOM template, you should always use **kebab-case** and **closin
         box.rotation.x += 0.01;
       });
     }
-  }).use(TroisJSVuePlugin).mount('#app');;
+  }).mount('#app');;
 </script>
 ```
