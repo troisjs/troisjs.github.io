@@ -6,8 +6,10 @@
 	},
 	"devDependencies": {
 		"chroma-js": "^2.1.0",
+		"gsap": "^3.5.1",
 		"simplex-noise": "^2.4.0",
-		"troisjs": "0.1.9",
+		"three": "^0.125.2",
+		"troisjs": "0.1.10",
 		"vitepress": "^0.12.2"
 	}
 }
