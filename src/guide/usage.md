@@ -38,21 +38,63 @@ See [Renderer.js](https://github.com/troisjs/trois/blob/master/src/core/Renderer
 #### Custom Props
 
 <table>
-<tbody>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Type</th>
-    <th>Default</th>
-  </tr>
-  <tr><td><code>mouseMove</code></td><td>Listen for mousemove. Use <code>'body'</code> to add listener on <code>body</code>. Use three.mouse to get the position.</td><td>Boolean, String</td><td>false</td></tr>
-  <tr><td><code>mouseRaycast</code></td><td>Raycast mouse position. Use three.mouseV3 to get the position.</td><td>Boolean</td><td>false</td></tr>
-  <tr><td><code>orbitCtrl</code></td><td>Enable/disable OrbitControls. If value is an Object, it will be used to configure OrbitControls.</td><td>Boolean, Object</td><td>false</td></tr>
-  <tr><td><code>resize</code></td><td>Resize canvas on window resize.</td><td>Boolean, String, Element</td><td>'window'</td></tr>
-  <tr><td><code>shadow</code></td><td>Use shadow or not.</td><td>Boolean</td><td>false</td></tr>
-  <tr><td><code>width</code></td><td>Fixed width</td><td>Number</td><td></td></tr>
-  <tr><td><code>height</code></td><td>Fixed height</td><td>Number</td><td></td></tr> 
-</tbody>
+  <tbody>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Default</th>
+    </tr>
+    <tr>
+      <td><code>mouseMove</code></td>
+      <td>Listen for mousemove. Use <code>'body'</code> to add listener on <code>body</code>. Use <code>renderer.three.mouse</code> to get the position.</td>
+      <td>Boolean, String</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td><code>mouseRaycast</code></td>
+      <td>Raycast mouse position. Use <code>renderer.three.mouseV3</code> to get the position.</td>
+      <td>Boolean</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td><code>orbitCtrl</code></td>
+      <td>Enable/disable OrbitControls. If value is an Object, it will be used to configure OrbitControls.</td>
+      <td>Boolean, Object</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td><code>resize</code></td>
+      <td>
+        Resize canvas on window resize.
+        <ul>
+          <li><code>false</code> : disabled</li>
+          <li><code>true</code> : parent size</li>
+          <li><code>'window'</code> : window size</li>
+        </ul>
+      </td>
+      <td>Boolean, String</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td><code>shadow</code></td>
+      <td>Use shadow or not.</td>
+      <td>Boolean</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td><code>width</code></td>
+      <td>Fixed width</td>
+      <td>Number</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>height</code></td>
+      <td>Fixed height</td>
+      <td>Number</td>
+      <td></td>
+    </tr>
+  </tbody>
 </table>
 
 ## Camera
