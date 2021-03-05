@@ -1,5 +1,5 @@
 <template>
-  <Renderer ref="renderer" antialias orbit-ctrl>
+  <Renderer ref="renderer" resize antialias orbit-ctrl>
     <Camera :position="{ z: 10 }" />
     <Scene background="#000000" >
       <AmbientLight :intensity="0.5" />

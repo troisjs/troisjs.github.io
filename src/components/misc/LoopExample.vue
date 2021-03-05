@@ -1,5 +1,5 @@
 <template>
-  <Renderer ref="renderer" antialias orbit-ctrl @click="onClick">
+  <Renderer ref="renderer" antialias resize orbit-ctrl @click="onClick">
     <Camera :position="{ z: 15 }" />
     <Scene background="#ffffff">
       <AmbientLight color="#808080" />

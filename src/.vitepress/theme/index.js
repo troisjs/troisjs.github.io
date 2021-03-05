@@ -3,7 +3,6 @@ import Layout from './Layout.vue';
 import './styles.css';
 
 // import { TroisJSVuePlugin } from 'troisjs';
-// import * as Examples from '/components/index.js';
 import Dyn from '/Dyn.vue';
 import chroma from 'chroma-js';
 
@@ -14,9 +13,6 @@ export default {
     app.component('Dyn', Dyn);
 
     // app.use(TroisJSVuePlugin);
-    // Object.entries(Examples).forEach(([key, value]) => {
-    //   app.component(key, value);
-    // });
 
     if (typeof window !== 'undefined') {
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

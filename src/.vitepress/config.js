@@ -1,10 +1,17 @@
 // const path = require('path');
 // const production = process.env.NODE_ENV === 'production';
 
+const title = 'TroisJS';
+const description = 'TroisJS examples and documentation';
+const head = [
+	['meta', { name: 'author', content: 'Kevin Levron' }],
+	['meta', { name: 'keywords', content: 'threejs, vuejs, vitejs, webgl, troisjs' }],
+];
+
 module.exports = {
-	base: '/',
-	title: 'TroisJS',
-	description: 'TroisJS examples and documentation',
+	title,
+	description,
+	head,
 	themeConfig: {
 		repo: 'troisjs/trois',
 		docsRepo: 'troisjs/troisjs.github.io',
@@ -26,6 +33,7 @@ module.exports = {
 						{ link: '/examples/demos/2', text: 'Demo 2' },
 						{ link: '/examples/demos/3', text: 'Demo 3' },
 						{ link: '/examples/demos/4', text: 'Demo 4' },
+						{ link: '/examples/demos/5', text: 'Demo 5' },
 					],
 				},
 				{

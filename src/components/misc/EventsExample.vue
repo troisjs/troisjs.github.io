@@ -1,5 +1,5 @@
 <template>
-  <Renderer ref="renderer" mouse-over click>
+  <Renderer ref="renderer" resize mouse-over click>
     <Camera :position="{ z: 10 }" />
     <Scene>
       <PointLight :position="{ y: 50, z: 50 }" />

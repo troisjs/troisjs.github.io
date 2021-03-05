@@ -1,5 +1,5 @@
 <template>
-  <Renderer ref="renderer" orbit-ctrl mouse-move mouse-raycast>
+  <Renderer ref="renderer" resize orbit-ctrl mouse-move mouse-raycast>
     <Camera :position="{ z: 200 }" />
     <Scene>
       <AmbientLight color="#808080" />

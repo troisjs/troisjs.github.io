@@ -1,5 +1,5 @@
 <template>
-  <GLTFViewer src="/assets/test.glb" :camera-position="{ z: 1 }">
+  <GLTFViewer src="/assets/test.glb" resize :camera-position="{ z: 1 }">
     <AmbientLight></AmbientLight>
   </GLTFViewer>
 </template>

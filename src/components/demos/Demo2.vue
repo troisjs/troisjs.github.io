@@ -1,5 +1,5 @@
 <template>
-  <Renderer ref="renderer" :orbit-ctrl="{ enableDamping: true, dampingFactor: 0.05 }">
+  <Renderer ref="renderer" resize :orbit-ctrl="{ enableDamping: true, dampingFactor: 0.05 }">
     <Camera :position="{ x: 0, y: 0, z: 100 }" />
     <Scene background="#000000">
       <NoisyImage
