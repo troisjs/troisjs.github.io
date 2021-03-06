@@ -1,14 +1,16 @@
 # CubeTexture
 
+Loads a [cube texture](//threejs.org/docs/#api/en/textures/CubeTexture) into a parent Material.
+
 ```html
 <Box>
-  <CubeTexture />
+  <BasicMaterial>
+    <CubeTexture/>
+  </BasicMaterial>
 </Box>
 ```
 
 ### Props
-
-Inherits all [base props](./#props).
 
 <table>
 <tbody>
