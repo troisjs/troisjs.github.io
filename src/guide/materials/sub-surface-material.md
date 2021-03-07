@@ -1,16 +1,4 @@
-# Materials (wip)
-
-You can easily create the following materials :
-
-- `BasicMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/BasicMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshBasicMaterial))
-- `LambertMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/LambertMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshLambertMaterial))
-- `MatcapMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/MatcapMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshMatcapMaterial))
-- `PhongMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/PhongMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshPhongMaterial))
-- `PhysicalMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/PhysicalMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshPhysicalMaterial))
-- `StandardMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/StandardMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshStandardMaterial))
-- `ToonMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/ToonMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshToonMaterial))
-
-Example :
+# Subsurface Material (WIP)
 
 ```html
 <Box>

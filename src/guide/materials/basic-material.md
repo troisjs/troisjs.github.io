@@ -1,5 +1,6 @@
 # Basic Material
-Example :
+
+Creates a [basic material](https://threejs.org/docs/#api/en/materials/MeshBasicMaterial) that is unaffected by lights.
 
 ```html
 <Box>

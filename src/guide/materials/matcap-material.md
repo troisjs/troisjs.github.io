@@ -1,24 +1,22 @@
-# Materials (wip)
+# Matcap Material
 
-You can easily create the following materials :
-
-- `BasicMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/BasicMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshBasicMaterial))
-- `LambertMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/LambertMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshLambertMaterial))
-- `MatcapMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/MatcapMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshMatcapMaterial))
-- `PhongMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/PhongMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshPhongMaterial))
-- `PhysicalMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/PhysicalMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshPhysicalMaterial))
-- `StandardMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/StandardMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshStandardMaterial))
-- `ToonMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/ToonMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshToonMaterial))
-
-Example :
+Creates a [matcap material](https://threejs.org/docs/#api/en/materials/MeshMatcapMaterial) with baked lighting and color that can cast, but not receive, shadows.
 
 ```html
 <Box>
-  <PhongMaterial color="#ffffff" />
+  <MatcapMaterial src="..." />
+</Box>
+
+<Box>
+  <MatcapMaterial name="392307_B3AE7D_6D5618_847C42" />
 </Box>
 ```
 
+You can use the name of any of [these](https://github.com/emmelleppi/matcaps) matcaps in the `name` prop. Click on a matcap image, then copy the name you'd like to use.
+
 ### Props
+
+Inherits all [base props](./#props).
 
 <table>
 <tbody>
@@ -28,30 +26,8 @@ Example :
     <th>Type</th>
     <th>Default</th>
   </tr>
-  <tr><td><code>color</code></td><td>Color</td><td>String, Number</td><td>#ffffff</td></tr>
-  <tr><td><code>depthTest</code></td><td>Whether to have depth test enabled when rendering this material.</td><td>Boolean</td><td>true</td></tr>
-  <tr><td><code>depthWrite</code></td><td>Whether rendering this material has any effect on the depth buffer.</td><td>Boolean</td><td>true</td></tr>
-  <tr><td><code>flatShading</code></td><td>Define whether the material is rendered with flat shading.</td><td>Boolean</td><td>false</td></tr>
-  <tr><td><code>fog</code></td><td>Whether the material is affected by fog.</td><td>Boolean</td><td>true</td></tr>
-  <!-- <tr><td><code>id</code></td><td>Material ID</td><td>String</td><td> </td></tr> -->
-  <tr><td><code>opacity</code></td><td>Float in the range of 0.0 - 1.0 indicating how transparent the material is.</td><td>Number</td><td>1</td></tr>
-  <tr><td><code>side</code></td><td>Defines which side of faces will be rendered - front, back or both.</td><td>Number</td><td>THREE.FrontSide</td></tr>
-  <tr><td><code>transparent</code></td><td>Defines whether this material is transparent.</td><td>Boolean</td><td>false</td></tr>
-  <tr><td><code>vertexColors</code></td><td>Defines whether vertex coloring is used.</td><td>Boolean</td><td>false</td></tr>
+  <tr><td><code>name</code></td><td>Name of matcap (from <a href="https://github.com/emmelleppi/matcaps" target="_blank">this repo</a>) to use. Overrides <code>src</code> if set.</td><td>String</td><td></td></tr>
+  <tr><td><code>src</code></td><td>URL for matcap image.</td><td>String</td><td></td></tr>
+
 </tbody>
 </table>
-
-
-### Access ThreeJS material
-
-You should set a *ref* on your material :
-
-```html
-<PhongMaterial ref="material" />
-```
-
-You can then access ThreeJS material in your component script :
-
-```js
-const material = this.$ref.material.material;
-```
