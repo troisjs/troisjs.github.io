@@ -37,6 +37,10 @@ module.exports = {
 					],
 				},
 				{
+					text: 'Lights',
+					link: '/examples/lights',
+				},
+				{
 					text: 'Materials',
 					children: [
 						{ link: '/examples/materials/1', text: 'Textures' },
