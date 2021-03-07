@@ -1,11 +1,11 @@
 <template>
-  <Renderer ref="renderer" resize antialias orbit-ctrl>
+  <Renderer ref="renderer" resize antialias orbit-ctrl mouse-move mouse-raycast>
     <Camera :position="{ x: 0, y: 0, z: 10 }" />
     <Scene background="#000000" >
+      <PointLight ref="light" :intensity="0.5" :position="{ x: 0, y: 0, z: 0 }">
+        <Sphere :radius="0.1" />
+      </PointLight>
       <Group :rotation="{ x: -Math.PI / 2, y: 0, z: 0 }">
-        <PointLight :intensity="0.5" :position="{ x: 0, y: 0, z: 5 }">
-          <Sphere :radius="0.1" />
-        </PointLight>
         <RectAreaLight color="#ff6000" :position="{ x: 0, y: 10, z: 1 }" v-bind="rectLightsProps" />
         <RectAreaLight color="#0060ff" :position="{ x: -5, y: 10, z: 1 }" v-bind="rectLightsProps" />
         <RectAreaLight color="#60ff60" :position="{ x: 5, y: 10, z: 1 }" v-bind="rectLightsProps" />
@@ -83,19 +83,13 @@ export default {
       },
     };
   },
-  // components: { AmbientLight, Camera, Renderer, PointLight, Scene, Sphere, StandardMaterial, Texture },
   mounted() {
-    // const sphere = new SphereGeometry(0.5, 16, 8);
-    // const mesh = new Mesh(sphere, new MeshBasicMaterial({ color: 0xffffff }));
-    // const light = this.$refs.light.light;
-    // light.add(mesh);
-
-    // const renderer = this.$refs.renderer;
-    // const mesh = this.$refs.mesh.mesh;
-    // renderer.onBeforeRender(() => {
-    //   mesh.rotation.x += 0.01;
-    //   mesh.rotation.y += 0.011;
-    // });
+    const renderer = this.$refs.renderer;
+    const light = this.$refs.light.light;
+    const mouseV3 = renderer.three.mouseV3;
+    renderer.onBeforeRender(() => {
+      light.position.copy(mouseV3);
+    });
   },
 };
 </script>
