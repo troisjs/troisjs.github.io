@@ -1,4 +1,7 @@
-# Phone Material (WIP)
+# Phong Material 
+
+Creates a [Phong material](https://threejs.org/docs/#api/en/materials/MeshPhongMaterial) (shiny surface with specular highlights).
+
 
 ```html
 <Box>
@@ -16,30 +19,11 @@
     <th>Type</th>
     <th>Default</th>
   </tr>
-  <tr><td><code>color</code></td><td>Color</td><td>String, Number</td><td>#ffffff</td></tr>
-  <tr><td><code>depthTest</code></td><td>Whether to have depth test enabled when rendering this material.</td><td>Boolean</td><td>true</td></tr>
-  <tr><td><code>depthWrite</code></td><td>Whether rendering this material has any effect on the depth buffer.</td><td>Boolean</td><td>true</td></tr>
-  <tr><td><code>flatShading</code></td><td>Define whether the material is rendered with flat shading.</td><td>Boolean</td><td>false</td></tr>
-  <tr><td><code>fog</code></td><td>Whether the material is affected by fog.</td><td>Boolean</td><td>true</td></tr>
-  <!-- <tr><td><code>id</code></td><td>Material ID</td><td>String</td><td> </td></tr> -->
-  <tr><td><code>opacity</code></td><td>Float in the range of 0.0 - 1.0 indicating how transparent the material is.</td><td>Number</td><td>1</td></tr>
-  <tr><td><code>side</code></td><td>Defines which side of faces will be rendered - front, back or both.</td><td>Number</td><td>THREE.FrontSide</td></tr>
-  <tr><td><code>transparent</code></td><td>Defines whether this material is transparent.</td><td>Boolean</td><td>false</td></tr>
-  <tr><td><code>vertexColors</code></td><td>Defines whether vertex coloring is used.</td><td>Boolean</td><td>false</td></tr>
+  <tr><td><code>emissive</code></td><td>Emissive color of the material.</td><td>String, Number</td><td><code>0</code></td></tr>
+  <tr><td><code>emissiveIntensity</code></td><td>Intensity of the emissive color.</td><td>Number</td><td><code>1</code></td></tr>
+  <tr><td><code>reflectivity</code></td><td>Amount of reflectivity</td><td>Number</td><td><code>1</code></td></tr>
+  <tr><td><code>shininess</code></td><td>Amount of shininess</td><td>Number</td><td><code>30</code></td></tr>
+  <tr><td><code>specular</code></td><td>Specular color of the material.</td><td>String, Number</td><td><code>0x111111</code></td></tr>
+
 </tbody>
 </table>
-
-
-### Access ThreeJS material
-
-You should set a *ref* on your material :
-
-```html
-<PhongMaterial ref="material" />
-```
-
-You can then access ThreeJS material in your component script :
-
-```js
-const material = this.$ref.material.material;
-```

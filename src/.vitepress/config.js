@@ -99,7 +99,7 @@ module.exports = {
 						{ link: '/guide/materials/lambert-material', text: 'LambertMaterial' },
 						{ link: '/guide/materials/matcap-material', text: 'MatcapMaterial' },
 						{ link: '/guide/materials/phong-material', text: 'PhongMaterial' },
-						{ link: '/guide/materials/physical-material', text: 'PhyicalMaterial' },
+						{ link: '/guide/materials/physical-material', text: 'PhysicalMaterial' },
 						{ link: '/guide/materials/shader-material', text: 'ShaderMaterial' },
 						{ link: '/guide/materials/standard-material', text: 'StandardMaterial' },
 						{ link: '/guide/materials/sub-surface-material', text: 'SubSurfaceMaterial' },
