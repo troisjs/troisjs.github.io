@@ -34,11 +34,16 @@ module.exports = {
 						{ link: '/examples/demos/3', text: 'Demo 3' },
 						{ link: '/examples/demos/4', text: 'Demo 4' },
 						{ link: '/examples/demos/5', text: 'Demo 5' },
+						{ link: '/examples/demos/6', text: 'Demo 6' },
 					],
 				},
 				{
 					text: 'Lights',
 					link: '/examples/lights',
+				},
+				{
+					text: 'Meshes',
+					link: '/examples/meshes',
 				},
 				{
 					text: 'Materials',

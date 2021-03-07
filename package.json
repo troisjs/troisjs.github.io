@@ -9,7 +9,8 @@
 		"gsap": "^3.5.1",
 		"simplex-noise": "^2.4.0",
 		"three": "^0.125.2",
-		"troisjs": "0.1.11",
+		"troisjs": "0.1.12",
+		"tweakpane": "^2.0.1",
 		"vitepress": "^0.12.2"
 	}
 }
