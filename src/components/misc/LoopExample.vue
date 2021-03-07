@@ -1,5 +1,5 @@
 <template>
-  <Renderer ref="renderer" antialias resize orbit-ctrl @click="onClick">
+  <Renderer ref="renderer" antialias resize :orbit-ctrl="{ enableDamping: true, dampingFactor: 0.05 }" @click="onClick">
     <Camera :position="{ z: 15 }" />
     <Scene background="#ffffff">
       <AmbientLight color="#808080" />

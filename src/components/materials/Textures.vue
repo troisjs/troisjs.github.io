@@ -1,5 +1,5 @@
 <template>
-  <Renderer ref="renderer" resize antialias orbit-ctrl>
+  <Renderer ref="renderer" resize antialias :orbit-ctrl="{ autoRotate: true, enableDamping: true, dampingFactor: 0.05 }">
     <Camera :position="{ z: 10 }" />
     <Scene background="#000000" >
       <AmbientLight :intensity="0.5" />
@@ -24,13 +24,5 @@ import { AmbientLight, Camera, Renderer, PointLight, Scene, Sphere, StandardMate
 
 export default {
   components: { AmbientLight, Camera, Renderer, PointLight, Scene, Sphere, StandardMaterial, Texture },
-  mounted() {
-    const renderer = this.$refs.renderer;
-    const mesh = this.$refs.mesh.mesh;
-    renderer.onBeforeRender(() => {
-      mesh.rotation.x += 0.01;
-      mesh.rotation.y += 0.011;
-    });
-  },
 };
 </script>

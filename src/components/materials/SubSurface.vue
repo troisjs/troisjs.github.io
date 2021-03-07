@@ -1,5 +1,5 @@
 <template>
-  <Renderer ref="renderer" resize orbit-ctrl mouse-move mouse-raycast @click="randomColors">
+  <Renderer ref="renderer" resize :orbit-ctrl="{ enableDamping: true, dampingFactor: 0.05 }" mouse-move mouse-raycast @click="randomColors">
     <Camera :position="{ z: 200 }" />
     <Scene>
       <PointLight ref="light" color="#FFC0C0" />

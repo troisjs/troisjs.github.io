@@ -1,5 +1,5 @@
 <template>
-  <Renderer ref="renderer" antialias resize orbit-ctrl mouse-move mouse-raycast shadow>
+  <Renderer ref="renderer" antialias resize :orbit-ctrl="{ enableDamping: true, dampingFactor: 0.05 }" mouse-move mouse-raycast shadow>
     <Camera :position="{ z: 20 }" />
     <Scene>
       <AmbientLight color="#808080" />

@@ -1,5 +1,5 @@
 <template>
-  <Renderer ref="renderer" resize mouse-over click>
+  <Renderer ref="renderer" antialias resize mouse-over click :orbit-ctrl="{ autoRotate: true, enableDamping: true, dampingFactor: 0.05 }">
     <Camera :position="{ z: 10 }" />
     <Scene>
       <PointLight :position="{ y: 50, z: 50 }" />
@@ -19,13 +19,6 @@ export default {
     return {
       boxColor: '#ffffff',
     };
-  },
-  mounted() {
-    const renderer = this.$refs.renderer;
-    const box = this.$refs.box.mesh;
-    renderer.onBeforeRender(() => {
-      box.rotation.x += 0.01;
-    });
   },
   methods: {
     boxHover({ over }) {
