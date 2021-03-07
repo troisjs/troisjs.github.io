@@ -1,0 +1,1 @@
+import{o as a,c as n,b as s}from"./app.6c14203b.js";const t='{"title":"Usage","description":"","frontmatter":{},"relativePath":"guide/usage/index.md","lastUpdated":1615151778117}',p={},e=s('',3);p.render=function(s,t,p,o,c,l){return a(),n("div",null,[e])};export default p;export{t as __pageData};
