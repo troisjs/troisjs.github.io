@@ -1,8 +1,10 @@
-# Standard Material (WIP)
+# Standard Material
+
+Creates a [standard material](https://threejs.org/docs/#api/en/materials/MeshStandardMaterial), a more accurate but more computationally expensive lighting model than Lambert or Phong.
 
 ```html
 <Box>
-  <PhongMaterial color="#ffffff" />
+  <StandardMaterial color="#ffffff" />
 </Box>
 ```
 
@@ -16,30 +18,17 @@
     <th>Type</th>
     <th>Default</th>
   </tr>
-  <tr><td><code>color</code></td><td>Color</td><td>String, Number</td><td>#ffffff</td></tr>
-  <tr><td><code>depthTest</code></td><td>Whether to have depth test enabled when rendering this material.</td><td>Boolean</td><td>true</td></tr>
-  <tr><td><code>depthWrite</code></td><td>Whether rendering this material has any effect on the depth buffer.</td><td>Boolean</td><td>true</td></tr>
-  <tr><td><code>flatShading</code></td><td>Define whether the material is rendered with flat shading.</td><td>Boolean</td><td>false</td></tr>
-  <tr><td><code>fog</code></td><td>Whether the material is affected by fog.</td><td>Boolean</td><td>true</td></tr>
-  <!-- <tr><td><code>id</code></td><td>Material ID</td><td>String</td><td> </td></tr> -->
-  <tr><td><code>opacity</code></td><td>Float in the range of 0.0 - 1.0 indicating how transparent the material is.</td><td>Number</td><td>1</td></tr>
-  <tr><td><code>side</code></td><td>Defines which side of faces will be rendered - front, back or both.</td><td>Number</td><td>THREE.FrontSide</td></tr>
-  <tr><td><code>transparent</code></td><td>Defines whether this material is transparent.</td><td>Boolean</td><td>false</td></tr>
-  <tr><td><code>vertexColors</code></td><td>Defines whether vertex coloring is used.</td><td>Boolean</td><td>false</td></tr>
+  <tr><td><code>aoMapIntensity</code></td><td>Ambient occlusion effect intensity.</td><td>Number</td><td><code>1</code></td></tr>
+  <tr><td><code>bumpScale</code></td><td>How much the bump map affects the material.</td><td>Number</td><td><code>1</code></td></tr>
+  <tr><td><code>displacementBias</code></td><td>The offset of the displacement map's values on the mesh's vertices. Without a displacement map set, this value is not applied. Default is 0.</td><td>Number</td><td><code>1</code></td></tr>
+  <tr><td><code>emissive</code></td><td>Emissive color of the material, unaffected by other lighting.</td><td>Number</td><td><code>0</code></td></tr>
+  <tr><td><code>emissiveIntensity</code></td><td>Intensity of the emissive light.</td><td>Number</td><td><code>1</code></td></tr>
+  <tr><td><code>envMapIntensity</code></td><td>Scaled effect of the environment map.</td><td>Number</td><td><code>1</code></td></tr>
+  <tr><td><code>lightMapIntensity</code></td><td>Intensity of baked light.</td><td>Number</td><td><code>1</code></td></tr>
+  <tr><td><code>metalness</code></td><td>How much the bump map affects the material.</td><td>Number</td><td><code>1</code></td></tr>
+  <tr><td><code>normalScale</code></td><td>How much the normal map affects the material.</td><td>Vector2</td><td><code>new Vector2(1,1</code></td></tr>
+  <tr><td><code>roughness</code></td><td>How rough the material appears. 0 = mirror reflection, 1 = fully diffuse.</td><td>Number</td><td><code>1</code></td></tr>
+  <tr><td><code>refractionRatio</code></td><td><a href="https://threejs.org/docs/#api/en/materials/MeshStandardMaterial.refractionRatio" target="_blank">Refraction ratio</a> of material.</td><td>Number</td><td><code>0.98</code></td></tr>
+  <tr><td><code>wireframe</code></td><td>Whether or not to render the material as a wireframe.</td><td>Boolean</td><td><code>false</code></td></tr>
 </tbody>
 </table>
-
-
-### Access ThreeJS material
-
-You should set a *ref* on your material :
-
-```html
-<PhongMaterial ref="material" />
-```
-
-You can then access ThreeJS material in your component script :
-
-```js
-const material = this.$ref.material.material;
-```
