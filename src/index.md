@@ -11,9 +11,9 @@ features:
   - title: ✨ ThreeJS
     details: The most popular WebGL library, with a good support on both desktop and mobile.
   - title: 🛠️ VueJS 3
-    details: With TroisJS you can easily create 3D content for your website using VuejS components.
+    details: With TroisJS you can easily create 3D content for your website using VueJS components.
   - title: ⚡️ ViteJS / HMR
-    details: Increase your development time with ViteJS/HMR and create awesome 3D scenes.
+    details: Really fast development time with ViteJS/HMR ! Useful to create awesome 3D scenes.
 ---
 
 <!-- <ClientOnly>
