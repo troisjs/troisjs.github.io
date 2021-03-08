@@ -1,8 +1,10 @@
-# Shader Material (WIP)
+# Phong Material 
+
+Creates a [shader material](https://threejs.org/docs/#api/en/materials/ShaderMaterial) rendered with custom shaders.
 
 ```html
 <Box>
-  <PhongMaterial color="#ffffff" />
+  <ShaderMaterial />
 </Box>
 ```
 
@@ -16,16 +18,10 @@
     <th>Type</th>
     <th>Default</th>
   </tr>
-  <tr><td><code>color</code></td><td>Color</td><td>String, Number</td><td>#ffffff</td></tr>
-  <tr><td><code>depthTest</code></td><td>Whether to have depth test enabled when rendering this material.</td><td>Boolean</td><td>true</td></tr>
-  <tr><td><code>depthWrite</code></td><td>Whether rendering this material has any effect on the depth buffer.</td><td>Boolean</td><td>true</td></tr>
-  <tr><td><code>flatShading</code></td><td>Define whether the material is rendered with flat shading.</td><td>Boolean</td><td>false</td></tr>
-  <tr><td><code>fog</code></td><td>Whether the material is affected by fog.</td><td>Boolean</td><td>true</td></tr>
-  <!-- <tr><td><code>id</code></td><td>Material ID</td><td>String</td><td> </td></tr> -->
-  <tr><td><code>opacity</code></td><td>Float in the range of 0.0 - 1.0 indicating how transparent the material is.</td><td>Number</td><td>1</td></tr>
-  <tr><td><code>side</code></td><td>Defines which side of faces will be rendered - front, back or both.</td><td>Number</td><td>THREE.FrontSide</td></tr>
-  <tr><td><code>transparent</code></td><td>Defines whether this material is transparent.</td><td>Boolean</td><td>false</td></tr>
-  <tr><td><code>vertexColors</code></td><td>Defines whether vertex coloring is used.</td><td>Boolean</td><td>false</td></tr>
+  <tr><td><code>id</code></td><td>Shader ID</td><td>String</td><td></td></tr>
+  <tr><td><code>uniforms</code></td><td>Uniforms to pass to shader</td><td>Object</td><td></td></tr>
+  <tr><td><code>vertexShader</code></td><td>Vertex shader, as string</td><td>String</td><td></td></tr>
+  <tr><td><code>fragmentShader</code></td><td>Fragment shader, as string</td><td>String</td><td></td></tr>
 </tbody>
 </table>
 
