@@ -1,14 +1,13 @@
 <template>
-  <Renderer ref="renderer" antialias :orbit-ctrl="{ enableDamping: true, dampingFactor: 0.05 }" resize>
+  <Renderer ref="renderer" antialias :orbit-ctrl="{ enableDamping: true }" mouse-move resize="window" @click="randomColors">
     <Camera :position="{ z: 5 }" />
     <Scene background="#000000">
-      <AmbientLight color="#505050" />
-      <PointLight color="#24f59e" :position="{ x: -2 , y: -2, z: 2 }" :intensity="0.5" />
-      <PointLight color="#e15040" :position="{ x: -2 , y: 2, z: 2 }" :intensity="0.5" />
-      <PointLight color="#1b859e" :position="{ x: 2 , y: 2, z: 2 }" :intensity="0.5" />
-      <PointLight color="#4cb04b" :position="{ x: 2 , y: -2, z: 2 }" :intensity="0.5" />
+      <PointLight :color="light1Color" :position="{ x: -2 , y: -2, z: 2 }" :intensity="0.5" />
+      <PointLight :color="light2Color" :position="{ x: -2 , y: 2, z: 2 }" :intensity="0.5" />
+      <PointLight :color="light3Color" :position="{ x: 2 , y: 2, z: 2 }" :intensity="0.5" />
+      <PointLight :color="light4Color" :position="{ x: 2 , y: -2, z: 2 }" :intensity="0.5" />
       <Tube v-for="t in tubes" :ref="t.key" v-bind="t">
-        <StandardMaterial :roughness="0.5" :metalness="1" flat-shading />
+        <StandardMaterial :roughness="0.5" :metalness="1" />
       </Tube>
     </Scene>
   </Renderer>
@@ -17,6 +16,8 @@
 <script>
 import { Vector3 } from 'three';
 import SimplexNoise from 'simplex-noise';
+import chroma from 'chroma-js';
+
 import {
   AmbientLight,
   Camera,
@@ -27,8 +28,8 @@ import {
   Tube,
 } from 'troisjs';
 
-const NX = 20;
-const NY = 10;
+const NX = 30;
+const NY = 15;
 
 const simplex = new SimplexNoise();
 
@@ -45,10 +46,15 @@ export default {
   data() {
     return {
       tubes: [],
+      light1Color: '#b307b5',
+      light2Color: '#8132aa',
+      light3Color: '#5737d0',
+      light4Color: '#0d25bb',
     };
   },
   mounted() {
     this.renderer = this.$refs.renderer;
+    this.mouse = this.renderer.three.mouse;
     this.size = this.renderer.three.size;
     this.initTubes();
 
@@ -61,7 +67,7 @@ export default {
         for (let i = 0; i < NX; i++) {
           x = this.x0 + i * this.dx; x1 = x * 0.25;
           y = this.y0 + j * this.dy; y1 = y * 0.25;
-          noisey = simplex.noise2D(x1 - time, y1 - time) * 0.25;
+          noisey = simplex.noise2D(x1 - time + this.mouse.x * 0.3, y1 - time + this.mouse.y * 0.3) * 0.25;
           noisez = simplex.noise2D(y1 + time, x1 + time) * 0.25;
           points[i].x = x;
           points[i].y = y + noisey;
@@ -90,11 +96,17 @@ export default {
         this.tubes.push({
           key: `tube-${j}`,
           points,
-          radius: 0.15,
+          radius: 0.1,
           tubularSegments: NX,
           radialSegments: 16,
         });
       }
+    },
+    randomColors() {
+      this.light1Color = chroma.random().hex();
+      this.light2Color = chroma.random().hex();
+      this.light3Color = chroma.random().hex();
+      this.light4Color = chroma.random().hex();
     },
   },
 };
