@@ -1,0 +1,1 @@
+import{o as n,c as s,d as a}from"./app.0c11a873.js";const t='{"title":"InstancedMesh","description":"","frontmatter":{},"relativePath":"guide/meshes/instanced.md","lastUpdated":1615239073961}',p={},o=a('',7);p.render=function(a,t,p,e,c,u){return n(),s("div",null,[o])};export default p;export{t as __pageData};
