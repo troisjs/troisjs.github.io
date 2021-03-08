@@ -1,5 +1,5 @@
 <template>
-  <Renderer ref="renderer" antialias :orbit-ctrl="{ enableDamping: true }" mouse-move resize="window" @click="randomColors">
+  <Renderer ref="renderer" antialias :orbit-ctrl="{ enableDamping: true }" mouse-move resize @click="randomColors">
     <Camera :position="{ z: 5 }" />
     <Scene background="#000000">
       <PointLight :color="light1Color" :position="{ x: -2 , y: -2, z: 2 }" :intensity="0.5" />
