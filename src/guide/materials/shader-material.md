@@ -24,18 +24,3 @@ Creates a [shader material](https://threejs.org/docs/#api/en/materials/ShaderMat
   <tr><td><code>fragmentShader</code></td><td>Fragment shader, as string</td><td>String</td><td></td></tr>
 </tbody>
 </table>
-
-
-### Access ThreeJS material
-
-You should set a *ref* on your material :
-
-```html
-<PhongMaterial ref="material" />
-```
-
-You can then access ThreeJS material in your component script :
-
-```js
-const material = this.$ref.material.material;
-```
