@@ -1,0 +1,1 @@
+import{o as n,c as a,d as s}from"./app.e8341af0.js";const t='{"title":"CDN","description":"","frontmatter":{},"relativePath":"guide/cdn.md","lastUpdated":1615238149492}',p={},o=s('',7);p.render=function(s,t,p,c,e,u){return n(),a("div",null,[o])};export default p;export{t as __pageData};
