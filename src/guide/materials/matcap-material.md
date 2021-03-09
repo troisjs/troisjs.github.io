@@ -16,7 +16,7 @@ You can use the name of any of [these](https://github.com/emmelleppi/matcaps) ma
 
 ### Props
 
-Inherits all [base props](./#props).
+Inherits all [base props](./#props) and accepts all [matcap material properties](https://threejs.org/docs/#api/en/materials/MeshMatcapMaterial). Additionally:
 
 <table>
 <tbody>

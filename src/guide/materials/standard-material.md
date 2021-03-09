@@ -10,6 +10,9 @@ Creates a [standard material](https://threejs.org/docs/#api/en/materials/MeshSta
 
 ### Props
 
+Inherits all [base props](./#props) and accepts all [basic material properties](https://threejs.org/docs/#api/en/materials/MeshStandardMaterial). Additionally:
+
+
 <table>
 <tbody>
   <tr>

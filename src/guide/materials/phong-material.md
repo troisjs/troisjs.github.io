@@ -11,7 +11,7 @@ Creates a [Phong material](https://threejs.org/docs/#api/en/materials/MeshPhongM
 
 ### Props
 
-Inherits all [base props](./#props).
+Inherits all [base props](./#props) and accepts all [Phong material properties](https://threejs.org/docs/#api/en/materials/MeshPhongMaterial)].
 
 <table>
 <tbody>

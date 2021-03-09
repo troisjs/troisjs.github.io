@@ -10,5 +10,5 @@ Creates a [basic material](https://threejs.org/docs/#api/en/materials/MeshBasicM
 
 ### Props
 
-Inherits all [base props](./#props).
+Inherits all [base props](./#props) and accepts all [basic material properties](https://threejs.org/docs/#api/en/materials/MeshBasicMaterial).
 

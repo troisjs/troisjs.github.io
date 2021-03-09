@@ -8,4 +8,4 @@
 
 ### Props
 
-Accepts all [toon material properties](https://threejs.org/docs/#api/en/materials/MeshToonMaterial).
+Inherits all [base props](./#props) and accepts all [toon material properties](https://threejs.org/docs/#api/en/materials/MeshToonMaterial).
