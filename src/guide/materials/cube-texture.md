@@ -27,7 +27,7 @@ Loads a [cube texture](//threejs.org/docs/#api/en/textures/CubeTexture) into a p
   <tr><td><code>onError</code></td><td>Function to fire on load error.</td><td>Function</td><td></td></tr>
   <tr><td><code>id</code></td><td>Texture ID</td><td>String</td><td><code>'envMap'</code></td></tr>
 
-  <tr><td><code>refraction</code></td><td>[?]</td><td>Boolean</td><td></td></tr>
-  <tr><td><code>refractionRatio</code></td><td>[?]</td><td>Number</td><td><code>0.98</code></td></tr>
+  <tr><td><code>refraction</code></td><td>Whether this material uses <a href="https://threejs.org/docs/#api/en/textures/CubeTexture" target="_blank">refraction mapping</a> or reflection mapping.</td><td>Boolean</td><td><code>false</code></td></tr>
+  <tr><td><code>refractionRatio</code></td><td>The <a href="https://threejs.org/docs/#api/en/materials/MeshStandardMaterial.refractionRatio" target="_blank">refraction ratio</a> of the material.</td><td>Number</td><td><code>0.98</code></td></tr>
 </tbody>
 </table>
