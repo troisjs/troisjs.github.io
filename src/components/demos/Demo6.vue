@@ -30,6 +30,7 @@ import {
 
 const NX = 40;
 const NY = 15;
+const RADIUS = 0.1;
 
 const simplex = new SimplexNoise();
 
@@ -60,10 +61,9 @@ export default {
 
     this.renderer.onBeforeRender(() => {
       const time = Date.now() * 0.0002;
-      let t, points, x, y, x1, y1, noisey, noisez;
+      let points, x, y, x1, y1, noisey, noisez;
       for (let j = 0; j < NY; j++) {
-        t = this.tubes[j];
-        points = t.points;
+        points = this._points[j];
         for (let i = 0; i < NX; i++) {
           x = this.x0 + i * this.dx; x1 = x * 0.25;
           y = this.y0 + j * this.dy; y1 = y * 0.25;
@@ -73,7 +73,7 @@ export default {
           points[i].y = y + noisey;
           points[i].z = noisez;
         }
-        this.$refs[t.key].updateCurve();
+        this.$refs[this.tubes[j].key].updateCurve(points);
       }
     });
 
@@ -83,6 +83,7 @@ export default {
   },
   methods: {
     initTubes() {
+      this._points = []; // point copy (not reactive)
       this.tubes.splice(0);
       this.dx = this.size.wWidth / (NX - 1);
       this.dy = this.size.wHeight / (NY - 1);
@@ -90,15 +91,18 @@ export default {
       this.y0 = -this.size.wHeight / 2;
       for (let j = 0; j < NY; j++) {
         const points = [];
+        this._points[j] = [];
         for (let i = 0; i < NX; i++) {
-          points.push(new Vector3(this.x0 + i * this.dx, this.y0 + j * this.dy, 0));
+          const v = new Vector3(this.x0 + i * this.dx, this.y0 + j * this.dy, 0);
+          points.push(v);
+          this._points[j].push(v.clone());
         }
         this.tubes.push({
           key: `tube-${j}`,
           points,
-          radius: 0.1,
+          radius: RADIUS,
           tubularSegments: NX,
-          radialSegments: 16,
+          radialSegments: 8,
         });
       }
     },
