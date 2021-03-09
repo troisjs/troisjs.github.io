@@ -95,7 +95,6 @@ module.exports = {
 							link: '/guide/materials/', text: 'Introduction'
 						},
 						{ link: '/guide/materials/basic-material', text: 'BasicMaterial' },
-						{ link: '/guide/materials/cube-texture', text: 'CubeTexture' },
 						{ link: '/guide/materials/lambert-material', text: 'LambertMaterial' },
 						{ link: '/guide/materials/matcap-material', text: 'MatcapMaterial' },
 						{ link: '/guide/materials/phong-material', text: 'PhongMaterial' },
@@ -104,9 +103,15 @@ module.exports = {
 						{ link: '/guide/materials/standard-material', text: 'StandardMaterial' },
 						{ link: '/guide/materials/sub-surface-material', text: 'SubSurfaceMaterial' },
 						{ link: '/guide/materials/subsurface-scattering-shader', text: 'SubsurfaceScatteringShader' },
-						{ link: '/guide/materials/texture', text: 'Texture' },
 						{ link: '/guide/materials/toon-material', text: 'ToonMaterial' },
 					],
+				},
+				{
+					text: 'Textures',
+					children: [
+						{ link: '/guide/materials/cube-texture', text: 'CubeTexture' },
+						{ link: '/guide/materials/texture', text: 'Texture' },
+					]
 				},
 				{
 					link: '/guide/lights/',
