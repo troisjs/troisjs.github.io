@@ -100,9 +100,26 @@ module.exports = {
 				{
 					text: 'Materials',
 					children: [
-						{ link: '/guide/materials/', text: 'Introduction' },
-						{ link: '/guide/materials/textures', text: 'Textures' },
+						{
+							link: '/guide/materials/', text: 'Introduction'
+						},
+						{ link: '/guide/materials/basic-material', text: 'BasicMaterial' },
+						{ link: '/guide/materials/lambert-material', text: 'LambertMaterial' },
+						{ link: '/guide/materials/matcap-material', text: 'MatcapMaterial' },
+						{ link: '/guide/materials/phong-material', text: 'PhongMaterial' },
+						{ link: '/guide/materials/physical-material', text: 'PhysicalMaterial' },
+						{ link: '/guide/materials/shader-material', text: 'ShaderMaterial' },
+						{ link: '/guide/materials/standard-material', text: 'StandardMaterial' },
+						{ link: '/guide/materials/sub-surface-material', text: 'SubSurfaceMaterial' },
+						{ link: '/guide/materials/toon-material', text: 'ToonMaterial' },
 					],
+				},
+				{
+					text: 'Textures',
+					children: [
+						{ link: '/guide/textures/cube-texture', text: 'CubeTexture' },
+						{ link: '/guide/textures/texture', text: 'Texture' },
+					]
 				},
 				{
 					link: '/guide/lights/',

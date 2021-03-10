@@ -1,4 +1,4 @@
-# Materials (wip)
+# Materials
 
 You can easily create the following materials :
 
