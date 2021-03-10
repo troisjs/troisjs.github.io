@@ -4,7 +4,9 @@ You can easily create the following lights :
 
 - `AmbientLight` ([source](https://github.com/troisjs/trois/blob/master/src/lights/AmbientLight.js), [threejs doc](https://threejs.org/docs/index.html#api/en/lights/AmbientLight))
 - `DirectionalLight` ([source](https://github.com/troisjs/trois/blob/master/src/lights/DirectionalLight.js), [threejs doc](https://threejs.org/docs/index.html#api/en/lights/DirectionalLight))
-- `PointLight` ([source](https://github.com/troisjs/trois/blob/master/src/lights/AmbientLPointLightight.js), [threejs doc](https://threejs.org/docs/index.html#api/en/lights/PointLight))
+- `HemisphereLight` ([source](https://github.com/troisjs/trois/blob/master/src/lights/HemisphereLight.js), [threejs doc](https://threejs.org/docs/index.html#api/en/lights/HemisphereLight))
+- `PointLight` ([source](https://github.com/troisjs/trois/blob/master/src/lights/PointLight.js), [threejs doc](https://threejs.org/docs/index.html#api/en/lights/PointLight))
+- `RectAreaLight` ([source](https://github.com/troisjs/trois/blob/master/src/lights/RectAreaLight.js), [threejs doc](https://threejs.org/docs/#api/en/lights/RectAreaLight))
 - `SpotLight` ([source](https://github.com/troisjs/trois/blob/master/src/lights/AmbientLight.js), [threejs doc](https://threejs.org/docs/index.html#api/en/lights/SpotLight))
 
 Example :
@@ -13,7 +15,7 @@ Example :
 <PointLight color="#ffffff" :intensity="0.5" />
 ```
 
-### Props
+### Common Props (see [Light.js](https://github.com/troisjs/trois/blob/master/src/lights/Light.js))
 
 <table>
 <tbody>
