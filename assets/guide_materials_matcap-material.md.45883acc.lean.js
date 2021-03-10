@@ -1,1 +1,0 @@
-import{o as a,c as t,d as n}from"./app.91ec005e.js";const s='{"title":"Matcap Material","description":"","frontmatter":{},"headers":[{"level":3,"title":"Props","slug":"props"}],"relativePath":"guide/materials/matcap-material.md","lastUpdated":1615395913285}',e={},p=n('',7);e.render=function(n,s,e,o,r,c){return a(),t("div",null,[p])};export default e;export{s as __pageData};

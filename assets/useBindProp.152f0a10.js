@@ -1,1 +1,0 @@
-import{s as n,n as e}from"./app.91ec005e.js";function t(n,e){e instanceof Object&&Object.entries(e).forEach((([e,t])=>{n[e]=t}))}function a(n,e,t){return n+(e-n)*(t=(t=t<0?0:t)>1?1:t)}function c(n,e,t){n.x=a(n.x,e.x,t),n.y=a(n.y,e.y,t)}function o(a,c,o){if(a[c]){const s=n(a,c);t(o,s.value),e(s,(()=>{t(o,s.value)}),{deep:!0})}}export{c as a,a as l,o as u};

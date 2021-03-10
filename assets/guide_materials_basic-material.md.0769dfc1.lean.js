@@ -1,1 +1,0 @@
-import{o as a,c as s,d as t}from"./app.91ec005e.js";const e='{"title":"Basic Material","description":"","frontmatter":{},"headers":[{"level":3,"title":"Props","slug":"props"}],"relativePath":"guide/materials/basic-material.md","lastUpdated":1615395913285}',n={},p=t('',5);n.render=function(t,e,n,r,o,l){return a(),s("div",null,[p])};export default n;export{e as __pageData};

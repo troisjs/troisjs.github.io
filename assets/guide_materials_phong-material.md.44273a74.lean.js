@@ -1,1 +1,0 @@
-import{o as t,c as a,d as e}from"./app.91ec005e.js";const s='{"title":"Phong Material","description":"","frontmatter":{},"headers":[{"level":3,"title":"Props","slug":"props"}],"relativePath":"guide/materials/phong-material.md","lastUpdated":1615395913285}',n={},o=e('',6);n.render=function(e,s,n,r,d,p){return t(),a("div",null,[o])};export default n;export{s as __pageData};
