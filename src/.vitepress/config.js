@@ -102,7 +102,6 @@ module.exports = {
 						{ link: '/guide/materials/shader-material', text: 'ShaderMaterial' },
 						{ link: '/guide/materials/standard-material', text: 'StandardMaterial' },
 						{ link: '/guide/materials/sub-surface-material', text: 'SubSurfaceMaterial' },
-						{ link: '/guide/materials/subsurface-scattering-shader', text: 'SubsurfaceScatteringShader' },
 						{ link: '/guide/materials/toon-material', text: 'ToonMaterial' },
 					],
 				},
