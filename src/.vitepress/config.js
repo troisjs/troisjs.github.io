@@ -109,8 +109,8 @@ module.exports = {
 				{
 					text: 'Textures',
 					children: [
-						{ link: '/guide/materials/cube-texture', text: 'CubeTexture' },
-						{ link: '/guide/materials/texture', text: 'Texture' },
+						{ link: '/guide/textures/cube-texture', text: 'CubeTexture' },
+						{ link: '/guide/textures/texture', text: 'Texture' },
 					]
 				},
 				{
