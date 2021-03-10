@@ -26,6 +26,10 @@
       </template>
     </Home>
     <Page v-else :class="{ examples: isExamples }" />
+
+    <a v-if="exampleSource" target="_blank" class="btn-src" :href="exampleSource">
+      <img src="/assets/source.svg" />
+    </a>
    
   </div>
 
@@ -64,6 +68,7 @@ const isCustomLayout = computed(() => !!route.data.frontmatter.customLayout)
 const enableHome = computed(() => !!route.data.frontmatter.home)
 // examples
 const isExamples = computed(() => route.path.match(/examples/))
+const exampleSource = computed(() => route.data.frontmatter.source)
 
 // navbar
 const showNavbar = computed(() => {
