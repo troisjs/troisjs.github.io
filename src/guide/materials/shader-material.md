@@ -1,12 +1,14 @@
-# Phong Material 
+# ShaderMaterial
 
-Creates a [shader material](https://threejs.org/docs/#api/en/materials/ShaderMaterial) rendered with custom shaders.
+Creates a [THREE.ShaderMaterial](https://threejs.org/docs/#api/en/materials/ShaderMaterial) rendered with custom shaders.
 
 ```html
 <Box>
   <ShaderMaterial />
 </Box>
 ```
+
+Source : https://github.com/troisjs/trois/blob/master/src/materials/ShaderMaterial.js
 
 ### Props
 

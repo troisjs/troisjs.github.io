@@ -1,4 +1,6 @@
-# Physical Material
+# PhysicalMaterial
+
+Creates a [THREE.MeshPhysicalMaterial](https://threejs.org/docs/#api/en/materials/MeshPhysicalMaterial).
 
 ```html
 <Box>
@@ -6,6 +8,8 @@
 </Box>
 ```
 
+Source : https://github.com/troisjs/trois/blob/master/src/materials/PhysicalMaterial.js
+
 ### Props
 
-Inherits all [standard material props](./standard-material#props) and accepts all [physical material properties](https://threejs.org/docs/#api/en/materials/MeshPhysicalMaterial).
+[Base props](./#props) and [standard material props](./standard-material#props).

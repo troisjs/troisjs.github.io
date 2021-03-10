@@ -1,6 +1,6 @@
-# Standard Material
+# StandardMaterial
 
-Creates a [standard material](https://threejs.org/docs/#api/en/materials/MeshStandardMaterial), a more accurate but more computationally expensive lighting model than Lambert or Phong.
+Creates a [THREE.MeshStandardMaterial](https://threejs.org/docs/#api/en/materials/MeshStandardMaterial), a more accurate but more computationally expensive lighting model than Lambert or Phong.
 
 ```html
 <Box>
@@ -8,10 +8,11 @@ Creates a [standard material](https://threejs.org/docs/#api/en/materials/MeshSta
 </Box>
 ```
 
+Source : https://github.com/troisjs/trois/blob/master/src/materials/StandardMaterial.js
+
 ### Props
 
-Inherits all [base props](./#props) and accepts all [basic material properties](https://threejs.org/docs/#api/en/materials/MeshStandardMaterial). Additionally:
-
+Inherits all [base props](./#props) and accepts the following [MeshStandardMaterial properties](https://threejs.org/docs/#api/en/materials/MeshStandardMaterial) :
 
 <table>
 <tbody>

@@ -1,6 +1,6 @@
-# Lambert Material
+# LambertMaterial
 
-Creates a [Lambert material](https://threejs.org/docs/#api/en/materials/MeshLambertMaterial) (non-shiny surface without specular highlights).
+Creates a [THREE.MeshLambertMaterial](https://threejs.org/docs/#api/en/materials/MeshLambertMaterial) (non-shiny surface without specular highlights).
 
 Example :
 
@@ -10,7 +10,8 @@ Example :
 </Box>
 ```
 
+Source : https://github.com/troisjs/trois/blob/master/src/materials/LambertMaterial.js
+
 ### Props
 
-Inherits all [base props](./#props) and accepts all [basic material properties](https://threejs.org/docs/#api/en/materials/MeshLambertMaterial).
-
+Inherits all [base props](./#props).

@@ -1,6 +1,6 @@
-# Subsurface Material 
+# SubSurfaceMaterial 
 
-Subsurface scattering based on [this method](https://colinbarrebrisebois.com/2011/03/07/gdc-2011-approximating-translucency-for-a-fast-cheap-and-convincing-subsurface-scattering-look/).
+Sub surface scattering based on [this method](https://colinbarrebrisebois.com/2011/03/07/gdc-2011-approximating-translucency-for-a-fast-cheap-and-convincing-subsurface-scattering-look/).
 
 This material is an implementation of the [shader material](./shader-material) using the shader in `three/examples/jsm/shaders/SubsurfaceScatteringShader.js`.
 
@@ -9,6 +9,8 @@ This material is an implementation of the [shader material](./shader-material) u
   <SubSurfaceMaterial />
 </Box>
 ```
+
+Source : https://github.com/troisjs/trois/blob/master/src/materials/SubSurfaceMaterial.js
 
 ### Props
 

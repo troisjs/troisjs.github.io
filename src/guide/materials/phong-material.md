@@ -1,7 +1,6 @@
-# Phong Material 
+# PhongMaterial 
 
-Creates a [Phong material](https://threejs.org/docs/#api/en/materials/MeshPhongMaterial) (shiny surface with specular highlights).
-
+Creates a [THREE.MeshPhongMaterial](https://threejs.org/docs/#api/en/materials/MeshPhongMaterial) (shiny surface with specular highlights).
 
 ```html
 <Box>
@@ -9,9 +8,11 @@ Creates a [Phong material](https://threejs.org/docs/#api/en/materials/MeshPhongM
 </Box>
 ```
 
+Source : https://github.com/troisjs/trois/blob/master/src/materials/PhongMaterial.js
+
 ### Props
 
-Inherits all [base props](./#props) and accepts all [Phong material properties](https://threejs.org/docs/#api/en/materials/MeshPhongMaterial)].
+Inherits all [base props](./#props) and accepts the following :
 
 <table>
 <tbody>

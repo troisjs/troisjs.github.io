@@ -1,12 +1,8 @@
-# Matcap Material
+# MatcapMaterial
 
-Creates a [matcap material](https://threejs.org/docs/#api/en/materials/MeshMatcapMaterial) with baked lighting and color that can cast, but not receive, shadows.
+Creates a [THREE.MeshMatcapMaterial](https://threejs.org/docs/#api/en/materials/MeshMatcapMaterial) with baked lighting and color that can cast, but not receive, shadows.
 
 ```html
-<Box>
-  <MatcapMaterial src="..." />
-</Box>
-
 <Box>
   <MatcapMaterial name="392307_B3AE7D_6D5618_847C42" />
 </Box>
@@ -14,9 +10,11 @@ Creates a [matcap material](https://threejs.org/docs/#api/en/materials/MeshMatca
 
 You can use the name of any of [these](https://github.com/emmelleppi/matcaps) matcaps in the `name` prop. Click on a matcap image, then copy the name you'd like to use.
 
+Source : https://github.com/troisjs/trois/blob/master/src/materials/MatcapMaterial.js
+
 ### Props
 
-Inherits all [base props](./#props) and accepts all [matcap material properties](https://threejs.org/docs/#api/en/materials/MeshMatcapMaterial). Additionally:
+Inherits all [base props](./#props) and accepts the following :
 
 <table>
 <tbody>

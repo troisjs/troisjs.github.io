@@ -1,6 +1,6 @@
-# Basic Material
+# BasicMaterial
 
-Creates a [basic material](https://threejs.org/docs/#api/en/materials/MeshBasicMaterial) that is unaffected by lights.
+Creates a [THREE.MeshBasicMaterial](https://threejs.org/docs/#api/en/materials/MeshBasicMaterial) (unaffected by lights).
 
 ```html
 <Box>
@@ -8,7 +8,8 @@ Creates a [basic material](https://threejs.org/docs/#api/en/materials/MeshBasicM
 </Box>
 ```
 
+Source : https://github.com/troisjs/trois/blob/master/src/materials/BasicMaterial.js
+
 ### Props
 
-Inherits all [base props](./#props) and accepts all [basic material properties](https://threejs.org/docs/#api/en/materials/MeshBasicMaterial).
-
+Inherits all [base props](./#props).
