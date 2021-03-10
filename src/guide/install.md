@@ -1,8 +1,8 @@
 # Installation
 
-`npm install troisjs`
+`npm install three@0.125 troisjs`
 
-Or `yarn add troisjs`
+Or `yarn add three@0.125 troisjs`
 
 ### Vue plugin
 
