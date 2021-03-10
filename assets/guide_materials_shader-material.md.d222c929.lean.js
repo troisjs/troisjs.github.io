@@ -1,0 +1,1 @@
+import{o as t,c as a,d as e}from"./app.91ec005e.js";const s='{"title":"Phong Material","description":"","frontmatter":{},"headers":[{"level":3,"title":"Props","slug":"props"}],"relativePath":"guide/materials/shader-material.md","lastUpdated":1615395913285}',r={},n=e('',5);r.render=function(e,s,r,d,o,p){return t(),a("div",null,[n])};export default r;export{s as __pageData};
