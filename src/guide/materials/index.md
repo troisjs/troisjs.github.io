@@ -1,4 +1,4 @@
-# Materials (wip)
+# Materials
 
 You can easily create the following materials :
 
@@ -7,7 +7,9 @@ You can easily create the following materials :
 - `MatcapMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/MatcapMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshMatcapMaterial))
 - `PhongMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/PhongMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshPhongMaterial))
 - `PhysicalMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/PhysicalMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshPhysicalMaterial))
+- `ShaderMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/ShaderMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/ShaderMaterial))
 - `StandardMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/StandardMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshStandardMaterial))
+- `SubSurfaceMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/SubSurfaceMaterial.js), [threejs example](https://github.com/mrdoob/three.js/blob/master/examples/webgl_materials_subsurface_scattering.html))
 - `ToonMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/ToonMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshToonMaterial))
 
 Example :
