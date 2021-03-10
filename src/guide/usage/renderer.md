@@ -2,7 +2,7 @@
 
 See [Renderer.js](https://github.com/troisjs/trois/blob/master/src/core/Renderer.js) and [THREE.WebGLRenderer](https://threejs.org/docs/#api/en/renderers/WebGLRenderer).
 
-### Props from `THREE.WebGLRenderer`
+## Props from `THREE.WebGLRenderer`
 
 <table>
   <tbody>
@@ -33,7 +33,7 @@ See [Renderer.js](https://github.com/troisjs/trois/blob/master/src/core/Renderer
   </tbody>
 </table>
 
-### Custom Props
+## Custom Props
 
 <table>
   <tbody>
@@ -97,7 +97,9 @@ See [Renderer.js](https://github.com/troisjs/trois/blob/master/src/core/Renderer
   </tbody>
 </table>
 
-### Access ThreeJS renderer
+## Examples
+
+#### Access renderer
 
 You should set a *ref* on the renderer :
 
@@ -111,4 +113,32 @@ You can then access ThreeJS renderer in your component script :
 
 ```js
 const renderer = this.$ref.renderer.renderer;
+```
+
+#### Mouse events
+
+```html
+<template>
+  <Renderer
+    ref="renderer"
+    mouse-move
+    mouse-raycast="/* optional for Vector2, required for Vector3 */"
+  >
+    ...
+  </Renderer>
+</template>
+```
+
+Then, in your component script:
+
+```js
+// mouse position as Vector2 in screenspace, 
+//  from (-1,-1) (bottom left) to (1,1) (top right)
+console.log(this.$refs.renderer.three.mouse)
+
+// mouse position as Vector3 in worldspace
+// requires mouse-raycast prop on renderer
+// position determined against an infinite plane 
+//  that intersects the origin with a normal of (0,0,1)
+console.log(this.$refs.renderer.three.mouseV3)
 ```
