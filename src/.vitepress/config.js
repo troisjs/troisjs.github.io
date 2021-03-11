@@ -22,6 +22,7 @@ module.exports = {
 		nav: [
 			{ text: 'Examples', link: '/examples/demos/1', activeMatch: '^/examples/' },
 			{ text: 'Documentation', link: '/guide/' },
+			{ text: 'CodePen', link: 'https://codepen.io/collection/AxoWoz' },
 			{ text: 'GitHub', link: 'https://github.com/troisjs/trois' },
 		],
 		sidebar: {
