@@ -1,11 +1,11 @@
 # CDN
 
-You can import TroisJS as a CDN package (take a look at this [codepen example](https://codepen.io/soju22/pen/YzpejwN)).
+You can import TroisJS as a CDN package (take a look at thess [codepen examples](https://codepen.io/collection/AxoWoz)).
 
 ::: warning ThreeJS/VueJS versions (TroisJS 0.1.15)
 If you need to import things from ThreeJS/VueJS, you should use :
-- ThreeJS **0.126.1**
-- VueJS **3.0.7**
+- ThreeJS **0.126.1** (https://unpkg.com/three@0.126.1/build/three.module.js)
+- VueJS **3.0.7** (https://unpkg.com/vue@3.0.7/dist/vue.esm-browser.prod.js)
 :::
 
 ::: warning PascalCase vs kebab-case
