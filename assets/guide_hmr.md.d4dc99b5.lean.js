@@ -1,1 +1,0 @@
-import{o as e,c as t,d as i}from"./app.8b9f0c66.js";const l='{"title":"HMR","description":"","frontmatter":{},"relativePath":"guide/hmr.md","lastUpdated":1615505531008}',a={},s=i('',3);a.render=function(i,l,a,r,o,n){return e(),t("div",null,[s])};export default a;export{l as __pageData};
