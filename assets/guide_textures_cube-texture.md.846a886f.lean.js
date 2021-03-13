@@ -1,1 +1,0 @@
-import{o as t,c as e,d as a}from"./app.d50cbeef.js";const n='{"title":"CubeTexture","description":"","frontmatter":{},"headers":[{"level":3,"title":"Props","slug":"props"}],"relativePath":"guide/textures/cube-texture.md","lastUpdated":1615669650436}',s={},d=a('',5);s.render=function(a,n,s,o,r,p){return t(),e("div",null,[d])};export default s;export{n as __pageData};

@@ -1,1 +1,0 @@
-import{o as t,c as a,d as e}from"./app.d50cbeef.js";const r='{"title":"ShaderMaterial","description":"","frontmatter":{},"headers":[{"level":3,"title":"Props","slug":"props"}],"relativePath":"guide/materials/shader-material.md","lastUpdated":1615669650436}',s={},d=e('',6);s.render=function(e,r,s,n,o,p){return t(),a("div",null,[d])};export default s;export{r as __pageData};
