@@ -43,15 +43,22 @@ module.exports = {
 					link: '/examples/lights',
 				},
 				{
-					text: 'Meshes',
-					link: '/examples/meshes',
-				},
-				{
 					text: 'Materials',
 					children: [
 						{ link: '/examples/materials/1', text: 'Textures' },
 						{ link: '/examples/materials/2', text: 'SubSurface' },
 						{ link: '/examples/materials/3', text: 'Matcap' },
+					],
+				},
+				{
+					text: 'Meshes',
+					link: '/examples/meshes',
+				},
+				{
+					text: 'Models',
+					children: [
+						{ link: '/examples/models/fbx', text: 'FBX' },
+						{ link: '/examples/models/gltf', text: 'GLTF' },
 					],
 				},
 				{
@@ -72,10 +79,6 @@ module.exports = {
 						{ link: '/examples/sliders/1', text: 'Slider 1' },
 						{ link: '/examples/sliders/2', text: 'Slider 2' },
 					],
-				},
-				{
-					text: 'GLTF',
-					link: '/examples/gltf',
 				},
 			],
 			'/guide/': [
