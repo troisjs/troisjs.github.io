@@ -1,17 +1,43 @@
 # Installation
 
+::: tip CDN
+You don't need to install TroisJS to play with it, please read [how to use TroisJS via CDN](cdn).
+:::
+
+### New project
+
+Download the [TroisJS/ViteJS Starter App](https://raw.githubusercontent.com/troisjs/troisjs.github.io/HEAD/src/public/assets/troisjs.zip).
+
+Unzip it, and :
+
+```
+cd troisjs
+npm install
+npm run dev
+```
+
+Or :
+
+```
+cd troisjs
+yarn
+yarn dev
+```
+
+### Existing VueJS 3 project
+
 `npm install three@0.126 troisjs`
 
 Or `yarn add three@0.126 troisjs`
 
-### Vue plugin
+#### Vue plugin
 
 ```js
 import { TroisJSVuePlugin } from 'troisjs';
 app.use(TroisJSVuePlugin);
 ```
 
-### Example
+#### Example
 
 ```vue
 <template>
@@ -39,7 +65,7 @@ export default {
 </script>
 ```
 
-### Example without plugin
+#### Example without plugin
 
 ::: tip
 If you don't use TroisJSVuePlugin (better for tree-shaking), you have to import and register the components.
