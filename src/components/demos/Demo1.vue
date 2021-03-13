@@ -1,108 +1,129 @@
 <template>
-  <Renderer ref="renderer" antialias resize :orbit-ctrl="{ enableDamping: true, dampingFactor: 0.05 }">
-    <Camera :position="{ x: -0, y: -100, z: 30 }" />
+  <Renderer ref="renderer" resize mouse-move @mousemove="updateTilt">
+    <Camera :position="{ y: -20, z: 10 }" :look-at="{ x: 0, y: 0, z: 0 }" />
     <Scene background="#ffffff">
-      <PointLight ref="light1" color="#0E09DC" :intensity="0.85" :position="{ x: 0, y: 0, z: 50 }" />
-      <PointLight ref="light2" color="#1CD1E1" :intensity="0.85" :position="{ x: 0, y: 0, z: 50 }" />
-      <PointLight ref="light3" color="#18C02C" :intensity="0.85" :position="{ x: 0, y: 0, z: 50 }" />
-      <PointLight ref="light4" color="#ee3bcf" :intensity="0.85" :position="{ x: 0, y: 0, z: 50 }" />
-
-      <!-- <NoisyText
-        text="TroisJS"
-        font-src="helvetiker_regular.typeface.json"
-        align="center"
-        :size="10"
-        :height="2"
-        :noise-coef="0.03"
-        :z-coef="5"
-        :position="{ x: 0, y: 0, z: 30 }"
-        :rotation="{ x: Math.PI / 2, y: 0, z: 0 }"
-      >
-        <PhysicalMaterial />
-      </NoisyText> -->
-
-      <NoisyPlane
-        :width="200" :width-segments="100"
-        :height="200" :height-segments="100"
-        :time-coef="0.0003"
-        :noise-coef="5"
-        :displacement-scale="15"
-        :delta-coef="1 / 200"
-        :position="{ x: 0, y: 0, z: 0 }"
-      >
-        <PhysicalMaterial />
-      </NoisyPlane>
-
-      <!-- <NoisySphere
-        :radius="10"
-        :time-coef="0.0003"
-        :noise-coef="0.07"
-        :disp-coef="2"
-        :position="{ x: 0, y: 0, z: 30 }"
-      >
-        <PhysicalMaterial flat-shading />
-      </NoisySphere> -->
-
-      <RefractionMesh ref="mesh" :position="{ x: 0, y: -20, z: 20 }" auto-update>
-        <TorusGeometry :radius="8" :tube="3" :radial-segments="8" :tubular-segments="6" />
-        <StandardMaterial color="#ffffff" :metalness="1" :roughness="0" flat-shading />
-      </RefractionMesh>
-
+      <AmbientLight />
+      <PointLight ref="light" :position="{ y: 0, z: 20 }" />
+      <InstancedMesh ref="imesh" :count="NUM_INSTANCES" :position="{ y: 20, z: 10 }">
+        <BoxGeometry :size="SIZE" />
+        <PhongMaterial vertex-colors />
+      </InstancedMesh>
     </Scene>
+    <EffectComposer>
+      <RenderPass />
+      <FXAAPass />
+      <TiltShiftPass :gradient-radius="tiltRadius" :start="{ x: 0, y: this.tiltY }" :end="{ x: 100, y: this.tiltY }" />
+    </EffectComposer>
   </Renderer>
 </template>
 
 <script>
+import { InstancedBufferAttribute, Object3D } from 'three';
 import {
+  AmbientLight,
+  BoxGeometry,
   Camera,
-  PhysicalMaterial,
+  EffectComposer,
+  FXAAPass,
+  InstancedMesh,
+  PhongMaterial,
   PointLight,
-  RefractionMesh,
   Renderer,
+  RenderPass,
   Scene,
-  StandardMaterial,
-  TorusGeometry,
+  TiltShiftPass,
 } from 'troisjs';
+import SimplexNoise from 'simplex-noise';
 
-import NoisyPlane from 'troisjs/src/components/noisy/NoisyPlane.js';
-import NoisySphere from 'troisjs/src/components/noisy/NoisySphere.js';
-import NoisyText from 'troisjs/src/components/noisy/NoisyText.js';
+const simplex = new SimplexNoise();
 
 export default {
   components: {
+    AmbientLight,
+    BoxGeometry,
     Camera,
-    NoisyPlane,
-    NoisySphere,
-    NoisyText,
-    PhysicalMaterial,
+    EffectComposer,
+    FXAAPass,
+    InstancedMesh,
+    PhongMaterial,
     PointLight,
-    RefractionMesh,
     Renderer,
+    RenderPass,
     Scene,
-    StandardMaterial,
-    TorusGeometry,
+    TiltShiftPass,
+  },
+  setup() {
+    const SIZE = 1.6, NX = 25, NY = 25, PADDING = 1;
+    const SIZEP = SIZE + PADDING;
+    const W = NX * SIZEP - PADDING;
+    const H = NY * SIZEP - PADDING;
+    return {
+      SIZE, NX, NY, PADDING,
+      SIZEP, W, H,
+      NUM_INSTANCES: NX * NY,
+    };
+  },
+  data() {
+    return {
+      tiltRadius: 100,
+      tiltY: 100,
+    };
+  },
+  computed: {
+    tiltStart() { return { x: 0, y: this.tiltY }; },
+    tiltEnd() { return { x: 100, y: this.tiltY }; },
   },
   mounted() {
-    const renderer = this.$refs.renderer;
-    const light1 = this.$refs.light1.light;
-    const light2 = this.$refs.light2.light;
-    const light3 = this.$refs.light3.light;
-    const light4 = this.$refs.light4.light;
-    const mesh = this.$refs.mesh.mesh;
+    this.renderer = this.$refs.renderer;
+    this.size = this.renderer.three.size;
+    this.mouse = this.renderer.three.mouse;
+    this.imesh = this.$refs.imesh.mesh;
 
-    renderer.onBeforeRender(() => {
-      const time = Date.now() * 0.001;
-      const d = 100;
-      light1.position.x = Math.sin(time * 0.1) * d;
-      light1.position.y = Math.cos(time * 0.2) * d;
-      light2.position.x = Math.cos(time * 0.3) * d;
-      light2.position.y = Math.sin(time * 0.4) * d;
-      light3.position.x = Math.sin(time * 0.5) * d;
-      light3.position.y = Math.sin(time * 0.6) * d;
-      light4.position.x = Math.sin(time * 0.7) * d;
-      light4.position.y = Math.cos(time * 0.8) * d;
-      mesh.rotation.x += 0.02; mesh.rotation.y += 0.01;
-    });
+    // init color attribute
+    const colors = [];
+    for (let i = 0; i < this.NUM_INSTANCES; i++) {
+      const c = Math.random();
+      colors.push(c, c, c);
+    }
+    this.imesh.geometry.setAttribute('color', new InstancedBufferAttribute(new Float32Array(colors), 3));
+
+    this.tiltRadius = this.size.height / 3;
+    this.tiltY = this.size.height / 2;
+    this.renderer.onAfterResize(this.updateTilt);
+
+    this.dummy = new Object3D();
+    this.renderer.onBeforeRender(this.animate);
+  },
+  methods: {
+    animate() {
+      this.updateInstanceMatrix();
+    },
+    updateTilt() {
+      this.tiltRadius = this.size.height / 3;
+      this.tiltY = (this.mouse.y + 1) * 0.5 * this.size.height;
+    },
+    updateInstanceMatrix() {
+      const x0 = -this.W / 2 + this.PADDING;
+      const y0 = -this.H / 2 + this.PADDING;
+      const time = Date.now() * 0.0001;
+      const noise = 0.005;
+      let x, y, nx, ny, rx, ry;
+      for (let i = 0; i < this.NX; i++) {
+        for (let j = 0; j < this.NY; j++) {
+          x = x0 + i * this.SIZEP;
+          y = y0 + j * this.SIZEP;
+          nx = x * noise;
+          ny = y * noise;
+          rx = simplex.noise3D(nx, ny, time) * Math.PI;
+          ry = simplex.noise3D(ny, nx, time) * Math.PI;
+          this.dummy.position.set(x, y, -10);
+          this.dummy.rotation.set(rx, ry, 0);
+          this.dummy.updateMatrix();
+          this.imesh.setMatrixAt(i * this.NY + j, this.dummy.matrix);
+        }
+      }
+      this.imesh.instanceMatrix.needsUpdate = true;
+    },
   },
 };
 </script>
