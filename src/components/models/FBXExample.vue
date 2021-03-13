@@ -1,7 +1,7 @@
 <template>
   <Renderer ref="renderer" antialias :orbit-ctrl="{ enableDamping: true, target }" resize shadow>
     <Camera :position="{ x: 100, y: 200, z: 300 }" />
-    <Scene ref="scene" background="#ffffff">
+    <Scene ref="scene" background="#a0a0a0">
       <HemisphereLight />
 
       <DirectionalLight
