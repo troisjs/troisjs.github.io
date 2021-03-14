@@ -31,7 +31,7 @@
 
 <script>
 // textures from https://3dtextures.me/2019/04/26/wood-tiles-002/
-import { Mesh, MeshBasicMaterial, SphereGeometry, RepeatWrapping } from 'three';
+import { RepeatWrapping } from 'three';
 import {
   AmbientLight,
   Camera,
