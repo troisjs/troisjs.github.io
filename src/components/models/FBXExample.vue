@@ -13,7 +13,7 @@
         <PhongMaterial color="#999999" :depth-write="false" />
       </Plane>
 
-      <FBXModel src="/assets/models/Samba Dancing.fbx" @loaded="onLoaded" />
+      <FBXModel src="/assets/models/Samba Dancing.fbx" @load="onLoad" />
     </Scene>
   </Renderer>
 </template>
@@ -59,10 +59,13 @@ export default {
     grid.material.transparent = true;
     this.$refs.scene.add(grid);
   },
+  unmounted() {
+    this.$refs.renderer.offBeforeRender(this.updateMixer);
+  },
   methods: {
-    onLoaded(object) {
-      const mixer = new AnimationMixer(object);
-      const action = mixer.clipAction(object.animations[0]);
+    onLoad(object) {
+      this.mixer = new AnimationMixer(object);
+      const action = this.mixer.clipAction(object.animations[0]);
       action.play();
 
       object.traverse(function (child) {
@@ -72,11 +75,11 @@ export default {
         }
       });
 
-      const renderer = this.$refs.renderer;
-      const clock = new Clock();
-      renderer.onBeforeRender(() => {
-        mixer.update(clock.getDelta());
-      });
+      this.clock = new Clock();
+      this.$refs.renderer.onBeforeRender(this.updateMixer);
+    },
+    updateMixer() {
+      this.mixer.update(this.clock.getDelta());
     },
   },
 };
