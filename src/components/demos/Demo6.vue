@@ -73,7 +73,7 @@ export default {
           points[i].y = y + noisey;
           points[i].z = noisez;
         }
-        this.$refs[this.tubes[j].key].updateCurve(points);
+        this.$refs[this.tubes[j].key].updatePoints(points);
       }
     });
 

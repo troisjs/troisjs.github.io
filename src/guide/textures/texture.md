@@ -10,7 +10,7 @@ You can easily add texture to material :
 ```html
 <PhongMaterial>
   <Texture src="map.jpg" />
-  <Texture src="normal-map.jpg" id="normalMap" />
+  <Texture src="normal-map.jpg" name="normalMap" />
 </PhongMaterial>
 ```
 

@@ -8,10 +8,10 @@
       <Sphere ref="mesh" :radius="2.5" :width-segments="200" :height-segments="200" >
         <StandardMaterial :displacement-scale="0.2">
           <Texture src="/assets/textures/Wood_Tiles_002_basecolor.jpg" />
-          <Texture src="/assets/textures/Wood_Tiles_002_height.png" id="displacementMap" />
-          <Texture src="/assets/textures/Wood_Tiles_002_normal.jpg" id="normalMap" />
-          <Texture src="/assets/textures/Wood_Tiles_002_roughness.jpg" id="roughnessMap" />
-          <Texture src="/assets/textures/Wood_Tiles_002_ambientOcclusion.jpg" id="aoMap" />
+          <Texture src="/assets/textures/Wood_Tiles_002_height.png" name="displacementMap" />
+          <Texture src="/assets/textures/Wood_Tiles_002_normal.jpg" name="normalMap" />
+          <Texture src="/assets/textures/Wood_Tiles_002_roughness.jpg" name="roughnessMap" />
+          <Texture src="/assets/textures/Wood_Tiles_002_ambientOcclusion.jpg" name="aoMap" />
         </StandardMaterial>
       </Sphere>
     </Scene>

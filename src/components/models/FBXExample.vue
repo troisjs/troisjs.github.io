@@ -59,9 +59,6 @@ export default {
     grid.material.transparent = true;
     this.$refs.scene.add(grid);
   },
-  unmounted() {
-    this.$refs.renderer.offBeforeRender(this.updateMixer);
-  },
   methods: {
     onLoad(object) {
       this.mixer = new AnimationMixer(object);

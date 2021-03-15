@@ -13,10 +13,10 @@
         <Plane :width="30" :height="30" :rotation="{ x: 0 }" :position="{ z: -3 }">
           <StandardMaterial :displacement-scale="0.2" :roughness="0" :metalness="0" >
             <Texture v-bind="texturesProps" src="/assets/textures/Wood_Tiles_002_basecolor.jpg" />
-            <Texture v-bind="texturesProps" src="/assets/textures/Wood_Tiles_002_height.png" id="displacementMap" />
-            <Texture v-bind="texturesProps" src="/assets/textures/Wood_Tiles_002_normal.jpg" id="normalMap" />
-            <Texture v-bind="texturesProps" src="/assets/textures/Wood_Tiles_002_roughness.jpg" id="roughnessMap" />
-            <Texture v-bind="texturesProps" src="/assets/textures/Wood_Tiles_002_ambientOcclusion.jpg" id="aoMap" />
+            <Texture v-bind="texturesProps" src="/assets/textures/Wood_Tiles_002_height.png" name="displacementMap" />
+            <Texture v-bind="texturesProps" src="/assets/textures/Wood_Tiles_002_normal.jpg" name="normalMap" />
+            <Texture v-bind="texturesProps" src="/assets/textures/Wood_Tiles_002_roughness.jpg" name="roughnessMap" />
+            <Texture v-bind="texturesProps" src="/assets/textures/Wood_Tiles_002_ambientOcclusion.jpg" name="aoMap" />
           </StandardMaterial>
         </Plane>
       </Group>
