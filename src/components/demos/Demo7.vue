@@ -24,12 +24,8 @@ import chroma from 'chroma-js';
 import {
   AmbientLight,
   Camera,
-  DirectionalLight,
-  FBXModel,
-  HemisphereLight,
   PointLight,
   Renderer,
-  PhongMaterial,
   Scene,
 } from 'troisjs';
 
@@ -39,13 +35,9 @@ export default {
   components: {
     AmbientLight,
     Camera,
-    DirectionalLight,
-    FBXModel,
-    HemisphereLight,
     LiquidPlane,
     PointLight,
     Renderer,
-    PhongMaterial,
     Scene,
   },
   setup() {
