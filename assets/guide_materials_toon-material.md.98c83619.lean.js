@@ -1,0 +1,1 @@
+import{o as a,c as s,d as t}from"./app.daac61c3.js";const e='{"title":"ToonMaterial","description":"","frontmatter":{},"headers":[{"level":3,"title":"Props","slug":"props"}],"relativePath":"guide/materials/toon-material.md","lastUpdated":1615893692528}',n={},o=t('',6);n.render=function(t,e,n,r,p,l){return a(),s("div",null,[o])};export default n;export{e as __pageData};

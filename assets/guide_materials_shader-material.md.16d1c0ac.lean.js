@@ -1,1 +1,0 @@
-import{o as t,c as a,d as e}from"./app.f1528712.js";const r='{"title":"ShaderMaterial","description":"","frontmatter":{},"headers":[{"level":3,"title":"Props","slug":"props"}],"relativePath":"guide/materials/shader-material.md","lastUpdated":1615841636241}',s={},n=e('',6);s.render=function(e,r,s,d,o,p){return t(),a("div",null,[n])};export default s;export{r as __pageData};
