@@ -45,11 +45,11 @@ Source : https://github.com/troisjs/trois/blob/master/src/materials/ShaderMateri
 
 ### Adding textures
 
-You can pass textures to shaders by adding a `Texture` with the prop `name` as a child of the material:
+You can pass textures to shaders by adding a `Texture` with the prop `uniform` as a child of the material:
 
 ```html
 <ShaderMaterial :fragmentShader="...">
-  <Texture src="/my/texture/src.png" name="myCustomTexture"/>
+  <Texture src="/my/texture/src.png" uniform="myCustomTexture"/>
 </ShaderMaterial>
 ```
 
