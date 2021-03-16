@@ -40,3 +40,25 @@ Source : https://github.com/troisjs/trois/blob/master/src/materials/ShaderMateri
     </tr>
   </tbody>
 </table>
+
+## Examples
+
+### Adding textures
+
+You can pass textures to shaders by adding a `Texture` with the prop `name` as a child of the material:
+
+```html
+<ShaderMaterial :fragmentShader="...">
+  <Texture src="/my/texture/src.png" name="myCustomTexture"/>
+</ShaderMaterial>
+```
+
+The texture will be set as a uniform sampler2D in the shader. The fragment shader in the example above would have access to the texture as:
+
+```glsl
+uniform sampler2D myCustomTexture;
+
+void main(){
+  gl_FragColor = texture2D(myCustomTexture, /* your UV vec2 */);
+}
+```
