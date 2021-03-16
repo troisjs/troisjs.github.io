@@ -29,3 +29,12 @@ You can easily add texture to material :
   <CubeTexture path="/cube_texture/" refraction :refraction-ratio="0.95" />
 </BasicMaterial>
 ```
+
+### Shader
+
+```html
+<ShaderMaterial :fragmentShader="...">
+  <!-- uniform prop is required - will be uniform name in texture -->
+  <Texture src="/my/texture/src.png" uniform="myCustomTexture"/>
+</ShaderMaterial>
+```
