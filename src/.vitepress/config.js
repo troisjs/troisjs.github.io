@@ -103,6 +103,21 @@ module.exports = {
 					],
 				},
 				{
+					text: 'Meshes',
+					children: [
+						{ link: '/guide/meshes/', text: 'Introduction' },
+						{ link: '/guide/meshes/events', text: 'Events' },
+						{ link: '/guide/meshes/geometries', text: 'Geometries' },
+						// { link: '/guide/meshes/image', text: 'Image' },
+						{ link: '/guide/meshes/instanced', text: 'InstancedMesh' },
+						// { link: '/guide/meshes/sprite', text: 'Sprite' },
+					],
+				},
+				{
+					link: '/guide/lights/',
+					text: 'Lights',
+				},
+				{
 					text: 'Materials',
 					children: [
 						{
@@ -125,20 +140,6 @@ module.exports = {
 						{ link: '/guide/textures/texture', text: 'Texture' },
 						{ link: '/guide/textures/cube-texture', text: 'CubeTexture' },
 					]
-				},
-				{
-					link: '/guide/lights/',
-					text: 'Lights',
-				},
-				{
-					text: 'Meshes',
-					children: [
-						{ link: '/guide/meshes/', text: 'Introduction' },
-						{ link: '/guide/meshes/geometries', text: 'Geometries' },
-						{ link: '/guide/meshes/image', text: 'Image' },
-						{ link: '/guide/meshes/instanced', text: 'InstancedMesh' },
-						{ link: '/guide/meshes/sprite', text: 'Sprite' },
-					],
 				},
 				{
 					link: '/guide/shadows',
