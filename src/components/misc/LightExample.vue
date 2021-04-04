@@ -1,5 +1,5 @@
 <template>
-  <Renderer ref="renderer" resize antialias :orbit-ctrl="{ autoRotate: true, enableDamping: true, dampingFactor: 0.05 }" mouse-move mouse-raycast>
+  <Renderer ref="renderer" resize antialias :orbit-ctrl="{ autoRotate: true, enableDamping: true, dampingFactor: 0.05 }" pointer>
     <Camera :position="{ x: 0, y: 0, z: 10 }" />
     <Scene background="#000000" >
       <PointLight ref="light" :intensity="0.5" :position="{ x: 0, y: 0, z: 0 }">
@@ -88,9 +88,9 @@ export default {
   mounted() {
     const renderer = this.$refs.renderer;
     const light = this.$refs.light.light;
-    const mouseV3 = renderer.three.mouseV3;
+    const pointerV3 = renderer.three.pointer.positionV3;
     renderer.onBeforeRender(() => {
-      light.position.copy(mouseV3);
+      light.position.copy(pointerV3);
     });
   },
 };

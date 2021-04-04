@@ -1,5 +1,5 @@
 <template>
-  <Renderer ref="renderer" resize orbit-ctrl mouse-move mouse-raycast>
+  <Renderer ref="renderer" resize orbit-ctrl pointer>
     <Camera :position="{ z: 200 }" />
     <Scene>
       <AmbientLight color="#808080" />
@@ -119,7 +119,8 @@ export default {
       this.renderer.onBeforeRender(this.animate);
     },
     animate() {
-      this.target.copy(this.renderer.three.mouseV3);
+      const { pointer } = this.renderer.three;
+      this.target.copy(pointer.positionV3);
       this.light.position.copy(this.target);
 
       for (let i = 0; i < this.NUM_INSTANCES; i++) {

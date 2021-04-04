@@ -1,5 +1,5 @@
 <template>
-  <Renderer ref="renderer" antialias resize :orbit-ctrl="{ enableDamping: true, dampingFactor: 0.05 }" mouse-move mouse-raycast shadow>
+  <Renderer ref="renderer" antialias resize :orbit-ctrl="{ enableDamping: true, dampingFactor: 0.05 }" pointer shadow>
     <Camera :position="{ z: 20 }" />
     <Scene>
       <AmbientLight color="#808080" />
@@ -64,8 +64,8 @@ export default {
   },
   mounted() {
     this.renderer = this.$refs.renderer;
-    this.mouse = this.renderer.three.mouse;
-    this.mouseV3 = this.renderer.three.mouseV3;
+    this.pointer = this.renderer.three.pointer;
+    console.log(this.pointer);
 
     this.imesh = this.$refs.imesh.mesh;
     this.light = this.$refs.light.light;
@@ -76,16 +76,16 @@ export default {
   },
   methods: {
     animate() {
-      this.light.position.x = this.mouseV3.x;
-      this.light.position.y = this.mouseV3.y;
+      this.light.position.x = this.pointer.positionV3.x;
+      this.light.position.y = this.pointer.positionV3.y;
       this.updateInstanceMatrix();
     },
     updateInstanceMatrix() {
       const x0 = -this.W / 2 + this.PADDING;
       const y0 = -this.H / 2 + this.PADDING;
       const time = Date.now() * 0.0001;
-      const mx = this.mouse.x * 0.1;
-      const my = this.mouse.y * 0.1;
+      const mx = this.pointer.positionN.x * 0.1;
+      const my = this.pointer.positionN.y * 0.1;
       const noise = 0.005;
       let x, y, nx, ny, rx, ry;
       for (let i = 0; i < this.NX; i++) {

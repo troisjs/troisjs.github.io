@@ -1,5 +1,5 @@
 <template>
-  <Renderer ref="renderer" resize mouse-move @mousemove="updateTilt">
+  <Renderer ref="renderer" resize :pointer="{ onMove: updateTilt }">
     <Camera :position="{ y: -20, z: 10 }" :look-at="{ x: 0, y: 0, z: 0 }" />
     <Scene background="#ffffff">
       <AmbientLight />
@@ -76,7 +76,6 @@ export default {
   mounted() {
     this.renderer = this.$refs.renderer;
     this.size = this.renderer.three.size;
-    this.mouse = this.renderer.three.mouse;
     this.imesh = this.$refs.imesh.mesh;
 
     // init color attribute
@@ -98,9 +97,9 @@ export default {
     animate() {
       this.updateInstanceMatrix();
     },
-    updateTilt() {
+    updateTilt({ positionN }) {
       this.tiltRadius = this.size.height / 3;
-      this.tiltY = (this.mouse.y + 1) * 0.5 * this.size.height;
+      this.tiltY = (positionN.y + 1) * 0.5 * this.size.height;
     },
     updateInstanceMatrix() {
       const x0 = -this.W / 2 + this.PADDING;

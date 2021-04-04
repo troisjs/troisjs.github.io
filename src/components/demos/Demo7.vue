@@ -1,5 +1,5 @@
 <template>
-  <Renderer ref="renderer" antialias mouse-move resize :orbit-ctrl="{ enableDamping: true }" @mousemove="onMouseMove">
+  <Renderer ref="renderer" antialias :pointer="{ onMove: onPointerMove }" resize :orbit-ctrl="{ enableDamping: true }">
     <Camera :position="{ x: 0, y: 0, z: 20 }" />
     <Scene ref="scene">
       <AmbientLight />
@@ -58,14 +58,14 @@ export default {
     };
   },
   mounted() {
-    this.mouse = this.$refs.renderer.three.mouse;
+    this.pointer = this.$refs.renderer.three.pointer;
     this.liquidEffect = this.$refs.liquid.liquidEffect;
     this.liquidEffect.addDrop(0, 0, 0.05, 0.05);
 
     // custom raycaster
     this.raycaster = new Raycaster();
-    this.mousePlane = new Plane(new Vector3(0, 0, 1), 0);
-    this.mouseV3 = new Vector3();
+    this.pointerPlane = new Plane(new Vector3(0, 0, 1), 0);
+    this.pointerV3 = new Vector3();
 
     this.pane = new Tweakpane();
     this.pane.addInput(this, 'color');
@@ -77,11 +77,11 @@ export default {
     this.pane.dispose();
   },
   methods: {
-    onMouseMove() {
-      this.raycaster.setFromCamera(this.mouse, this.$refs.renderer.three.camera);
-      this.raycaster.ray.intersectPlane(this.mousePlane, this.mouseV3);
-      const x = 2 * this.mouseV3.x / this.WIDTH;
-      const y = 2 * this.mouseV3.y / this.HEIGHT;
+    onPointerMove() {
+      this.raycaster.setFromCamera(this.pointer.positionN, this.$refs.renderer.three.camera);
+      this.raycaster.ray.intersectPlane(this.pointerPlane, this.pointerV3);
+      const x = 2 * this.pointerV3.x / this.WIDTH;
+      const y = 2 * this.pointerV3.y / this.HEIGHT;
       this.liquidEffect.addDrop(x, y, 0.025, 0.005);
     },
     randomColors() {

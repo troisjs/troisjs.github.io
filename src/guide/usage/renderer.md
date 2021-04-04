@@ -44,22 +44,21 @@ See [Renderer.js](https://github.com/troisjs/trois/blob/master/src/core/Renderer
       <th>Default</th>
     </tr>
     <tr>
-      <td><code>mouseMove</code></td>
-      <td>
-        Listen for mousemove. Use <code>'body'</code> to add listener on <code>body</code>. Use <code>renderer.three.mouse</code> to get the position.
-      </td>
-      <td>Boolean, String</td>
-      <td>false</td>
-    </tr>
-    <tr>
-      <td><code>mouseRaycast</code></td>
-      <td>Raycast mouse position. Use <code>renderer.three.mouseV3</code> to get the position.</td>
-      <td>Boolean</td>
-      <td>false</td>
-    </tr>
-    <tr>
       <td><code>orbitCtrl</code></td>
       <td>Enable/disable OrbitControls. If value is an Object, it will be used to configure OrbitControls.</td>
+      <td>Boolean, Object</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td><code>pointer</code></td>
+      <td>
+        Listen for pointer events to track mouse or touch positions (2D and 3D). Use <code>renderer.three.pointer</code> to get :
+        <ul>
+          <li><code>position</code> : 2D position.</li>
+          <li><code>positionN</code> : nomalized position, can be used for raycasting.</li>
+          <li><code>'positionV3'</code> : 3D position.</li>
+        </ul>
+      </td>
       <td>Boolean, Object</td>
       <td>false</td>
     </tr>

@@ -1,5 +1,5 @@
 <template>
-  <Renderer ref="renderer" resize :orbit-ctrl="{ enableDamping: true, dampingFactor: 0.05 }" mouse-move mouse-raycast @click="randomColors">
+  <Renderer ref="renderer" resize :orbit-ctrl="{ enableDamping: true, dampingFactor: 0.05 }" pointer @click="randomColors">
     <Camera :position="{ z: 200 }" />
     <Scene>
       <PointLight ref="light" color="#FFC0C0" />
@@ -102,7 +102,8 @@ export default {
       this.renderer.onBeforeRender(this.animate);
     },
     animate() {
-      this.target.copy(this.renderer.three.mouseV3);
+      const { pointer } = this.renderer.three;
+      this.target.copy(pointer.positionV3)
       this.light.position.copy(this.target);
 
       for (let i = 0; i < this.NUM_INSTANCES; i++) {

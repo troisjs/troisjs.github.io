@@ -8,8 +8,8 @@
 		"chroma-js": "^2.1.0",
 		"gsap": "^3.5.1",
 		"simplex-noise": "^2.4.0",
-		"three": "^0.126.1",
-		"troisjs": "0.1.18",
+		"three": "^0.127.0",
+		"troisjs": "0.2.1",
 		"tweakpane": "^2.0.1",
 		"vitepress": "^0.12.2"
 	}

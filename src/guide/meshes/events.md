@@ -134,6 +134,7 @@ If using mesh events, you should set `pointer` prop on `Renderer` :
 
 ```html
 <Renderer :pointer="{ intersectMode: 'frame' }">
+  ...
 </Renderer>
 ```
 
