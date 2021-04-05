@@ -26,9 +26,9 @@ yarn dev
 
 ## Existing VueJS 3 project
 
-`npm install three@0.126 troisjs`
+`npm install three@0.127 troisjs`
 
-Or `yarn add three@0.126 troisjs`
+Or `yarn add three@0.127 troisjs`
 
 ### Vue plugin
 
