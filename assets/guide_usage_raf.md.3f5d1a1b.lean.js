@@ -1,1 +1,0 @@
-import{o as n,c as a,d as s}from"./app.80aaf375.js";const t='{"title":"Render loop","description":"","frontmatter":{},"relativePath":"guide/usage/raf.md","lastUpdated":1617567470060}',p={},o=s('',4);p.render=function(s,t,p,e,c,u){return n(),a("div",null,[o])};export default p;export{t as __pageData};
