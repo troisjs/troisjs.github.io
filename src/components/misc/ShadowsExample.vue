@@ -65,7 +65,6 @@ export default {
   mounted() {
     this.renderer = this.$refs.renderer;
     this.pointer = this.renderer.three.pointer;
-    console.log(this.pointer);
 
     this.imesh = this.$refs.imesh.mesh;
     this.light = this.$refs.light.light;

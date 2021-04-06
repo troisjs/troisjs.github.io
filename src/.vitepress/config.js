@@ -63,6 +63,13 @@ module.exports = {
 					],
 				},
 				{
+					text: 'Physics',
+					children: [
+						{ link: '/examples/physics/1', text: 'Demo 1' },
+						{ link: '/examples/physics/2', text: 'Demo 2' },
+					],
+				},
+				{
 					text: 'Shadows',
 					link: '/examples/shadows',
 				},

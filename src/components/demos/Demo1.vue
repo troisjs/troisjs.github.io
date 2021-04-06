@@ -57,13 +57,13 @@ import {
   Camera,
   PhysicalMaterial,
   PointLight,
-  RefractionMesh,
   Renderer,
   Scene,
   StandardMaterial,
   TorusGeometry,
 } from 'troisjs';
 
+import RefractionMesh from 'troisjs/src/components/meshes/RefractionMesh.js';
 import NoisyPlane from 'troisjs/src/components/noisy/NoisyPlane.js';
 import NoisySphere from 'troisjs/src/components/noisy/NoisySphere.js';
 import NoisyText from 'troisjs/src/components/noisy/NoisyText.js';

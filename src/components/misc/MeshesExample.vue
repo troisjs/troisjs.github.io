@@ -138,8 +138,9 @@ export default {
 
     const renderer = this.$refs.renderer;
     renderer.onBeforeRender(() => {
-      this.$refs.mesh.mesh.rotation.x += 0.01;
-      this.$refs.mesh.mesh.rotation.y += 0.013;
+      const mesh = this.$refs.mesh.mesh;
+      mesh.rotation.x += 0.01;
+      mesh.rotation.y += 0.013;
     });
   },
   unmounted() {
