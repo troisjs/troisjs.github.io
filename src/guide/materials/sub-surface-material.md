@@ -10,7 +10,7 @@ This material is an implementation of the [shader material](./shader-material) u
 </Box>
 ```
 
-Source : https://github.com/troisjs/trois/blob/master/src/materials/SubSurfaceMaterial.js
+Source : https://github.com/troisjs/trois/blob/master/src/materials/SubSurfaceMaterial.ts
 
 ### Props
 

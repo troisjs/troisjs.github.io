@@ -8,7 +8,7 @@ Creates a [THREE.MeshPhysicalMaterial](https://threejs.org/docs/#api/en/material
 </Box>
 ```
 
-Source : https://github.com/troisjs/trois/blob/master/src/materials/PhysicalMaterial.js
+Source : https://github.com/troisjs/trois/blob/master/src/materials/PhysicalMaterial.ts
 
 ### Props
 

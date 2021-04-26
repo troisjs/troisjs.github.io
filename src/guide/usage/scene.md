@@ -1,6 +1,6 @@
 # Scene
 
-See [Scene.js](https://github.com/troisjs/trois/blob/master/src/core/Scene.js) and [THREE.Scene](https://threejs.org/docs/#api/en/scenes/Scene).
+See [Scene.ts](https://github.com/troisjs/trois/blob/master/src/core/Scene.ts) and [THREE.Scene](https://threejs.org/docs/#api/en/scenes/Scene).
 
 <table>
   <tbody>

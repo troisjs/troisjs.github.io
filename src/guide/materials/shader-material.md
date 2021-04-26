@@ -8,7 +8,7 @@ Creates a [THREE.ShaderMaterial](https://threejs.org/docs/#api/en/materials/Shad
 </Box>
 ```
 
-Source : https://github.com/troisjs/trois/blob/master/src/materials/ShaderMaterial.js
+Source : https://github.com/troisjs/trois/blob/master/src/materials/ShaderMaterial.ts
 
 ### Props
 

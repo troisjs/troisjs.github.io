@@ -2,15 +2,15 @@
 
 You can easily create the following materials :
 
-- `BasicMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/BasicMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshBasicMaterial))
-- `LambertMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/LambertMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshLambertMaterial))
-- `MatcapMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/MatcapMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshMatcapMaterial))
-- `PhongMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/PhongMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshPhongMaterial))
-- `PhysicalMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/PhysicalMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshPhysicalMaterial))
-- `ShaderMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/ShaderMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/ShaderMaterial))
-- `StandardMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/StandardMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshStandardMaterial))
-- `SubSurfaceMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/SubSurfaceMaterial.js), [threejs example](https://github.com/mrdoob/three.js/blob/master/examples/webgl_materials_subsurface_scattering.html))
-- `ToonMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/ToonMaterial.js), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshToonMaterial))
+- `BasicMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/BasicMaterial.ts), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshBasicMaterial))
+- `LambertMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/LambertMaterial.ts), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshLambertMaterial))
+- `MatcapMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/MatcapMaterial.ts), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshMatcapMaterial))
+- `PhongMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/PhongMaterial.ts), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshPhongMaterial))
+- `PhysicalMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/PhysicalMaterial.ts), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshPhysicalMaterial))
+- `ShaderMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/ShaderMaterial.ts), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/ShaderMaterial))
+- `StandardMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/StandardMaterial.ts), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshStandardMaterial))
+- `SubSurfaceMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/SubSurfaceMaterial.ts), [threejs example](https://github.com/mrdoob/three.js/blob/master/examples/webgl_materials_subsurface_scattering.html))
+- `ToonMaterial` ([source](https://github.com/troisjs/trois/blob/master/src/materials/ToonMaterial.ts), [threejs doc](https://threejs.org/docs/index.html#api/en/materials/MeshToonMaterial))
 
 Example :
 

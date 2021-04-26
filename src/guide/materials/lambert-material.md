@@ -10,7 +10,7 @@ Example :
 </Box>
 ```
 
-Source : https://github.com/troisjs/trois/blob/master/src/materials/LambertMaterial.js
+Source : https://github.com/troisjs/trois/blob/master/src/materials/LambertMaterial.ts
 
 ### Props
 

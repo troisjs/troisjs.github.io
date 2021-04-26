@@ -1,6 +1,6 @@
 # Renderer
 
-See [Renderer.js](https://github.com/troisjs/trois/blob/master/src/core/Renderer.js) and [THREE.WebGLRenderer](https://threejs.org/docs/#api/en/renderers/WebGLRenderer).
+See [Renderer.ts](https://github.com/troisjs/trois/blob/master/src/core/Renderer.ts) and [THREE.WebGLRenderer](https://threejs.org/docs/#api/en/renderers/WebGLRenderer).
 
 ### Props from `THREE.WebGLRenderer`
 

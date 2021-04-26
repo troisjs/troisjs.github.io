@@ -1,16 +1,16 @@
 # Postprocessing
 
-You can use `EffectComposer` ([source](https://github.com/troisjs/trois/blob/master/src/effects/EffectComposer.js)) to easily add post processing effects.
+You can use `EffectComposer` ([source](https://github.com/troisjs/trois/blob/master/src/effects/EffectComposer.ts)) to easily add post processing effects.
 
 Passes :
 
-- `BokehPass` ([source](https://github.com/troisjs/trois/blob/master/src/effects/BokehPass.js))
-- `FilmPass` ([source](https://github.com/troisjs/trois/blob/master/src/effects/FilmPass.js))
-- `FXAAPass` ([source](https://github.com/troisjs/trois/blob/master/src/effects/FXAAPass.js))
-- `HalftonePass` ([source](https://github.com/troisjs/trois/blob/master/src/effects/HalftonePass.js))
-- `Renderpass` ([source](https://github.com/troisjs/trois/blob/master/src/effects/Renderpass.js))
-- `SMAAPass` ([source](https://github.com/troisjs/trois/blob/master/src/effects/SMAAPass.js))
-- `UnrealBloomPass` ([source](https://github.com/troisjs/trois/blob/master/src/effects/UnrealBloomPass.js))
+- `BokehPass` ([source](https://github.com/troisjs/trois/blob/master/src/effects/BokehPass.ts))
+- `FilmPass` ([source](https://github.com/troisjs/trois/blob/master/src/effects/FilmPass.ts))
+- `FXAAPass` ([source](https://github.com/troisjs/trois/blob/master/src/effects/FXAAPass.ts))
+- `HalftonePass` ([source](https://github.com/troisjs/trois/blob/master/src/effects/HalftonePass.ts))
+- `Renderpass` ([source](https://github.com/troisjs/trois/blob/master/src/effects/Renderpass.ts))
+- `SMAAPass` ([source](https://github.com/troisjs/trois/blob/master/src/effects/SMAAPass.ts))
+- `UnrealBloomPass` ([source](https://github.com/troisjs/trois/blob/master/src/effects/UnrealBloomPass.ts))
 
 ### Example
 

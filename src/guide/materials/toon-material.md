@@ -8,7 +8,7 @@ Creates a [THREE.MeshToonMaterial](https://threejs.org/docs/#api/en/materials/Me
 </Box>
 ```
 
-Source : https://github.com/troisjs/trois/blob/master/src/materials/ToonMaterial.js
+Source : https://github.com/troisjs/trois/blob/master/src/materials/ToonMaterial.ts
 
 ### Props
 

@@ -2,8 +2,8 @@
 
 You can easily add texture to material :
 
-- `Texture` ([source](https://github.com/troisjs/trois/blob/master/src/materials/Texture.js))
-- `CubeTexture` ([source](https://github.com/troisjs/trois/blob/master/src/materials/CubeTexture.js))
+- `Texture` ([source](https://github.com/troisjs/trois/blob/master/src/materials/Texture.ts))
+- `CubeTexture` ([source](https://github.com/troisjs/trois/blob/master/src/materials/CubeTexture.ts))
 
 ### Map
 

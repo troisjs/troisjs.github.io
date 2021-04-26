@@ -10,7 +10,7 @@ Creates a [THREE.MeshMatcapMaterial](https://threejs.org/docs/#api/en/materials/
 
 You can use the name of any of [these](https://github.com/emmelleppi/matcaps) matcaps in the `name` prop. Click on a matcap image, then copy the name you'd like to use.
 
-Source : https://github.com/troisjs/trois/blob/master/src/materials/MatcapMaterial.js
+Source : https://github.com/troisjs/trois/blob/master/src/materials/MatcapMaterial.ts
 
 ### Props
 

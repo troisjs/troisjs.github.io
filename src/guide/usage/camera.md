@@ -1,6 +1,6 @@
 # Camera
 
-See [PerspectiveCamera.js](https://github.com/troisjs/trois/blob/master/src/core/PerspectiveCamera.js) and [THREE.PerspectiveCamera](https://threejs.org/docs/#api/en/cameras/PerspectiveCamera).
+See [PerspectiveCamera.ts](https://github.com/troisjs/trois/blob/master/src/core/PerspectiveCamera.ts) and [THREE.PerspectiveCamera](https://threejs.org/docs/#api/en/cameras/PerspectiveCamera).
 
 ### Props from `THREE.PerspectiveCamera`
 

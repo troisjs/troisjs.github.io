@@ -1,6 +1,6 @@
 # InstancedMesh
 
-See [InstancedMesh.js](https://github.com/troisjs/trois/blob/master/src/meshes/InstancedMesh.js) and [THREE.InstancedMesh](https://threejs.org/docs/index.html#api/en/objects/InstancedMesh).
+See [InstancedMesh.ts](https://github.com/troisjs/trois/blob/master/src/meshes/InstancedMesh.ts) and [THREE.InstancedMesh](https://threejs.org/docs/index.html#api/en/objects/InstancedMesh).
 
 Example :
 

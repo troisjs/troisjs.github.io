@@ -10,24 +10,24 @@ You can easily create mesh :
 
 You can use the following meshes :
 
-- `Box` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Box.js), [threejs doc](https://threejs.org/docs/#api/en/geometries/BoxBufferGeometry))
-- `Circle` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Circle.js), [threejs doc](https://threejs.org/docs/#api/en/geometries/CircleBufferGeometry))
-- `Cone` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Cone.js), [threejs doc](https://threejs.org/docs/#api/en/geometries/ConeBufferGeometry))
-- `Cylinder` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Cylinder.js), [threejs doc](https://threejs.org/docs/#api/en/geometries/CylinderBufferGeometry))
-- `Dodecahedron` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Dodecahedron.js), [threejs doc](https://threejs.org/docs/#api/en/geometries/DodecahedronBufferGeometry))
-- `Icosahedron` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Icosahedron.js), [threejs doc](https://threejs.org/docs/#api/en/geometries/IcosahedronBufferGeometry))
-- `Lathe` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Lathe.js), [threejs doc](https://threejs.org/docs/#api/en/geometries/LatheBufferGeometry))
-- `Octahedron` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Octahedron.js), [threejs doc](https://threejs.org/docs/#api/en/geometries/OctahedronBufferGeometry))
-- `Plane` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Plane.js), [threejs doc](https://threejs.org/docs/#api/en/geometries/PlaneBufferGeometry))
-- `Polyhedron` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Polyhedron.js), [threejs doc](https://threejs.org/docs/#api/en/geometries/PolyhedronBufferGeometry))
-- `Ring` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Ring.js), [threejs doc](https://threejs.org/docs/#api/en/geometries/RingBufferGeometry))
-- `Sphere` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Sphere.js), [threejs doc](https://threejs.org/docs/#api/en/geometries/SphereBufferGeometry))
-- `Tetrahedron` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Tetrahedron.js), [threejs doc](https://threejs.org/docs/#api/en/geometries/TetrahedronBufferGeometry))
-- `Torus` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Torus.js), [threejs doc](https://threejs.org/docs/#api/en/geometries/TorusBufferGeometry))
-- `TorusKnot` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/TorusKnot.js), [threejs doc](https://threejs.org/docs/#api/en/geometries/TorusKnotBufferGeometry))
-- `Tube` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Tube.js), [threejs doc](https://threejs.org/docs/#api/en/geometries/TubeBufferGeometry))
+- `Box` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Box.ts), [threejs doc](https://threejs.org/docs/#api/en/geometries/BoxBufferGeometry))
+- `Circle` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Circle.ts), [threejs doc](https://threejs.org/docs/#api/en/geometries/CircleBufferGeometry))
+- `Cone` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Cone.ts), [threejs doc](https://threejs.org/docs/#api/en/geometries/ConeBufferGeometry))
+- `Cylinder` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Cylinder.ts), [threejs doc](https://threejs.org/docs/#api/en/geometries/CylinderBufferGeometry))
+- `Dodecahedron` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Dodecahedron.ts), [threejs doc](https://threejs.org/docs/#api/en/geometries/DodecahedronBufferGeometry))
+- `Icosahedron` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Icosahedron.ts), [threejs doc](https://threejs.org/docs/#api/en/geometries/IcosahedronBufferGeometry))
+- `Lathe` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Lathe.ts), [threejs doc](https://threejs.org/docs/#api/en/geometries/LatheBufferGeometry))
+- `Octahedron` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Octahedron.ts), [threejs doc](https://threejs.org/docs/#api/en/geometries/OctahedronBufferGeometry))
+- `Plane` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Plane.ts), [threejs doc](https://threejs.org/docs/#api/en/geometries/PlaneBufferGeometry))
+- `Polyhedron` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Polyhedron.ts), [threejs doc](https://threejs.org/docs/#api/en/geometries/PolyhedronBufferGeometry))
+- `Ring` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Ring.ts), [threejs doc](https://threejs.org/docs/#api/en/geometries/RingBufferGeometry))
+- `Sphere` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Sphere.ts), [threejs doc](https://threejs.org/docs/#api/en/geometries/SphereBufferGeometry))
+- `Tetrahedron` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Tetrahedron.ts), [threejs doc](https://threejs.org/docs/#api/en/geometries/TetrahedronBufferGeometry))
+- `Torus` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Torus.ts), [threejs doc](https://threejs.org/docs/#api/en/geometries/TorusBufferGeometry))
+- `TorusKnot` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/TorusKnot.ts), [threejs doc](https://threejs.org/docs/#api/en/geometries/TorusKnotBufferGeometry))
+- `Tube` ([source](https://github.com/troisjs/trois/blob/master/src/meshes/Tube.ts), [threejs doc](https://threejs.org/docs/#api/en/geometries/TubeBufferGeometry))
 
-# Common Props (see [Mesh.js](https://github.com/troisjs/trois/blob/master/src/meshes/Mesh.js))
+# Common Props (see [Mesh.ts](https://github.com/troisjs/trois/blob/master/src/meshes/Mesh.ts))
 
 <table>
 <tbody>

@@ -8,7 +8,7 @@ Creates a [THREE.MeshStandardMaterial](https://threejs.org/docs/#api/en/material
 </Box>
 ```
 
-Source : https://github.com/troisjs/trois/blob/master/src/materials/StandardMaterial.js
+Source : https://github.com/troisjs/trois/blob/master/src/materials/StandardMaterial.ts
 
 ### Props
 
