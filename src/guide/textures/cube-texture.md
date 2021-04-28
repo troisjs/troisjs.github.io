@@ -1,6 +1,6 @@
 # CubeTexture
 
-Loads a [cube texture](//threejs.org/docs/#api/en/textures/CubeTexture) into a parent Material. See [Texture](./texture) for more info.
+Loads a [cube texture](https://threejs.org/docs/#api/en/textures/CubeTexture) into a parent Material. See [Texture](./texture) for more info.
 
 ```html
 <Box>

@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 :root {
+	--font-family-base: 'Roboto', sans-serif;
 	--c-brand: #d24339;
 	--c-brand-light: #ef584e;
 	--c-divider: #ffffff1f;
+	--sidebar-size: 18rem;
 }
 
 .examples .container {
@@ -51,13 +55,27 @@
 }
 
 @media (min-width: 720px) {
+  .theme .page {
+		margin-left: var(--sidebar-size);
+  }
+  .theme .sidebar {
+    width: var(--sidebar-size);
+  }
 	.examples .content  {
-		left: 16.4rem;
+		left: var(--sidebar-size);
 	}
 }
 
-@media (min-width: 960px) {
-	.examples .content  {
-		left: 20rem;
-	}
+.page .container {
+	padding: 0 2rem 4rem;
+	max-width: 60rem;
 }
+
+/* @media (min-width: 960px) {
+  .sidebar {
+    width: 16rem;
+  }
+	.examples .content  {
+		left: 16rem;
+	}
+} */

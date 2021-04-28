@@ -109,51 +109,74 @@ You can use the following functions to add/remove event listeners on Renderer co
     </tr>
     <tr>
       <td><code>onInit</code></td>
-      <td>Add init listener</td>
+      <td>Add <em>init</em> listener</td>
       <td><code>{ type: 'init', renderer }</code></td>
     </tr>
     <tr>
       <td><code>onMounted</code></td>
-      <td>Add mounted listener</td>
+      <td>Add <em>mounted</em> listener</td>
       <td><code>{ type: 'mounted', renderer }</code></td>
     </tr>
     <tr>
       <td><code>onResize</code></td>
-      <td>Add resize listener</td>
+      <td>Add <em>resize</em> listener</td>
       <td><code>{ type: 'init', renderer, size }</code></td>
     </tr>
     <tr>
       <td><code>onBeforeRender</code></td>
-      <td>Add beforerender listener</td>
+      <td>Add <em>beforerender</em> listener</td>
       <td><code>{ type: 'beforerender', renderer, time }</code></td>
     </tr>
     <tr>
       <td><code>offBeforeRender</code></td>
-      <td>Remove beforerender listener</td>
+      <td>Remove <em>beforerender</em> listener</td>
       <td></td>
     </tr>
     <tr>
       <td><code>onAfterRender</code></td>
-      <td>Add afterrender listener</td>
+      <td>Add <em>afterrender</em> listener</td>
       <td><code>{ type: 'afterrender', renderer, time }</code></td>
     </tr>
     <tr>
       <td><code>offAfterRender</code></td>
-      <td>Remove afterrender listener</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><code>addListener(type, callback)</code></td>
-      <td>Add event listener</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><code>removeListener(type, callback)</code></td>
-      <td>Remove event listener</td>
+      <td>Remove <em>afterrender</em> listener</td>
       <td></td>
     </tr>
   </tbody>
 </table>
+
+
+You can also use :
+
+<table>
+  <tbody>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td><code>addListener(type, callback)</code></td>
+      <td>Add event listener</td>
+    </tr>
+    <tr>
+      <td><code>removeListener(type, callback)</code></td>
+      <td>Remove event listener</td>
+    </tr>
+  </tbody>
+</table>
+
+## Custom render function
+
+You can use a custom render function :
+
+```js
+const renderer = this.$refs.renderer
+renderer.onInit(() => {
+  renderer.renderFn = () => {
+    // do what you want
+  }
+})
+```
 
 ## Access ThreeJS renderer
 

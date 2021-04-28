@@ -96,6 +96,7 @@ module.exports = {
 						{ link: '/guide/install', text: 'Installation' },
 						{ link: '/guide/cdn', text: 'CDN' },
 						{ link: '/guide/hmr', text: 'HMR' },
+						{ link: '/guide/faq', text: 'FAQ' },
 						{ link: '/guide/dev', text: 'Contribute' },
 					],
 				},
