@@ -2,7 +2,7 @@
 
 See [Renderer.ts](https://github.com/troisjs/trois/blob/master/src/core/Renderer.ts) and [THREE.WebGLRenderer](https://threejs.org/docs/#api/en/renderers/WebGLRenderer).
 
-### Props from `THREE.WebGLRenderer`
+## Props from `THREE.WebGLRenderer`
 
 <table>
   <tbody>
@@ -33,7 +33,7 @@ See [Renderer.ts](https://github.com/troisjs/trois/blob/master/src/core/Renderer
   </tbody>
 </table>
 
-### Custom Props
+## Custom Props
 
 <table>
   <tbody>
@@ -96,7 +96,66 @@ See [Renderer.ts](https://github.com/troisjs/trois/blob/master/src/core/Renderer
   </tbody>
 </table>
 
-### Access ThreeJS renderer
+## Events API (v0.3)
+
+You can use the following functions to add/remove event listeners on Renderer component :
+
+<table>
+  <tbody>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Event </th>
+    </tr>
+    <tr>
+      <td><code>onInit</code></td>
+      <td>Add init listener</td>
+      <td><code>{ type: 'init', renderer }</code></td>
+    </tr>
+    <tr>
+      <td><code>onMounted</code></td>
+      <td>Add mounted listener</td>
+      <td><code>{ type: 'mounted', renderer }</code></td>
+    </tr>
+    <tr>
+      <td><code>onResize</code></td>
+      <td>Add resize listener</td>
+      <td><code>{ type: 'init', renderer, size }</code></td>
+    </tr>
+    <tr>
+      <td><code>onBeforeRender</code></td>
+      <td>Add beforerender listener</td>
+      <td><code>{ type: 'beforerender', renderer, time }</code></td>
+    </tr>
+    <tr>
+      <td><code>offBeforeRender</code></td>
+      <td>Remove beforerender listener</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>onAfterRender</code></td>
+      <td>Add afterrender listener</td>
+      <td><code>{ type: 'afterrender', renderer, time }</code></td>
+    </tr>
+    <tr>
+      <td><code>offAfterRender</code></td>
+      <td>Remove afterrender listener</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>addListener(type, callback)</code></td>
+      <td>Add event listener</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>removeListener(type, callback)</code></td>
+      <td>Remove event listener</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+## Access ThreeJS renderer
 
 You should set a *ref* on the renderer :
 

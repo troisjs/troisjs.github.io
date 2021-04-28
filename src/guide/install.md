@@ -37,6 +37,10 @@ import { TroisJSVuePlugin } from 'troisjs';
 app.use(TroisJSVuePlugin);
 ```
 
+::: warning
+Don't use the plugin if you need tree shaking and typescript support.
+:::
+
 ### Example
 
 ```vue
@@ -67,10 +71,6 @@ export default {
 
 ### Example without plugin
 
-::: tip
-If you don't use TroisJSVuePlugin (better for tree-shaking), you have to import and register the components.
-:::
-
 ```vue
 <template>
   <Renderer>
@@ -91,3 +91,11 @@ export default {
 };
 </script>
 ```
+
+## Typescript
+
+TroisJS v0.3 has been rewrites using Typescript, if you want to have a good support :
+
+- Use Visual Studio Code, with Volar extension : https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar
+- Read this : https://v3.vuejs.org/guide/typescript-support.html
+- Don't use TroisJS plugin and import the components

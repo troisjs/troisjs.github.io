@@ -1,7 +1,7 @@
 # ✨ ThreeJS + VueJS 3 + ViteJS ⚡
 
 <p>
-  <a href="/little-planet/"><img src="/assets/screenshots/little-planet.jpg" style="width:30%; margin-right: 1%;" /></a>
+  <a href="https://troisjs.github.io/little-planet/" target="_blank"><img src="/assets/screenshots/little-planet.jpg" style="width:30%; margin-right: 1%;" /></a>
   <a href="/examples/physics/1.html"><img src="/assets/screenshots/troisjs_10.jpg" style="width:30%; margin-right: 1%;" /></a>
   <a href="/examples/physics/2.html"><img src="/assets/screenshots/troisjs_11.jpg" style="width:30%; margin-right: 1%;" /></a>
   <a href="/examples/demos/3.html"><img src="/assets/screenshots/troisjs_1.jpg" style="width:30%; margin-right: 1%;" /></a>
