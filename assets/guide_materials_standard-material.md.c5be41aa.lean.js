@@ -1,1 +1,0 @@
-import{o as t,c as e,d as a}from"./app.e8a5d5a3.js";const d='{"title":"StandardMaterial","description":"","frontmatter":{},"headers":[{"level":3,"title":"Props","slug":"props"}],"relativePath":"guide/materials/standard-material.md","lastUpdated":1619634893476}',r={},o=a('',7);r.render=function(a,d,r,s,n,c){return t(),e("div",null,[o])};export default r;export{d as __pageData};
