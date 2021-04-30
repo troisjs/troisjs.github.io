@@ -77,7 +77,7 @@ export default {
       }
     });
 
-    // this.renderer.onAfterResize(() => {
+    // this.renderer.onResize(() => {
     //   this.initTubes();
     // });
   },

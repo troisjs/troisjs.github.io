@@ -88,7 +88,7 @@ export default {
 
     this.tiltRadius = this.size.height / 3;
     this.tiltY = this.size.height / 2;
-    this.renderer.onAfterResize(this.updateTilt);
+    this.renderer.onResize(this.updateTilt);
 
     this.dummy = new Object3D();
     this.renderer.onBeforeRender(this.animate);
