@@ -5,7 +5,7 @@
       <AmbientLight color="#808080" />
       <PointLight :position="{ y: 10, z: 10 }" />
       <component ref="mesh" :is="mesh" :rotation="{ y: Math.PI / 4, z: Math.PI / 4 }" v-bind="meshProps">
-        <component ref="mat" :is="material" :color="color" :side="materialSide" v-bind="matProps"></component>
+        <component ref="mat" :is="material" :color="color" :props="{ ...matProps, side: materialSide }"></component>
       </component>
     </Scene>
   </Renderer>

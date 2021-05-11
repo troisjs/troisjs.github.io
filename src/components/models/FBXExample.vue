@@ -10,10 +10,10 @@
       />
 
       <Plane :width="2000" :height="2000" :rotation="{ x: -Math.PI / 2 }" receive-shadow>
-        <PhongMaterial color="#999999" :depth-write="false" />
+        <PhongMaterial color="#999999" :props="{ depthWrite: false }" />
       </Plane>
 
-      <FBXModel src="/assets/models/Samba Dancing.fbx" @load="onLoad" />
+      <FbxModel src="/assets/models/Samba Dancing.fbx" @load="onLoad" />
     </Scene>
   </Renderer>
 </template>
@@ -25,7 +25,7 @@ import {
   AmbientLight,
   Camera,
   DirectionalLight,
-  FBXModel,
+  FbxModel,
   HemisphereLight,
   Renderer,
   PhongMaterial,
@@ -38,7 +38,7 @@ export default {
     AmbientLight,
     Camera,
     DirectionalLight,
-    FBXModel,
+    FbxModel,
     HemisphereLight,
     Renderer,
     PhongMaterial,

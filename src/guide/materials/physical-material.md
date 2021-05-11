@@ -9,7 +9,3 @@ Creates a [THREE.MeshPhysicalMaterial](https://threejs.org/docs/#api/en/material
 ```
 
 Source : https://github.com/troisjs/trois/blob/master/src/materials/PhysicalMaterial.ts
-
-### Props
-
-[Base props](./#props) and [standard material props](./standard-material#props).

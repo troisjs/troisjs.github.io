@@ -6,7 +6,7 @@
 
       <InstancedMesh ref="imesh" :count="NUM_INSTANCES">
         <DodecahedronGeometry :radius="5" />
-        <SubSurfaceMaterial vertex-colors />
+        <SubSurfaceMaterial :props="{ vertexColors: true }" />
       </InstancedMesh>
     </Scene>
     <EffectComposer>

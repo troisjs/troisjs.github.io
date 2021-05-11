@@ -9,7 +9,3 @@ Creates a [THREE.MeshBasicMaterial](https://threejs.org/docs/#api/en/materials/M
 ```
 
 Source : https://github.com/troisjs/trois/blob/master/src/materials/BasicMaterial.ts
-
-### Props
-
-Inherits all [base props](./#props).

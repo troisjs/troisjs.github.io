@@ -12,7 +12,7 @@
 		"simplex-noise": "^2.4.0",
 		"stats.js": "^0.17.0",
 		"three": "^0.127.0",
-		"troisjs": "0.3.0-beta.5",
+		"troisjs": "0.3.0",
 		"tweakpane": "^2.0.1",
 		"vitepress": "0.12.2"
 	}

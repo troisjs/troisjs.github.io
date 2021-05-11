@@ -11,12 +11,12 @@
         <RectAreaLight color="#60ff60" :position="{ x: -10, y: 0, z: 1 }" v-bind="rectLightsProps" />
         <RectAreaLight color="#ffffff" :position="{ x: 0, y: -10, z: 1 }" v-bind="rectLightsProps" />
         <Plane :width="30" :height="30" :rotation="{ x: 0 }" :position="{ z: -3 }">
-          <StandardMaterial :displacement-scale="0.2" :roughness="0" :metalness="0" >
-            <Texture v-bind="texturesProps" src="/assets/textures/Wood_Tiles_002_basecolor.jpg" />
-            <Texture v-bind="texturesProps" src="/assets/textures/Wood_Tiles_002_height.png" name="displacementMap" />
-            <Texture v-bind="texturesProps" src="/assets/textures/Wood_Tiles_002_normal.jpg" name="normalMap" />
-            <Texture v-bind="texturesProps" src="/assets/textures/Wood_Tiles_002_roughness.jpg" name="roughnessMap" />
-            <Texture v-bind="texturesProps" src="/assets/textures/Wood_Tiles_002_ambientOcclusion.jpg" name="aoMap" />
+          <StandardMaterial :props="{ displacementScale: 0.2, roughness: 0, metalness: 0 }"  >
+            <Texture :props="texturesProps" src="/assets/textures/Wood_Tiles_002_basecolor.jpg" />
+            <Texture :props="texturesProps" src="/assets/textures/Wood_Tiles_002_height.png" name="displacementMap" />
+            <Texture :props="texturesProps" src="/assets/textures/Wood_Tiles_002_normal.jpg" name="normalMap" />
+            <Texture :props="texturesProps" src="/assets/textures/Wood_Tiles_002_roughness.jpg" name="roughnessMap" />
+            <Texture :props="texturesProps" src="/assets/textures/Wood_Tiles_002_ambientOcclusion.jpg" name="aoMap" />
           </StandardMaterial>
         </Plane>
       </Group>

@@ -10,6 +10,3 @@ Creates a [THREE.MeshToonMaterial](https://threejs.org/docs/#api/en/materials/Me
 
 Source : https://github.com/troisjs/trois/blob/master/src/materials/ToonMaterial.ts
 
-### Props
-
-Inherits all [base props](./#props).

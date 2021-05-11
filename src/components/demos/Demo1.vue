@@ -45,7 +45,7 @@
 
       <RefractionMesh ref="mesh" :position="{ x: 0, y: -20, z: 20 }" auto-update>
         <TorusGeometry :radius="8" :tube="3" :radial-segments="8" :tubular-segments="6" />
-        <StandardMaterial color="#ffffff" :metalness="1" :roughness="0" flat-shading />
+        <StandardMaterial color="#ffffff" :props="{ metalness: 1, roughness: 0, flatShading: true }" />
       </RefractionMesh>
 
     </Scene>

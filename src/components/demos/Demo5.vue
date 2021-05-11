@@ -6,7 +6,7 @@
       <PointLight ref="light" :position="{ y: 0, z: 20 }" />
       <InstancedMesh ref="imesh" :count="NUM_INSTANCES" :position="{ y: 20, z: 10 }">
         <BoxGeometry :size="SIZE" />
-        <PhongMaterial vertex-colors />
+        <PhongMaterial :props="{ vertexColors: true }" />
       </InstancedMesh>
     </Scene>
     <EffectComposer>

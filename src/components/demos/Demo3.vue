@@ -10,7 +10,7 @@
 
       <InstancedMesh ref="imesh" :count="NUM_INSTANCES">
         <BoxGeometry :width="2" :height="2" :depth="10" />
-        <StandardMaterial :transparent="true" :opacity="0.9" :metalness="0.8" :roughness="0.5" />
+        <StandardMaterial :props="{ transparent: true, opacity: 0.9, metalness: 0.8, roughness: 0.5 }"  />
       </InstancedMesh>
 
       <Text

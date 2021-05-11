@@ -6,7 +6,7 @@
       <PointLight :position="{ y: 50, z: 0 }" />
       <PointLight color="#ff6000" :intensity="0.75" :position="{ y: -50, z: 0 }" />
       <Sphere ref="mesh" :radius="2.5" :width-segments="200" :height-segments="200" >
-        <StandardMaterial :displacement-scale="0.2">
+        <StandardMaterial :props="{ displacementScale: 0.2 }">
           <Texture src="/assets/textures/Wood_Tiles_002_basecolor.jpg" />
           <Texture src="/assets/textures/Wood_Tiles_002_height.png" name="displacementMap" />
           <Texture src="/assets/textures/Wood_Tiles_002_normal.jpg" name="normalMap" />

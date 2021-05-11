@@ -12,7 +12,15 @@ This material is an implementation of the [shader material](./shader-material) u
 
 Source : https://github.com/troisjs/trois/blob/master/src/materials/SubSurfaceMaterial.ts
 
-### Props
+### `uniform` Prop
+
+You can use the `uniform` prop to customize this material, e.g. :
+
+```html
+<Box>
+  <SubSurfaceMaterial :uniform="{ thicknessColor: '#ffffff' }" />
+</Box>
+```
 
 <table>
 <tbody>
@@ -22,7 +30,7 @@ Source : https://github.com/troisjs/trois/blob/master/src/materials/SubSurfaceMa
     <th>Type</th>
     <th>Default</th>
   </tr>
-  <tr><td><code>color</code></td><td>Material color.</td><td>String</td><td>#ffffff</td></tr>
+  <tr><td><code>diffuse</code></td><td>Material color.</td><td>String</td><td>#ffffff</td></tr>
   <tr><td><code>thicknessColor</code></td><td>Thickness color.</td><td>String</td><td>#ffffff</td></tr>
   <tr><td><code>thicknessDistortion</code></td><td>Thickness distortion.</td><td>Number</td><td><code>0.4</code></td></tr>
   <tr><td><code>thicknessAmbient</code></td><td>Ambient thickness.</td><td>Number</td><td><code>0.01</code></td></tr>
@@ -32,8 +40,5 @@ Source : https://github.com/troisjs/trois/blob/master/src/materials/SubSurfaceMa
   <tr><td><code>transparent</code></td><td>Whether or not the material is transparent.</td><td>Boolean</td><td><code>false</code></td></tr>
   <tr><td><code>opacity</code></td><td>Material opacity.</td><td>Number</td><td><code>1</code></td></tr>
   <tr><td><code>vertexColors</code></td><td>Use vertex colors on material.</td><td>Boolean</td><td><code>false</code></td></tr>
-
 </tbody>
 </table>
-
-

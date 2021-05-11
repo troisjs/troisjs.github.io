@@ -7,7 +7,7 @@
       <PointLight :color="light3Color" :position="{ x: 2 , y: 2, z: 2 }" :intensity="0.5" />
       <PointLight :color="light4Color" :position="{ x: 2 , y: -2, z: 2 }" :intensity="0.5" />
       <Tube v-for="t in tubes" :ref="t.key" v-bind="t">
-        <StandardMaterial :roughness="0.4" :metalness="1" />
+        <StandardMaterial :props="{ roughness: 0.4, metalness: 1 }" />
       </Tube>
     </Scene>
   </Renderer>
