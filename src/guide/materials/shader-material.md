@@ -4,13 +4,15 @@ Creates a [THREE.ShaderMaterial](https://threejs.org/docs/#api/en/materials/Shad
 
 ```html
 <Box>
-  <ShaderMaterial />
+  <ShaderMaterial :props="{ uniforms: {}, vertexShader: '...', fragmentShader: '...' }" />
 </Box>
 ```
 
 Source : https://github.com/troisjs/trois/blob/master/src/materials/ShaderMaterial.ts
 
 ### Props
+
+As the other materials, you should use special prop `props` to define the following `THREE.ShaderMaterial` properties :
 
 <table>
   <tbody>
@@ -48,7 +50,7 @@ Source : https://github.com/troisjs/trois/blob/master/src/materials/ShaderMateri
 You can pass textures to shaders by adding a `Texture` with the prop `uniform` as a child of the material:
 
 ```html
-<ShaderMaterial :fragmentShader="...">
+<ShaderMaterial :props="{ fragmentShader: '...' }">
   <Texture src="/my/texture/src.png" uniform="myCustomTexture"/>
 </ShaderMaterial>
 ```
