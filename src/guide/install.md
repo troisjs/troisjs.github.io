@@ -94,7 +94,7 @@ export default {
 
 ## Typescript
 
-TroisJS v0.3 has been rewrites using Typescript, if you want to have a good support :
+TroisJS v0.3 has been rewritten using Typescript, if you want to have a good support :
 
 - Use Visual Studio Code, with Volar extension : https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar
 - Read this : https://v3.vuejs.org/guide/typescript-support.html
