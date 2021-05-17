@@ -6,12 +6,14 @@ You don't need to install TroisJS to play with it, please read [how to use Trois
 
 ## New project
 
-Download the [TroisJS/ViteJS Starter App](https://raw.githubusercontent.com/troisjs/troisjs.github.io/HEAD/src/public/assets/troisjs.zip).
+Download :
+- [TroisJS/ViteJS Starter App](https://raw.githubusercontent.com/troisjs/troisjs.github.io/HEAD/src/public/assets/troisjs.zip).
+- or [TroisJS/Typescript/ViteJS Starter App](https://raw.githubusercontent.com/troisjs/troisjs.github.io/HEAD/src/public/assets/troisjs-ts.zip).
 
 Unzip it, and :
 
 ```
-cd troisjs
+cd troisjs (or troisjs-ts)
 npm install
 npm run dev
 ```
@@ -19,7 +21,7 @@ npm run dev
 Or :
 
 ```
-cd troisjs
+cd troisjs (or troisjs-ts)
 yarn
 yarn dev
 ```
