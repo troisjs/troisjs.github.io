@@ -92,17 +92,18 @@ module.exports = {
 			'/guide/': [
 				{
 					text: 'Introduction',
+					link: "/guide/",
 					children: [
 						{ link: '/guide/install', text: 'Installation' },
 						{ link: '/guide/cdn', text: 'CDN' },
-						{ link: '/guide/hmr', text: 'HMR' },
+						// { link: '/guide/hmr', text: 'HMR' },
 						{ link: '/guide/faq', text: 'FAQ' },
 						{ link: '/guide/dev', text: 'Contribute' },
 					],
 				},
 				{
 					link: '/guide/usage/',
-					text: 'Usage',
+					text: 'Core',
 					children: [
 						{ link: '/guide/usage/renderer', text: 'Renderer' },
 						{ link: '/guide/usage/camera', text: 'Camera' },
@@ -111,61 +112,64 @@ module.exports = {
 					],
 				},
 				{
-					text: 'Meshes',
-					children: [
-						{ link: '/guide/meshes/', text: 'Introduction' },
-						{ link: '/guide/meshes/events', text: 'Events' },
-						{ link: '/guide/meshes/geometries', text: 'Geometries' },
-						// { link: '/guide/meshes/image', text: 'Image' },
-						{ link: '/guide/meshes/instanced', text: 'InstancedMesh' },
-						// { link: '/guide/meshes/sprite', text: 'Sprite' },
-					],
-				},
-				{
-					link: '/guide/lights/',
-					text: 'Lights',
-				},
-				{
-					text: 'Materials',
+					text: 'Features',
 					children: [
 						{
-							link: '/guide/materials/', text: 'Introduction'
+							link: '/guide/lights/',
+							text: 'Lights',
 						},
-						{ link: '/guide/materials/basic-material', text: 'BasicMaterial' },
-						{ link: '/guide/materials/lambert-material', text: 'LambertMaterial' },
-						{ link: '/guide/materials/matcap-material', text: 'MatcapMaterial' },
-						{ link: '/guide/materials/phong-material', text: 'PhongMaterial' },
-						{ link: '/guide/materials/physical-material', text: 'PhysicalMaterial' },
-						{ link: '/guide/materials/shader-material', text: 'ShaderMaterial' },
-						{ link: '/guide/materials/standard-material', text: 'StandardMaterial' },
-						{ link: '/guide/materials/sub-surface-material', text: 'SubSurfaceMaterial' },
-						{ link: '/guide/materials/toon-material', text: 'ToonMaterial' },
-					],
-				},
-				{
-					text: 'Textures',
-					children: [
-						{ link: '/guide/textures/texture', text: 'Texture' },
-						{ link: '/guide/textures/cube-texture', text: 'CubeTexture' },
+						{
+							text: 'Materials',
+							link: '/guide/materials/',
+							children: [
+								{ link: '/guide/materials/basic-material', text: 'BasicMaterial' },
+								{ link: '/guide/materials/lambert-material', text: 'LambertMaterial' },
+								{ link: '/guide/materials/matcap-material', text: 'MatcapMaterial' },
+								{ link: '/guide/materials/phong-material', text: 'PhongMaterial' },
+								{ link: '/guide/materials/physical-material', text: 'PhysicalMaterial' },
+								{ link: '/guide/materials/shader-material', text: 'ShaderMaterial' },
+								{ link: '/guide/materials/standard-material', text: 'StandardMaterial' },
+								{ link: '/guide/materials/sub-surface-material', text: 'SubSurfaceMaterial' },
+								{ link: '/guide/materials/toon-material', text: 'ToonMaterial' },
+							],
+						},
+						{
+							text: 'Meshes',
+							link: '/guide/meshes/',
+							children: [
+								{ link: '/guide/meshes/events', text: 'Events' },
+								{ link: '/guide/meshes/geometries', text: 'Geometries' },
+								// { link: '/guide/meshes/image', text: 'Image' },
+								{ link: '/guide/meshes/instanced', text: 'InstancedMesh' },
+								// { link: '/guide/meshes/sprite', text: 'Sprite' },
+							],
+						},
+						{
+							link: '/guide/postprocessing/',
+							text: 'Postprocessing',
+						},
+						{
+							link: '/guide/shadows',
+							text: 'Shadows',
+						},
+						{
+							text: 'Textures',
+							link: '/guide/textures/texture',
+							children: [
+								{ link: '/guide/textures/cube-texture', text: 'CubeTexture' },
+							]
+						},
+						// {
+						// 	text: 'Directives',
+						// 	children: [
+						// 		{ link: '/guide/directives/v-for', text: 'v-for' },
+						// 	],
+						// },
 					]
 				},
 				{
-					link: '/guide/shadows',
-					text: 'Shadows',
-				},
-				{
-					link: '/guide/postprocessing/',
-					text: 'Postprocessing',
-				},
-				{
-					text: 'Directives',
-					children: [
-						{ link: '/guide/directives/v-for', text: 'v-for' },
-					],
-				},
-				{
-					link: '/guide/components/',
-					text: 'Components',
+					link: '/guide/extras/',
+					text: 'Extras',
 				},
 			],
 		},
