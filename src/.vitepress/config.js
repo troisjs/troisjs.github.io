@@ -96,7 +96,7 @@ module.exports = {
 					children: [
 						{ link: '/guide/install', text: 'Installation' },
 						{ link: '/guide/cdn', text: 'CDN' },
-						// { link: '/guide/hmr', text: 'HMR' },
+						{ link: '/guide/hmr', text: 'HMR' },
 						{ link: '/guide/faq', text: 'FAQ' },
 						{ link: '/guide/dev', text: 'Contribute' },
 					],
@@ -159,12 +159,12 @@ module.exports = {
 								{ link: '/guide/textures/cube-texture', text: 'CubeTexture' },
 							]
 						},
-						// {
-						// 	text: 'Directives',
-						// 	children: [
-						// 		{ link: '/guide/directives/v-for', text: 'v-for' },
-						// 	],
-						// },
+						{
+							text: 'Directives',
+							children: [
+								{ link: '/guide/directives/v-for', text: 'v-for' },
+							],
+						},
 					]
 				},
 				{
