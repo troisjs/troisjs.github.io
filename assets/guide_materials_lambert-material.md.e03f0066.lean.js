@@ -1,0 +1,1 @@
+import{o as a,c as t,d as e}from"./app.883f0a39.js";const s='{"title":"LambertMaterial","description":"","frontmatter":{},"relativePath":"guide/materials/lambert-material.md","lastUpdated":1622660569771}',n={},r=e('',4);n.render=function(e,s,n,o,l,p){return a(),t("div",null,[r])};export default n;export{s as __pageData};

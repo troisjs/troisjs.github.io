@@ -1,0 +1,1 @@
+import{o as a,c as s,d as t}from"./app.883f0a39.js";const n='{"title":"BasicMaterial","description":"","frontmatter":{},"relativePath":"guide/materials/basic-material.md","lastUpdated":1622660569771}',e={},r=t('',4);e.render=function(t,n,e,p,o,i){return a(),s("div",null,[r])};export default e;export{n as __pageData};
