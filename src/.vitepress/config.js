@@ -145,6 +145,10 @@ module.exports = {
 							],
 						},
 						{
+							text: 'Models',
+							link: '/guide/models/',
+						},
+						{
 							link: '/guide/postprocessing/',
 							text: 'Postprocessing',
 						},
