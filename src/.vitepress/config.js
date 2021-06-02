@@ -102,13 +102,13 @@ module.exports = {
 					],
 				},
 				{
-					link: '/guide/usage/',
+					link: '/guide/core/',
 					text: 'Core',
 					children: [
-						{ link: '/guide/usage/renderer', text: 'Renderer' },
-						{ link: '/guide/usage/camera', text: 'Camera' },
-						{ link: '/guide/usage/scene', text: 'Scene' },
-						{ link: '/guide/usage/raf', text: 'Render loop' },
+						{ link: '/guide/core/renderer', text: 'Renderer' },
+						{ link: '/guide/core/camera', text: 'Camera' },
+						{ link: '/guide/core/scene', text: 'Scene' },
+						{ link: '/guide/core/raf', text: 'Render loop' },
 					],
 				},
 				{
