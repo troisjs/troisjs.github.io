@@ -2,6 +2,10 @@
 
 Extra components that require manual imports, like ThreeJS's Examples directory (see "Examples" section [here](https://threejs.org/docs/#manual/en/introduction/Installation)).
 
+## GLTFViewer
+
+See [GLTFViewer.vue](https://github.com/troisjs/trois/blob/master/src/components/viewers/GLTFViewer.vue).
+
 ## NoisyImage
 
 See [NoisyImage.js](https://github.com/troisjs/trois/blob/master/src/components/noisy/NoisyImage.js).
