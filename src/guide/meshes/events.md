@@ -143,3 +143,13 @@ If using `Raycaster` component, you should set `intersect-mode` prop :
 ```html
 <Raycaster intersect-mode="frame" />
 ```
+
+## `intersectRecursive`
+
+If present (=`true`), it also checks all descendants. Otherwise it only checks intersection with the object.
+
+Default is `false`.
+
+```html
+<Raycaster intersect-recursive />
+```
