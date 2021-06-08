@@ -139,6 +139,7 @@ module.exports = {
 							children: [
 								{ link: '/guide/meshes/events', text: 'Events' },
 								{ link: '/guide/meshes/geometries', text: 'Geometries' },
+                { link: '/guide/meshes/groups', text: 'Groups' },
 								// { link: '/guide/meshes/image', text: 'Image' },
 								{ link: '/guide/meshes/instanced', text: 'InstancedMesh' },
 								// { link: '/guide/meshes/sprite', text: 'Sprite' },
