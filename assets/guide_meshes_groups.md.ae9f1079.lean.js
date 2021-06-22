@@ -1,1 +1,0 @@
-import{o as t,c as s,d as e}from"./app.b0ad6587.js";const a='{"title":"Groups","description":"","frontmatter":{},"relativePath":"guide/meshes/groups.md","lastUpdated":1624379464768}',o={},n=e('',5);o.render=function(e,a,o,r,p,l){return t(),s("div",null,[n])};export default o;export{a as __pageData};
