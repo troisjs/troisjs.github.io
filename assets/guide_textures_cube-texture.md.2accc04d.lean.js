@@ -1,1 +1,0 @@
-import{o as t,c as e,d as a}from"./app.b0ad6587.js";const n='{"title":"CubeTexture","description":"","frontmatter":{},"headers":[{"level":3,"title":"Props","slug":"props"}],"relativePath":"guide/textures/cube-texture.md","lastUpdated":1623174256041}',o={},r=a('',5);o.render=function(a,n,o,s,d,p){return t(),e("div",null,[r])};export default o;export{n as __pageData};
