@@ -45,7 +45,7 @@ See [Renderer.ts](https://github.com/troisjs/trois/blob/master/src/core/Renderer
     </tr>
     <tr>
       <td><code>orbitCtrl</code></td>
-      <td>Enable/disable OrbitControls. If value is an Object, it will be used to configure OrbitControls.</td>
+      <td>Enable/disable OrbitControls. If value is an Object, it will be used to configure [OrbitControls](#access-threejs-orbitcontrols).</td>
       <td>Boolean, Object</td>
       <td>false</td>
     </tr>
@@ -192,4 +192,42 @@ You can then access ThreeJS renderer in your component script :
 
 ```js
 const renderer = this.$ref.renderer.renderer;
+```
+
+## Access ThreeJS OrbitControls
+
+In the same fashion you can access the renderer's `three` object which contains different functions to control the scene, amongst which is `cameraCtrl`, handling the ThreeJS `OrbitControls` settings
+
+```js
+const orbitCtrl = this.$ref.renderer.three.cameraCtrl;
+```
+
+### Events
+
+To use events, apply an event listener in `mounted()` section of your App.
+
+```js
+
+orbitCtrl.addEventListener('change', () => {
+      // Do something when the camera has been transformed by the controls.
+    })
+
+orbitCtrl.addEventListener('start', () => {
+      // Do something when an interaction was initiated.
+    })
+
+orbitCtrl.addEventListener('end', () => {
+      // Do something when an interaction has finished.
+    })
+
+```
+
+
+### Properties, Methods
+You can apply all properties and methods in the same way as listed in the official [ThreeJS docs](https://threejs.org/docs/?q=orbit#examples/en/controls/OrbitControls)
+
+Example:
+
+```js
+orbitCtrl.enablePan = false
 ```
