@@ -4,7 +4,7 @@ Creates a [THREE.MeshBasicMaterial](https://threejs.org/docs/#api/en/materials/M
 
 ```html
 <Box>
-  <BasicMaterial color="#ffffff" />
+  <BasicMaterial :color="ffffff" />
 </Box>
 ```
 
