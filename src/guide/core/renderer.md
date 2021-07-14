@@ -71,6 +71,8 @@ See [Renderer.ts](https://github.com/troisjs/trois/blob/master/src/core/Renderer
           <li><code>true</code> : parent size</li>
           <li><code>'window'</code> : window size</li>
         </ul>
+        To directly set the size of the renderer you can call the built in three function:
+        <code>this.$refs.renderer.three.setSize(width, height)</code>
       </td>
       <td>Boolean, String</td>
       <td>false</td>
