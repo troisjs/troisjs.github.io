@@ -175,6 +175,12 @@ module.exports = {
 				{
 					link: '/guide/extras/',
 					text: 'Extras',
+					children: [
+						{
+							link: '/extras/vrbutton/',
+							text: 'VR-Button',
+						},
+					]
 				},
 			],
 		},
