@@ -1,5 +1,6 @@
 // const path = require('path');
 // const production = process.env.NODE_ENV === 'production';
+const rendererSidebar = require('./rendererSidebar')
 
 const title = 'TroisJS';
 const description = 'TroisJS examples and documentation';
@@ -139,7 +140,7 @@ module.exports = {
 							children: [
 								{ link: '/guide/meshes/events', text: 'Events' },
 								{ link: '/guide/meshes/geometries', text: 'Geometries' },
-                { link: '/guide/meshes/groups', text: 'Groups' },
+								{ link: '/guide/meshes/groups', text: 'Groups' },
 								// { link: '/guide/meshes/image', text: 'Image' },
 								{ link: '/guide/meshes/instanced', text: 'InstancedMesh' },
 								// { link: '/guide/meshes/sprite', text: 'Sprite' },
@@ -183,6 +184,7 @@ module.exports = {
 					]
 				},
 			],
+			'/renderer/': rendererSidebar
 		},
 	},
 };
