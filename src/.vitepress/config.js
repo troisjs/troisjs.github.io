@@ -1,6 +1,5 @@
 // const path = require('path');
 // const production = process.env.NODE_ENV === 'production';
-const rendererSidebar = require('./rendererSidebar')
 
 const title = 'TroisJS';
 const description = 'TroisJS examples and documentation';
@@ -184,7 +183,16 @@ module.exports = {
 					]
 				},
 			],
-			'/renderer/': rendererSidebar
+			'/renderer/': [
+				{
+					text: 'Introduction',
+					link: "/guide/",
+					children: [
+						{ link: '/renderer/installation', text: 'Installation' },
+						{ link: '/renderer/core', text: 'Core Concepts' }
+					]
+				}
+			],
 		},
 	},
 };
