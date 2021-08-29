@@ -186,11 +186,15 @@ module.exports = {
 			'/renderer/': [
 				{
 					text: 'Introduction',
-					link: "/guide/",
+					link: "/renderer/",
 					children: [
 						{ link: '/renderer/installation', text: 'Installation' },
 						{ link: '/renderer/core', text: 'Core Concepts' }
 					]
+				},
+				{
+					text: 'Extend',
+					link: '/renderer/extend'
 				}
 			],
 		},
