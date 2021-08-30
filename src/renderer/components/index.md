@@ -101,8 +101,21 @@ All Trois components emit an `onAdded` and `onReady` event:
 
 Additional events available to Trois components are:
 
-| Name | Parameters | Notes |
-| ---- | ---------- | ----- |
+:::tip @ Naming
+Note you can replace `on` with `@` in the event names below. `onClick` is the same as `@click`, etc.
+:::
+
+| Name             | Parameters                             |
+| ---------------- | -------------------------------------- |
+| `onClick`        | `{ intersection: THREE.Intersection }` |
+| `onPointerUp`    | `{ intersection: THREE.Intersection }` |
+| `onPointerDown`  | `{ intersection: THREE.Intersection }` |
+| `onPointerOver`  | `{ intersection: THREE.Intersection }` |
+| `onPointerOut`   | `{ intersection: THREE.Intersection }` |
+| `onPointerEnter` | `{ intersection: THREE.Intersection }` |
+| `onPointerLeave` | `{ intersection: THREE.Intersection }` |
+| `onPointerMove`  | `{ intersection: THREE.Intersection }` |
+
 
 ## `attach`
 
