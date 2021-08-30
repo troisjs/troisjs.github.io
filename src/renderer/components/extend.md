@@ -15,12 +15,12 @@ const app = createApp(App)
 app.extend({ OrbitControls })
 
 // You can add any number of new classes to the object:
-// app.extend({ OrbitControls, AnotherClass, ThirdClass, ... })
-// Each one is available under the property name,
+// app.extend({ OrbitControls, AnotherClass, 'third-class': ThirdClass, ... })
+// Each one register a component under the property name,
 // so you could use the above classes with:
 // <OrbitControls />
 // <AnotherClass />
-// <ThirdClass />
+// <third-class />
 
 // mount the app
 app.mount('#app')
@@ -39,8 +39,10 @@ Then in your template:
 From there, you have full access to the component as a regular Trois prop:
 
 ```
-ref="controls"          // Access the created instance with `$refs.controls.instance`
-:args="[...]"           // Pass an array of args to the instantiation method
-:enableDamping="true"   // Set properties
-:dampingFactor="0.1"    // (etc)
+<OrbitControls
+    ref="controls"          // Access the created instance with `$refs.controls.instance`
+    :args="[...]"           // Pass an array of args to the instantiation method
+    :enableDamping="true"   // Set properties
+    :dampingFactor="0.1"    // (etc)
+/>
 ```
