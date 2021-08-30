@@ -285,4 +285,65 @@ const finalParent = new THREE.Mesh(...args)
 
 ## `instance`
 
-TODO
+Sometimes you'll need to access a Three.js object in your JS. You can do this by accessing an element's `instance` property. For example:
+
+```html
+<template>
+    <TroisCanvas>
+        <mesh ref="mesh"/>
+    </TroisCanvas>
+</template>
+
+<script>
+export default {
+    mounted(){
+        console.log(this.$refs.mesh.instance)
+    }
+}
+</script>
+```
+
+The Vue reactivity system is great for occasional changes, but for smooth motion, changing properties on `instance` will be give you the best result:
+
+```html
+<template>
+    <TroisCanvas>
+        <mesh ref="mesh">
+            <meshBasicMaterial :color="color"/>
+        </mesh>
+    </TroisCanvas>
+</template>
+
+<script>
+export default {
+    data(){
+        return {
+            color: 'blue'
+        }
+    },
+    mounted(){
+        // `color` only changes a couple times a second, so that works well with reactive values
+        setInterval(() => {
+            this.color = this.color === 'blue' ? 'green' : 'blue'
+        }, 500)
+
+        // start the update loop
+        this.update()
+    },
+    methods: {
+        update(){
+            requestAnimationFrame(this.update)
+
+            const mesh = this.$refs.mesh.instance
+            // cancel if no mesh yet
+            if (!mesh) return
+
+            // this bobs the mesh up and down smoothly -
+            // since it happens so frequently (ideally ~60 times per second),
+            // it makes sense to change the property directly instead of relying on reactivity
+            mesh.position.y = Math.sin(Date.now() * 0.001)
+        }
+    }
+}
+</script>
+```
