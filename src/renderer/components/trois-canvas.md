@@ -39,7 +39,7 @@ You can pass several configuration props to a TroisCanvas:
 
 ## Environment map example
 ```html
-<TroisCanvas :environment="'/your/env-map.hdr">
+<TroisCanvas :environment="'/your/env-map.hdr'">
     <!-- ... -->
 </TroisCanvas>
 ```

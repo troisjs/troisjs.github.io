@@ -99,7 +99,7 @@ You can use most Three.js classes in Trois, such as:
 * Materials (standard, basic, points, shader, etc)
 * Lights (spotlights, point lights, directional, etc)
 
-For more inofrmation, see [Components](/renderer/components/).
+For more information, see [Components](/renderer/components/).
 
 To add any features not in that list, see the instructions under [Extend](/renderer/components/extend).
 
