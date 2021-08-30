@@ -193,9 +193,15 @@ module.exports = {
 					]
 				},
 				{
-					text: 'Extend',
-					link: '/renderer/extend'
-				}
+					text: 'Components',
+					link: '/renderer/components/',
+					children: [
+						{ text: 'Extend', link: '/renderer/components/extend' },
+						{ text: 'GLTF', link: '/renderer/components/gltf' },
+						{ text: 'TroisCanvas', link: '/renderer/components/trois-canvas' },
+					]
+				},
+				{ text: 'useTrois', link: '/renderer/useTrois' }
 			],
 		},
 	},
