@@ -99,6 +99,11 @@ All Trois components emit an `onAdded` and `onReady` event:
 }
 ```
 
+Additional events available to Trois components are:
+
+| Name | Parameters | Notes |
+| ---- | ---------- | ----- |
+
 ## `attach`
 
 You can pass instantiated items using the `attach` prop and `$attached.<propName>` strings. See [Core Concepts](/renderer/core.html#attach) for more details. 
