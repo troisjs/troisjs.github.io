@@ -36,7 +36,9 @@ export default {
 
                 // you now have guaranteed access to the camera - for example, you can do:
                 camera.lookAt(new THREE.Vector3(0, 0, 0))
-            }
+            },
+            // tell the watcher to fire immediately
+            { immediate: true },
         )
     },
     methods: {
