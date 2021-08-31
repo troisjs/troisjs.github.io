@@ -5,12 +5,12 @@ The Trois renderer is a custom renderer for Vue 3, like [react-three-fiber](http
 You can use it to write code like this:
 
 ```html
-  <TroisCanvas>
-    <mesh :position-z="-5">
-      <sphereGeometry />
-      <meshBasicMaterial :wireframe="true" />
-    </mesh>
-  </TroisCanvas>
+<TroisCanvas background="white">
+  <mesh :position-z="-5">
+    <sphereGeometry />
+    <meshBasicMaterial :wireframe="true" color="black" />
+  </mesh>
+</TroisCanvas>
 ```
 
 which creates:
