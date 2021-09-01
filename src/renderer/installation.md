@@ -19,4 +19,6 @@ From there, you can build a Trois app like a regular Vue app.
 
 ## In HTML Apps
 
-TODO
+Currently, the easiest way to use a Trois app in an HTML page is to use an iframe. 
+
+Mixing renderers in Vue 3 is something the Trois team and others is still working on - see [here](https://github.com/vuejs/vue-loader/pull/1645) for more information.
