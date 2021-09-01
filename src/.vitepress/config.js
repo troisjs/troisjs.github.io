@@ -202,7 +202,12 @@ module.exports = {
 						{ text: 'TroisCanvas', link: '/renderer/components/trois-canvas' },
 					]
 				},
-				{ text: 'useTrois', link: '/renderer/useTrois' }
+				{ text: 'useTrois', link: '/renderer/useTrois' },
+				{
+					text: 'Examples', children: [
+						{ text: 'Shadows', link: '/renderer/examples/shadows' }
+					]
+				}
 			],
 		},
 	},
