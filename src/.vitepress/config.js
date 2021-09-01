@@ -205,6 +205,12 @@ module.exports = {
 				{ text: 'useTrois', link: '/renderer/useTrois' },
 				{
 					text: 'Examples', children: [
+						{ text: 'Bones', link: '/renderer/examples/bones' },
+						{ text: 'GLTF', link: '/renderer/examples/gltf' },
+						{ text: 'Instanced', link: '/renderer/examples/instanced' },
+						{ text: 'Physics and Events', link: '/renderer/examples/physics-and-events' },
+						{ text: 'Points', link: '/renderer/examples/points' },
+						{ text: 'Refraction', link: '/renderer/examples/refraction' },
 						{ text: 'Shadows', link: '/renderer/examples/shadows' }
 					]
 				}
