@@ -12,7 +12,7 @@ This is the recommended flow for `useTrois`:
 <script>
 import { watch } from 'vue'
 import * as THREE from 'three'
-import { useTrois } from 'trois-renderer-proof-of-concept'
+import { useTrois } from 'trois-renderer'
 
 export default {
     setup(){

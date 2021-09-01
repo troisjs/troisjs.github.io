@@ -3,7 +3,7 @@
 If you need to add a Three.js class that doesn't already exist in the [included components](http://localhost:3000/renderer/components/), you can do so using `app.extend`. For example:
 
 ```js
-import { createApp } from 'trois-renderer-proof-of-concept'
+import { createApp } from 'trois-renderer'
 import App from 'YourApp.vue'
 
 // we'll be adding OrbitControls in this example, so let's import the OrbitControls class
