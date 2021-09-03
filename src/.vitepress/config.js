@@ -199,6 +199,7 @@ module.exports = {
 					children: [
 						{ text: 'Extend', link: '/renderer/components/extend' },
 						{ text: 'GLTF', link: '/renderer/components/gltf' },
+						{ text: 'Loaders', link: '/renderer/components/loaders' },
 						{ text: 'TroisCanvas', link: '/renderer/components/trois-canvas' },
 					]
 				},
