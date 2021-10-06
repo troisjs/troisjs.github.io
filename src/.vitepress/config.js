@@ -177,7 +177,7 @@ module.exports = {
 					text: 'Extras',
 					children: [
 						{
-							link: '/extras/vrbutton/',
+							link: '/guide/extras/vrbutton',
 							text: 'VR-Button',
 						},
 					]
