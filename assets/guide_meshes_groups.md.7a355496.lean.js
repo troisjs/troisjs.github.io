@@ -1,0 +1,1 @@
+import{o as t,c as s,d as e}from"./app.c4cbb42c.js";const a='{"title":"Groups","description":"","frontmatter":{},"relativePath":"guide/meshes/groups.md","lastUpdated":1633525509708}',o={},n=e('',5);o.render=function(e,a,o,r,p,l){return t(),s("div",null,[n])};export default o;export{a as __pageData};
