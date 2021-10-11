@@ -1,0 +1,1 @@
+import{o as a,c as s,d as t}from"./app.c4cbb42c.js";const n='{"title":"PhysicalMaterial","description":"","frontmatter":{},"relativePath":"guide/materials/physical-material.md","lastUpdated":1633983367204}',e={},p=t('',4);e.render=function(t,n,e,r,l,o){return a(),s("div",null,[p])};export default e;export{n as __pageData};
