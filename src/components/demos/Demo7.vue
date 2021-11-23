@@ -10,7 +10,7 @@
 
       <LiquidPlane ref="liquid"
         :width="WIDTH" :height="HEIGHT" :width-segments="512" :height-segments="512"
-        :color="color" :metalness="metalness" :roughness="roughness"
+        :material-props="{ color, metalness, roughness }"
       />
     </Scene>
   </Renderer>
@@ -18,7 +18,7 @@
 
 <script>
 import { Plane, Raycaster, Vector3 } from 'three';
-import Tweakpane from 'tweakpane';
+import { Pane } from 'tweakpane';
 import chroma from 'chroma-js';
 
 import {
@@ -29,7 +29,7 @@ import {
   Scene,
 } from 'troisjs';
 
-import LiquidPlane from 'troisjs/src/components/liquid/LiquidPlane.js';
+import LiquidPlane from '@troisjs/components/src/liquid/LiquidPlane.js';
 
 export default {
   components: {
@@ -67,7 +67,7 @@ export default {
     this.pointerPlane = new Plane(new Vector3(0, 0, 1), 0);
     this.pointerV3 = new Vector3();
 
-    this.pane = new Tweakpane();
+    this.pane = new Pane();
     this.pane.addInput(this, 'color');
     this.pane.addInput(this, 'metalness', { min: 0, max: 1 });
     this.pane.addInput(this, 'roughness', { min: 0, max: 1 });
@@ -93,22 +93,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.tp-dfwv {
-  margin-top: var(--header-height);
-  /* left: 8px;
-  right: auto!important; */
-}
-
-@media (min-width: 720px) {
-  .tp-dfwv {
-    margin-left: 16.4rem;
-  }
-}
-@media (min-width: 960px) {
-  .tp-dfwv {
-    margin-left: 20rem;
-  }
-}
-</style>

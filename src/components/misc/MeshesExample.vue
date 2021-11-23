@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Tweakpane from 'tweakpane';
+import { Pane } from 'tweakpane';
 import { DoubleSide, Vector3 } from 'three';
 import {
   AmbientLight,
@@ -130,7 +130,7 @@ export default {
     },
   },
   mounted() {
-    this.pane = new Tweakpane();
+    this.pane = new Pane();
 
     this.pane.addInput(this, 'mesh', { options: this.meshTweakOptions });
     this.pane.addInput(this, 'material', { options: this.matTweakOptions });
@@ -150,22 +150,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.tp-dfwv {
-  margin-top: var(--header-height);
-  left: 8px;
-  right: auto!important;
-}
-
-@media (min-width: 720px) {
-  .tp-dfwv {
-    margin-left: 16.4rem;
-  }
-}
-@media (min-width: 960px) {
-  .tp-dfwv {
-    margin-left: 20rem;
-  }
-}
-</style>
