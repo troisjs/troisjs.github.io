@@ -10,24 +10,18 @@
   </Renderer>
 </template>
 
-<script>
-import { Box, Camera, LambertMaterial, PointLight, Renderer, Scene } from 'troisjs';
+<script setup>
+import { ref } from 'vue'
+import { Box, Camera, LambertMaterial, PointLight, Renderer, Scene } from 'troisjs'
 
-export default {
-  components: { Box, Camera, LambertMaterial, PointLight, Renderer, Scene },
-  data() {
-    return {
-      boxColor: '#ffffff',
-    };
-  },
-  methods: {
-    boxOver({ over }) {
-      this.boxColor = over ? '#ff0000' : '#ffffff';
-    },
-    boxClick(e) {
-      alert('Click');
-      console.log(e);
-    },
-  },
-};
+const boxColor = ref('#ffffff')
+
+const boxOver = ({ over }) => {
+  boxColor.value = over ? '#ff0000' : '#ffffff'
+}
+
+const boxClick = (e) => {
+  alert('Click')
+  console.log(e)
+}
 </script>
