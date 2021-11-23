@@ -1,18 +1,16 @@
-import DefaultTheme from 'vitepress/theme';
-import Layout from './Layout.vue';
-import './styles.css';
-
-// import { TroisJSVuePlugin } from 'troisjs';
+import defaultTheme from 'vitepress/dist/client/theme-default/index'
+import Layout from './Layout.vue'
 import Dyn from '/Dyn.vue';
-import chroma from 'chroma-js';
+import './style.css'
 
 export default {
-  ...DefaultTheme,
+  ...defaultTheme,
   Layout,
+  // NotFound: () => 'custom 404', // <- this is a Vue 3 functional component
   enhanceApp({ app, router, siteData }) {
+    // app is the Vue 3 app instance from `createApp()`. router is VitePress'
+    // custom router. `siteData`` is a `ref`` of current site-level metadata.
     app.component('Dyn', Dyn);
-
-    // app.use(TroisJSVuePlugin);
 
     if (typeof window !== 'undefined') {
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -25,4 +23,4 @@ export default {
       siteData.$ga = ga;       
     }
   }
-};
+}

@@ -2,15 +2,13 @@
   <AsyncComponent></AsyncComponent>
 </template>
 
-<script>
+<script setup>
 import { defineAsyncComponent } from 'vue';
 
-export default {
-  props: ['folder', 'component'],
-  setup(props) {
-    const AsyncComponent = defineAsyncComponent(() => import(`./components/${props.folder}/${props.component}.vue`));
-    // const AsyncComponent = defineAsyncComponent(() => import(`./components/${props.component}.vue`));
-    return { AsyncComponent };
-  }
-}
+const props = defineProps({
+  folder: { type: String, required: true },
+  component: { type: String, required: true },
+})
+
+const AsyncComponent = defineAsyncComponent(() => import(`./components/${props.folder}/${props.component}.vue`));
 </script>

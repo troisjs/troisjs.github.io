@@ -5,15 +5,16 @@
 		"serve": "vitepress serve src"
 	},
 	"devDependencies": {
+		"@troisjs/components": "^0.0.4",
 		"cannon": "^0.6.2",
 		"chroma-js": "^2.1.0",
-		"gsap": "^3.5.1",
+		"gsap": "^3.8.0",
 		"nice-color-palettes": "^3.0.0",
-		"simplex-noise": "^2.4.0",
+		"simplex-noise": "^3.0.0",
 		"stats.js": "^0.17.0",
-		"three": "^0.127.0",
-		"troisjs": "0.3.0",
-		"tweakpane": "^2.0.1",
-		"vitepress": "0.12.2"
+		"three": "^0.134.0",
+		"troisjs": "^0.3.3",
+    "tweakpane": "^3.0.6",
+		"vitepress": "^0.20.1"
 	}
 }

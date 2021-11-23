@@ -4,26 +4,39 @@
 	--font-family-base: 'Inter', sans-serif;
 	--c-brand: #d24339;
 	--c-brand-light: #ef584e;
-	--c-divider: #ffffff1f;
+	/* --c-divider: #ffffff1f; */
 	--sidebar-size: 18rem;
 }
 
+.page .container {
+	padding: 0 2rem 4rem;
+	max-width: 60rem;
+}
+
+.next-and-prev-link .container {
+	border-top: none;
+}
+
+/* hide */
+.nav-bar .nav-links > .item:last-child,
+.examples .page-footer,
+.examples .next-and-prev-link {
+	display: none;
+}
+
+/* examples */
 .examples .container {
 	padding: 0;
 	max-width: none;
 }
 
-.examples .content {
+.examples .content > div {
 	position: fixed;
 	padding: 0;
 	top: 3.6rem;
 	right: 0;
 	bottom: 0;
 	left: 0;
-}
-
-.examples .content > div {
-	height: 100%;
 }
 
 .examples .content > div canvas {
@@ -48,12 +61,12 @@
 	width: 20px;
 }
 
-.nav-bar .nav-links > .item:last-child,
-.examples .page-footer,
-.examples .next-and-prev-link {
-	display: none;
+/* tweakpane */
+.tp-dfwv {
+  margin-top: var(--header-height);
 }
 
+/* sidebar */
 @media (min-width: 720px) {
   .theme .page {
 		margin-left: var(--sidebar-size);
@@ -61,21 +74,7 @@
   .theme .sidebar {
     width: var(--sidebar-size);
   }
-	.examples .content  {
+	.examples .content > div {
 		left: var(--sidebar-size);
 	}
 }
-
-.page .container {
-	padding: 0 2rem 4rem;
-	max-width: 60rem;
-}
-
-/* @media (min-width: 960px) {
-  .sidebar {
-    width: 16rem;
-  }
-	.examples .content  {
-		left: 16rem;
-	}
-} */
