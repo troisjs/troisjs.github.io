@@ -15,11 +15,7 @@
   </Renderer>
 </template>
 
-<script>
-import { Camera, Renderer, Scene } from 'troisjs';
-import NoisyImage from 'troisjs/src/components/noisy/NoisyImage.js';
-
-export default {
-  components: { Camera, NoisyImage, Renderer, Scene },
-};
+<script setup>
+import { Camera, Renderer, Scene } from 'troisjs'
+import NoisyImage from '@troisjs/components/src/noisy/NoisyImage.js'
 </script>
