@@ -8,22 +8,6 @@
   </Renderer>
 </template>
 
-<script>
-import {
-  AmbientLight,
-  Camera,
-  GltfModel,
-  Renderer,
-  Scene,
-} from 'troisjs';
-
-export default {
-  components: {
-    AmbientLight,
-    Camera,
-    GltfModel,
-    Renderer,
-    Scene,
-  },
-};
+<script setup>
+import { AmbientLight, Camera, GltfModel, Renderer, Scene } from 'troisjs'
 </script>
