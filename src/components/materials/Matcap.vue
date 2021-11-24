@@ -9,10 +9,6 @@
   </Renderer>
 </template>
 
-<script>
-import { Box, Camera, MatcapMaterial, Renderer, Scene } from 'troisjs';
-
-export default {
-  components: { Box, Camera, MatcapMaterial, Renderer, Scene },
-};
+<script setup>
+import { Box, Camera, MatcapMaterial, Renderer, Scene } from 'troisjs'
 </script>
