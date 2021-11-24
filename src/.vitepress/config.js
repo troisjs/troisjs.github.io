@@ -88,6 +88,7 @@ function getExamplesSidebar() {
       children: [
         { link: '/examples/sliders/1', text: 'Slider 1' },
         { link: '/examples/sliders/2', text: 'Slider 2' },
+        { link: '/examples/sliders/3', text: 'Slider 3' },
       ],
     },
   ]
