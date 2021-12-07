@@ -8,4 +8,4 @@ Creates a [THREE.MeshLambertMaterial](https://threejs.org/docs/#api/en/materials
 </Box>
 ```
 
-Source : https://github.com/troisjs/trois/blob/master/src/materials/LambertMaterial.ts
+Source : https://github.com/troisjs/trois/blob/master/src/materials/Material.ts

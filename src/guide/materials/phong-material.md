@@ -8,4 +8,4 @@ Creates a [THREE.MeshPhongMaterial](https://threejs.org/docs/#api/en/materials/M
 </Box>
 ```
 
-Source : https://github.com/troisjs/trois/blob/master/src/materials/PhongMaterial.ts
+Source : https://github.com/troisjs/trois/blob/master/src/materials/Material.ts

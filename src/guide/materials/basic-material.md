@@ -8,4 +8,4 @@ Creates a [THREE.MeshBasicMaterial](https://threejs.org/docs/#api/en/materials/M
 </Box>
 ```
 
-Source : https://github.com/troisjs/trois/blob/master/src/materials/BasicMaterial.ts
+Source : https://github.com/troisjs/trois/blob/master/src/materials/Material.ts

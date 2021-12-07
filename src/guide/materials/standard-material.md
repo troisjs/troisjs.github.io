@@ -8,4 +8,4 @@ Creates a [THREE.MeshStandardMaterial](https://threejs.org/docs/#api/en/material
 </Box>
 ```
 
-Source : https://github.com/troisjs/trois/blob/master/src/materials/StandardMaterial.ts
+Source : https://github.com/troisjs/trois/blob/master/src/materials/Material.ts
