@@ -7,7 +7,7 @@ You can easily create the following lights :
 - `HemisphereLight` ([source](https://github.com/troisjs/trois/blob/master/src/lights/HemisphereLight.ts), [threejs doc](https://threejs.org/docs/index.html#api/en/lights/HemisphereLight))
 - `PointLight` ([source](https://github.com/troisjs/trois/blob/master/src/lights/PointLight.ts), [threejs doc](https://threejs.org/docs/index.html#api/en/lights/PointLight))
 - `RectAreaLight` ([source](https://github.com/troisjs/trois/blob/master/src/lights/RectAreaLight.ts), [threejs doc](https://threejs.org/docs/#api/en/lights/RectAreaLight))
-- `SpotLight` ([source](https://github.com/troisjs/trois/blob/master/src/lights/AmbientLight.ts), [threejs doc](https://threejs.org/docs/index.html#api/en/lights/SpotLight))
+- `SpotLight` ([source](https://github.com/troisjs/trois/blob/master/src/lights/SpotLight.ts), [threejs doc](https://threejs.org/docs/index.html#api/en/lights/SpotLight))
 
 Example :
 
