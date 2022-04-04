@@ -8,7 +8,7 @@ Passes :
 - `FilmPass` ([source](https://github.com/troisjs/trois/blob/master/src/effects/FilmPass.ts))
 - `FXAAPass` ([source](https://github.com/troisjs/trois/blob/master/src/effects/FXAAPass.ts))
 - `HalftonePass` ([source](https://github.com/troisjs/trois/blob/master/src/effects/HalftonePass.ts))
-- `Renderpass` ([source](https://github.com/troisjs/trois/blob/master/src/effects/Renderpass.ts))
+- `RenderPass` ([source](https://github.com/troisjs/trois/blob/master/src/effects/RenderPass.ts))
 - `SMAAPass` ([source](https://github.com/troisjs/trois/blob/master/src/effects/SMAAPass.ts))
 - `UnrealBloomPass` ([source](https://github.com/troisjs/trois/blob/master/src/effects/UnrealBloomPass.ts))
 
