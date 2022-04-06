@@ -62,5 +62,5 @@ You should set a *ref* on the camera :
 You can then access ThreeJS camera in your component script :
 
 ```js
-const camera = this.$ref.camera.camera;
+const camera = this.$refs.camera.camera;
 ```
