@@ -193,7 +193,7 @@ You should set a *ref* on the renderer :
 You can then access ThreeJS renderer in your component script :
 
 ```js
-const renderer = this.$ref.renderer.renderer;
+const renderer = this.$refs.renderer.renderer;
 ```
 
 ## Access ThreeJS OrbitControls
@@ -201,7 +201,7 @@ const renderer = this.$ref.renderer.renderer;
 In the same fashion you can access the renderer's `three` object which contains different functions to control the scene, amongst which is `cameraCtrl`, handling the ThreeJS `OrbitControls` settings
 
 ```js
-const orbitCtrl = this.$ref.renderer.three.cameraCtrl;
+const orbitCtrl = this.$refs.renderer.three.cameraCtrl;
 ```
 
 ### Events
