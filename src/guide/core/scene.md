@@ -36,5 +36,5 @@ You should set a *ref* on the scene :
 You can then access ThreeJS scene in your component script :
 
 ```js
-const scene = this.$refs.scene.scene;
+const scene = this.$refs.renderer.scene;
 ```
